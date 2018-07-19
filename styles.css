@@ -2,13 +2,10 @@
 Flex css
 https://css-tricks.com/designing-a-product-page-layout-with-flexbox/
 http://jsbin.com/hakemosuyo/2/edit?html,css,output
-
 */
-
 
 body{
     background-color: rgb(20, 20, 20);
-    /*#282828*/
     font-size: 100%;
     margin: 0;
 }
@@ -22,11 +19,11 @@ header {
     width: 100%;
     max-width: 100%;
     margin-top: 0%;
-    position: fixed;
-    background: rgba(30,30,30,.95);
     border-top: 2px solid #33ccff; 
-    /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
+    background: rgba(30,30,30,.95);
+    position: fixed;
     z-index: 2;
+    /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
 }
 
 nav {
@@ -42,7 +39,7 @@ nav a {
 }
 
 nav a:hover{
-    color: rgb(95, 195, 228);
+    color: rgb(255, 255, 255);
 }
 
 nav a.active{
@@ -53,17 +50,16 @@ nav a.active{
     color: lightblue;
 }
 
-
 ul.catalogo li {
-    width: 220px; /* adjust the size of the catalog block */
+    width: 220px;
     height: 380px;
     margin-top: 50px;
-    display: inline-block; /* this creates the catalog effect */
-    text-align: center; /* align the image to center */
-    background-color:#282828 ; /* background color of each */
+    display: inline-block; /* efecto catalogo */
+    text-align: center; /* imagen centrada */
+    background-color:#282828 ;
     font-family: "Trebuchet MS", Helvetica, sans-serif; 
-    border-radius: 10px; /* rounded borders effect */
-    border: 2px solid #585858; /* border and color */
+    border-radius: 10px; /* bordes redondeados */
+    border: 2px solid #585858;
     margin-left: 2px;
 }
 
