@@ -1,0 +1,201 @@
+/*
+Flex css
+https://css-tricks.com/designing-a-product-page-layout-with-flexbox/
+http://jsbin.com/hakemosuyo/2/edit?html,css,output
+
+*/
+
+
+body{
+    background-color: rgb(20, 20, 20);
+    /*#282828*/
+    font-size: 100%;
+    margin: 0;
+}
+
+div{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header {
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    background: rgba(30,30,30,.95);
+    border-top: 2px solid #33ccff; 
+    /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
+    z-index: 2;
+}
+
+nav {
+    margin-left: 30px;
+}
+
+nav a {
+    font: 1.2em/1em sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white; 
+}
+
+nav a:hover{
+    color: rgb(95, 195, 228);
+}
+
+nav a.active{
+    border-bottom: 2px solid skyblue;
+}
+
+.navbar a{
+    color: lightblue;
+}
+
+
+ul.catalogo li {
+    width: 220px; /* adjust the size of the catalog block */
+    height: 380px;
+    margin-top: 50px;
+    display: inline-block; /* this creates the catalog effect */
+    text-align: center; /* align the image to center */
+    background-color:#282828 ; /* background color of each */
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    border-radius: 10px; /* rounded borders effect */
+    border: 2px solid #585858; /* border and color */
+    margin-left: 2px;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.portada {
+    position: relative;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.portada:hover {
+    transform: scale(1.2, 1.2); 
+    opacity: 1;
+}
+
+.registro form{
+    padding-top: 90px;
+    margin-left: 100px;
+}
+
+.encabezado h1{
+    margin-left: 100px;
+    margin-top: 50px;
+    
+}
+
+.comentarios textarea{
+    margin-top: 100px;
+
+}
+
+.comentarios label{
+    margin-top: 100px;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
