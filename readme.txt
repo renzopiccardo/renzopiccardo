@@ -1,0 +1,1 @@
+-Skyrim (primero en la lista) es el juego con información detallada y la opción para comprar

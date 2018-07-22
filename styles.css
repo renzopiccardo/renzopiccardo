@@ -78,6 +78,21 @@ ul.catalogo li {
     margin-left: 50px;
 }
 
+.registro input{
+    width: 430px;
+    height: 25px;
+}
+
+input[type=submit]{
+    width: 100px;
+    height: 40px;
+}
+
+input[type=reset]{
+    width: 100px;
+    height: 40px;
+}
+
 .encabezado h1{
     margin-left: 50px;
     margin-top: 50px;
