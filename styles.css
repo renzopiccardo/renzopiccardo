@@ -10,13 +10,20 @@ body{
 header {
     width: 100%;
     max-width: 100%;
-    margin-top: 0%;
+    margin-top: 0;
     border-top: 2px solid #33ccff; 
     background: rgba(30,30,30,.95);
     position: fixed;
     z-index: 2;
     /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
 }
+
+.encabezado h1{
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+/*Navbar*/
 
 nav {
     margin-left: 30px;
@@ -41,6 +48,8 @@ nav a.active{
 .navbar a{
     color: lightblue;
 }
+
+/*Lista juegos*/
 
 ul.catalogo li {
     width: 220px;
@@ -73,50 +82,73 @@ ul.catalogo li {
     opacity: 1;
 }
 
-.registro form{
-    padding-top: 50px;
-    margin-left: 50px;
-}
+/*Registro*/
 
 .registro input{
     width: 430px;
     height: 25px;
 }
 
-input[type=submit]{
-    width: 100px;
-    height: 40px;
-}
-
-input[type=reset]{
-    width: 100px;
-    height: 40px;
-}
-
-.encabezado h1{
+.registro form{
+    padding-top: 50px;
     margin-left: 50px;
-    margin-top: 50px;
 }
+
+.registro input[type=submit]{
+    width: 100px;
+    height: 40px;
+}
+
+.registro input[type=reset]{
+    width: 100px;
+    height: 40px;
+}
+
+/*Comentarios*/
 
 .comentarios form{
-    padding-top: 0px;
+    padding-top: 50px;
     margin-left: 50px;
 }
 
-.comentarios label{
-    display:inline-block;
-    margin-top: 80px;
-    font-size: 2em;
+.comentarios input{
+    width: 430px;
+    height: 25px;
 }
 
+.comentarios input[type=submit]{
+    width: 100px;
+    height: 40px;
+}
+
+.comentarios input[type=reset]{
+    width: 100px;
+    height: 40px;
+}
+
+/*
+.comentarios label{
+    display:inline-block;
+    padding-top: 80px;
+    font-size: 2em;
+}
+*/
+
 .comentarios textarea{
-    margin-top: 50px;
-    width: 400px;
+    padding-top: 4px;
+    width: 430px;
     height: 300px;
 }
 
+/*Imagenes*/
 .slideshow img{
-    width: 300px;
+    height: 150px;
+
 }
+
+img{
+    height: 300px;
+}
+
 
 /*------------------------------------------------------------------------------------------------------------*/

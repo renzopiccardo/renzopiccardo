@@ -23,12 +23,31 @@
             </nav>
         </div>
     </header>
+    <br>
+
+    <div class="encabezado">
+        <h1>Comentarios/Consultas</h1>
+    </div>
 
     <div class="comentarios">
         <form action="url" method="POST">
-            <label for="comentarios">Comentarios/Consultas</label>
+            <div> 
+                <label for="nombre">Nombre</label>
+                <br>
+                <input placeholder="Ingrese su nombre..." type="text" id="campo1" name="nombre" pattern="[A-Za-z]+" maxlength="30" required autofocus>
+            </div>
             <br>
-            <textarea id="comentarios" name="comentarios" cols="30" rows="30" maxlength="600" autofocus></textarea>
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input placeholder="Ingrese su email..." type="email" id="campo3" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            </div>    
+            <br>
+            <div>
+                <label for="areatexto">Escriba su comentario o consulta...</label>
+                <br>
+                <textarea id="comentarios" name="comentarios" cols="30" rows="30" maxlength="600"></textarea>
+            </div>
             <br>
             <input type="submit" value="Guardar">
             <input type="reset" value="Deshacer">
