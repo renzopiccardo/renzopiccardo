@@ -2,10 +2,7 @@
 body{
     background-color: rgb(20, 20, 20);
     font-size: 100%;
-    margin: 0;
-}
-
-div{
+    margin: 0 auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
@@ -77,23 +74,30 @@ ul.catalogo li {
 }
 
 .registro form{
-    padding-top: 90px;
-    margin-left: 100px;
+    padding-top: 50px;
+    margin-left: 50px;
 }
 
 .encabezado h1{
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 50px;
-    
 }
 
-.comentarios textarea{
-    margin-top: 100px;
-
+.comentarios form{
+    padding-top: 0px;
+    margin-left: 50px;
 }
 
 .comentarios label{
-    margin-top: 100px;
+    display:inline-block;
+    margin-top: 80px;
+    font-size: 2em;
+}
+
+.comentarios textarea{
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
 }
 
 .slideshow img{
