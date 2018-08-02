@@ -64,6 +64,26 @@ ul.catalogo li {
     margin-left: 2px;
 }
 
+/*ul li a h3{
+    text-decoration: none;
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    
+}
+
+ul li a h3:visited{
+    text-decoration: none;
+    color: white;
+    text-decoration-line: none;
+}
+*/
+a:visited{
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
 .catalogo img{
     width: 200px;
     height: 300px;
