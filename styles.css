@@ -49,6 +49,10 @@ nav a.active{
     color: lightblue;
 }
 
+.sidenav{
+    padding-top: 60px;
+}
+
 /*Lista juegos*/
 
 ul.catalogo li {

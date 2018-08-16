@@ -17,7 +17,7 @@
     <header>
         <div class="navbar">
             <nav>
-                <a class="active" href="index.html">Inicio</a>
+                <a class="active" href="index.html">Juegos</a>
                 <a href="registro.html">Registrarse</a>
                 <a href="comentarios.html">Comentarios</a>
             </nav>
@@ -25,12 +25,17 @@
     </header>
     <br>
 
+    <div class="sidenav" >
+        <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar" >
+        <button onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
+    </div>
+
     <div>
-        <ul class="catalogo">
+        <ul class="catalogo" id="catalogo" >
             <li>
-                <a href="skyrim.html"><!--Por ahora es el único juego con información detallada y la opción para comprar -->
+                <a href="skyrim.html">
                     <img src="img/skyrim.jpg" alt="portada de skyrim" class="portada">
-                    <h3>Skyrim</h3>    
+                    <h3>Skyrim</h3>  
                 </a>
             </li>
             <li>
