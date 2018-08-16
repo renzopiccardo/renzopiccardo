@@ -26,6 +26,14 @@
     <br>
 
     <div class="sidenav" >
+        <div class="dropdown">
+            <button class="dropbtn">Categoría</button>
+            <div class="dropdown-content">
+                <a href="#">Acción</a>
+                <a href="#">Aventura</a>
+                <a href="#">FPS</a>
+            </div>
+        </div>
         <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar" >
         <button onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
     </div>
@@ -39,8 +47,10 @@
                 </a>
             </li>
             <li>
-                <img src="img/destiny.jpg" alt="portada de destiny" class="portada">
-                <h3>Destiny</h3>
+                <a href="destiny.html">
+                    <img src="img/destiny.jpg" alt="portada de destiny" class="portada">
+                    <h3>Destiny</h3>
+                </a>
             </li>
             <li>
                 <img src="img/watch.jpg" alt="portada de watch dogs" class="portada">

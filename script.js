@@ -27,27 +27,24 @@ function ordenarJuegos()
     var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
     list = document.getElementById("catalogo");
     switching = true;
-    // Set the sorting direction to ascending:
+    // orden ascendente
     dir = "asc"; 
-    // Make a loop that will continue until no switching has been done:
+    // Loop hasta que no se necesite mas switching
     while (switching) 
     {
-      // Start by saying: no switching is done:
+      // Empezar diciendo que no se va a hacer switching
       switching = false;
       b = list.getElementsByTagName("li");
-      // Loop through all list-items:
+      // Loopear entre todos los li
       for (i = 0; i < (b.length - 1); i++) 
       {
-        // Start by saying there should be no switching:
         shouldSwitch = false;
-        /* Check if the next item should switch place with the current item,
-        based on the sorting direction (asc or desc): */
+        // Checkear si el siguente li tendria que cambiar lugar con el actual
         if (dir == "asc") 
         {
           if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) 
           {
-            /* If next item is alphabetically lower than current item,
-            mark as a switch and break the loop: */
+            //Si el siguiente li es alfabeticamente menor que el actual, indicar switch y cortar el loop
             shouldSwitch = true;
             break;
           }
@@ -55,8 +52,7 @@ function ordenarJuegos()
         {
           if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) 
           {
-            /* If next item is alphabetically higher than current item,
-            mark as a switch and break the loop: */
+            //Si el siguiente li es alfabeticamente mayor que el actual, indicar switch y cortar el loop
             shouldSwitch= true;
             break;
           }
@@ -64,16 +60,14 @@ function ordenarJuegos()
       }
       if (shouldSwitch) 
       {
-        /* If a switch has been marked, make the switch
-        and mark that a switch has been done: */
+        //Si un switch fue marcado, hacer el switch e indicar que se hizo
         b[i].parentNode.insertBefore(b[i + 1], b[i]);
         switching = true;
-        // Each time a switch is done, increase switchcount by 1:
+        //Cada vez que se hace un swiitch, incrementar en 1
         switchcount ++;
       } else 
       {
-        /* If no switching has been done AND the direction is "asc",
-        set the direction to "desc" and run the while loop again. */
+        // Si no se hizo switching y la direccion en ascendente, setear la direccion en descendente y hacer el loop de nuevo
         if (switchcount == 0 && dir == "asc") 
         {
           dir = "desc";
