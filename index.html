@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="script.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +18,46 @@
 
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar" id="miNavbar" >
             <nav>
                 <a class="active" href="index.html">Juegos</a>
                 <a href="registro.html">Registrarse</a>
                 <a href="comentarios.html">Comentarios</a>
+                <a href="javascript:void(0);" class="icono" onclick="abrirMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
         </div>
     </header>
     <br>
 
+    <div class="parallax"></div>
+
+    
+
     <div class="sidenav" >
+
         <div class="dropdown">
-            <button class="dropbtn">Categoría</button>
+            <button class="dropbtn">Categoría &#9660;</button>
             <div class="dropdown-content">
                 <a href="#">Acción</a>
                 <a href="#">Aventura</a>
                 <a href="#">FPS</a>
             </div>
         </div>
-        <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar" >
-        <button onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
+
+        <div class="botonOrdenar">
+            <button id="botonOrdenar" onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
+        </div>
+
+        <div class="filtroTexto">
+            <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar..." >
+        </div>
+        
     </div>
 
     <div class="mainpanel">
+        <main>
         <ul class="catalogo" id="catalogo" >
             <li>
                 <a href="skyrim.html">
@@ -101,7 +120,9 @@
                 <h3>Call of Duty Black Ops</h3>
             </li>
         </ul>
+        </main> 
     </div>
+    
 
 </body>
 

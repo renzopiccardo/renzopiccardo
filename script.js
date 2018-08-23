@@ -76,3 +76,15 @@ function ordenarJuegos()
       }
     }
   }
+
+function abrirMenu() {
+  var x = document.getElementById("miNavbar");
+  if (x.className === "navbar") 
+  {
+      x.className += " responsive";
+  } 
+  else 
+  {
+      x.className = "navbar";
+  }
+} 
