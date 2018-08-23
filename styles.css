@@ -250,7 +250,7 @@ ul li a:visited{
 
 @media screen and (max-width: 600px){
     ul.catalogo li{
-        width: 10em;
+        width: 12em;
         height: 20em;
         margin-top: 1em;
         margin-left: 0em;
@@ -261,7 +261,7 @@ ul li a:visited{
     }
 
     .catalogo img{
-        width: 9em;
+        width: 11em;
         height: 16em;
         margin-top: 10px;
         z-index: 1;
@@ -290,23 +290,23 @@ ul li a:visited{
 }
 
 .registro input{
-    width: 430px;
-    height: 25px;
+    width: 26em;
+    height: 2em;
 }
 
 .registro form{
-    padding-top: 50px;
-    margin-left: 50px;
+    padding-top: 2em;
+    margin-left: 2em;
 }
 
 .registro input[type=submit]{
-    width: 100px;
-    height: 40px;
+    width: 6em;
+    height: 3em;
 }
 
 .registro input[type=reset]{
-    width: 100px;
-    height: 40px;
+    width: 6em;
+    height: 3em; 
 }
 
 input:focus, textarea:focus{
@@ -325,23 +325,23 @@ input:focus, textarea:focus{
 }
 
 .comentarios form{
-    padding-top: 50px;
-    margin-left: 50px;
+    padding-top: 2em;
+    margin-left: 2em;
 }
 
 .comentarios input{
-    width: 430px;
-    height: 25px;
+    width: 26em;
+    height: 2em;
 }
 
 .comentarios input[type=submit]{
-    width: 100px;
-    height: 40px;
+    width: 6em;
+    height: 3em;
 }
 
 .comentarios input[type=reset]{
-    width: 100px;
-    height: 40px;
+    width: 6em;
+    height: 3em;
 }
 
 /*
