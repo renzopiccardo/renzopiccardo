@@ -14,7 +14,7 @@ header {
     border-top: 2px solid #33ccff; 
     background: rgba(30,30,30,.95);
     position: fixed;
-    z-index: 2;
+    z-index: 6;
     /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
 }
 
@@ -26,13 +26,15 @@ header {
 /*Navbar*/
 
 nav {
-    margin-left: 30px;
+    margin-left: 3em;
 }
 
 nav a {
-    font: 1.2em/1em sans-serif;
-    display: inline-block;
-    padding: 10px 15px;
+    display: block;
+    float: left;
+    padding: 14px 16px;
+    font: 1.3em/1em sans-serif;   
+    text-align: center;
     text-decoration: none;
     color: white; 
 }
@@ -45,46 +47,39 @@ nav a.active{
     border-bottom: 2px solid skyblue;
 }
 
-.navbar a{
-    color: lightblue;
-}
-
 .sidenav{
-    padding-top: 60px;
+    display: inline-block;
+    padding-top: 4em;
+    margin-left: 3em;
 }
 
 /*Lista juegos*/
 
 ul.catalogo li {
-    width: 220px;
-    height: 380px;
-    margin-top: 50px;
+    width: 14em;
+    height: 24em;
+    margin-top: 2em;
     display: inline-block; /* efecto catalogo */
     text-align: center; /* imagen centrada */
     background-color:#282828 ;
     font-family: "Trebuchet MS", Helvetica, sans-serif; 
     border-radius: 10px; /* bordes redondeados */
-    border: 2px solid #585858;
+    border: 3px solid rgb(0, 10, 14);
+    /*border: 2px solid #585858;*/
     margin-left: 2px;
 }
 
-/*ul li a h3{
+ul.catalogo li a{
     text-decoration: none;
-    color: white;
     text-decoration-style: none;
     text-decoration-line: none;
+    color: white;
     
 }
 
-ul li a h3:visited{
+ul li a:visited{
     text-decoration: none;
-    color: white;
     text-decoration-line: none;
-}
-*/
-a:visited{
-    text-decoration: none;
-    text-decoration-skip-ink: none;
     color: white;
 }
 
@@ -108,6 +103,14 @@ a:visited{
 
 /*Registro*/
 
+input, textarea{
+    border-radius: 5px;
+    border-color: black;
+    border-inline-start-color: black;
+    border-inline-end-color: black;
+    border-style: solid;
+}
+
 .registro input{
     width: 430px;
     height: 25px;
@@ -126,6 +129,11 @@ a:visited{
 .registro input[type=reset]{
     width: 100px;
     height: 40px;
+}
+
+input:focus, textarea:focus{
+    border-color: rgb(238, 194, 144);
+    border-radius: 5px;
 }
 
 /*Comentarios*/
@@ -216,6 +224,66 @@ img{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+/* Slideshow */
+
+.slider-holder{
+    width: 800px;
+    height: 400px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+    
+.image-holder{
+    width: 2400px;
+    background-color: red;
+    height: 400px;
+    clear: both;
+    position: relative;
+    
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+    
+.slider-image{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+    
+#slider-image-1:target ~ .image-holder{
+        left: 0px;
+}
+    
+#slider-image-2:target ~ .image-holder{
+        left: -800px;
+}
+    
+#slider-image-3:target ~ .image-holder{
+    left: -1600px;
+}
+
+.button-holder{
+    position: relative;
+    top: -20px;
+}
+
+.slider-change{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    background-color: brown;
+}
+
 
 /*Vista detallada juego*/
 
