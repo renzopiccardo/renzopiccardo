@@ -289,9 +289,10 @@ ul li a:visited{
     }
 
     .topSidenav{
-        width: 99%;
+        width: 100%;
         max-width: 100%;
         display: inline-block;
+        
     }
     
     .bottomSidenav{
@@ -340,11 +341,33 @@ ul li a:visited{
         padding-bottom: 0.2em;
     }
 
+
+    .filtroTexto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .filtroTexto input{
         width: 100%;
         position: relative;
         overflow: hidden;
+        text-align: center;
+
     }
+
+    .botonOrdenar{
+        display: inline-block;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .dropdown{
+        display: inline-flex;
+        float: right;
+    }
+
+
 
 }
 
@@ -379,10 +402,23 @@ ul li a:visited{
         z-index: 1;
         overflow: auto;
     }
+
+    .topSidenav{
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+        
+    }
+    
+    .bottomSidenav{
+        width: 100%;
+        display: inline-block;
+    }
     
     .sidenav{
         display: inline-block;
         text-align: center;
+        margin: 0 auto;
         padding-top: 3em;
         margin-left: 0.5em;
     }
@@ -394,6 +430,12 @@ ul li a:visited{
     .textoLI{
         font-size: 1.2em;
         padding-top: 0.2em;
+    }
+
+    .filtroTexto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
