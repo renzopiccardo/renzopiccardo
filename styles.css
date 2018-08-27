@@ -1,4 +1,4 @@
-body{
+html, body{
     background-color: rgb(20, 20, 20);
     /*font-size: 100%;*/
     margin: 0 auto;
@@ -13,6 +13,7 @@ header{
     width: 100%;
     max-width: 100%;
     margin-top: 0;
+    padding-top: 0;
     border-top: 2px solid #33ccff; 
     background: rgba(30,30,30,.95);
     position: fixed;
@@ -82,8 +83,16 @@ nav a.active{
     position: relative;
     padding-top: 4em;
     margin-left: 3em;
-    width: 100%;
+    max-width: 100%;
     clear: none;
+}
+
+.topSidenav{
+    display: inline-block;
+}
+
+.bottomSidenav{
+    display: inline-block;
 }
 
 /* Dropdown Button */
@@ -274,6 +283,22 @@ ul li a:visited{
 (max-width: 600px) and
 (min-width: 350px) {
 
+    .portada:hover {
+        transform: scale(1, 1); 
+        opacity: 1;
+    }
+
+    .topSidenav{
+        width: 99%;
+        max-width: 100%;
+        display: inline-block;
+    }
+    
+    .bottomSidenav{
+        width: 100%;
+        display: inline-block;
+    }
+
     ul.catalogo{
         padding-left: 0.5em;
     }
@@ -285,6 +310,7 @@ ul li a:visited{
         margin-top: 0em;
         margin-left: 0em;
         margin-bottom: 0.3em;
+        vertical-align: top;
     }
 
     .catalogo img{
@@ -299,6 +325,7 @@ ul li a:visited{
 
     .sidenav{
         display: inline-block;
+        margin: 0 auto;
         padding-top: 3em;
         margin-left: 0.7em;
     }
@@ -313,46 +340,10 @@ ul li a:visited{
         padding-bottom: 0.2em;
     }
 
-    .dropdown{
-        width: 49%;
-
+    .filtroTexto input{
+        width: 100%;
+        position: relative;
         overflow: hidden;
-        float: left;
-        clear: none;
-    }
-
-    .dropbtn {
-        padding: 0.7em;
-        margin-right: 0.5em;
-        margin-bottom: 0.3em;
-        font-size: 16px;
-    }
-
-    .botonOrdenar{
-        width: 49%;
-        float: left;
-        clear: none;
-        font-size: 0.7em;
-    }
-
-    .filtroTexto{
-        width: 99%;
-        overflow: hidden;
-        float: left;
-        clear: none;
-    }
-
-    #filtroTexto {
-        padding: 0.2em;
-        margin-right: 0.2em;
-        margin-bottom: 0.2em;
-        font-size: 1em;
-    }
-
-    #botonOrdenar{
-        padding: 0.2em;
-        margin-right: 0.2em;
-        margin-bottom: 0.2em;
     }
 
 }
@@ -360,6 +351,11 @@ ul li a:visited{
 @media screen and 
 (max-width: 349px) and
 (min-width: 150px){
+
+    .portada:hover {
+        transform: scale(1, 1); 
+        opacity: 1;
+    }
 
     ul.catalogo{
         padding-left: 0.2em;
@@ -371,6 +367,7 @@ ul li a:visited{
         margin-top: 0em;
         margin-left: 0em;
         margin-bottom: 0.3em;
+        vertical-align: top;
     }
 
     .catalogo img{
@@ -385,7 +382,7 @@ ul li a:visited{
     
     .sidenav{
         display: inline-block;
-        /*text-align: center;*/
+        text-align: center;
         padding-top: 3em;
         margin-left: 0.5em;
     }

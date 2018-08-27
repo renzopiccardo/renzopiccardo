@@ -35,22 +35,27 @@
     <!--<div class="parallax">-->
 
     <div class="sidenav" >
+        
+        <div class="topSidenav">
 
-        <div class="dropdown">
-            <button class="dropbtn">Categoría &#9660;</button>
-            <div class="dropdown-content">
-                <a href="#">Acción</a>
-                <a href="#">Aventura</a>
-                <a href="#">FPS</a>
+            <div class="botonOrdenar">
+                <button id="botonOrdenar" onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Categoría &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="#">Acción</a>
+                    <a href="#">Aventura</a>
+                    <a href="#">FPS</a>
+                </div>
             </div>
         </div>
 
-        <div class="botonOrdenar">
-            <button id="botonOrdenar" onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
-        </div>
-
-        <div class="filtroTexto">
-            <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar..." >
+        <div class="bottomSidenav">
+            <div class="filtroTexto">
+                <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar..." >
+            </div>
         </div>
         
     </div>
