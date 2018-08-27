@@ -10,7 +10,7 @@ function filtrarJuegos()
     // Loopear entre todos los elementos de la lista y ocultar los que no coinciden con la busqueda
     for (i = 0; i < li.length; i++) 
     {
-        a = li[i].getElementsByTagName("h3")[0];
+        a = li[i].getElementsByTagName("div")[0];
 
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) 
         {

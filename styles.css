@@ -22,6 +22,7 @@ header{
 
 nav {
     margin-left: 2.5em;
+    margin-right: 1em;
 }
 
 nav a {
@@ -204,7 +205,8 @@ nav a.active{
 
 ul.catalogo li {
     width: 14em;
-    height: 24em;
+    height: auto;
+    /*24*/
     margin-top: 2em;
     display: inline-block; /* efecto catalogo */
     text-align: center; /* imagen centrada */
@@ -225,6 +227,25 @@ ul.catalogo li a{
     color: white;
 }
 
+.juego{
+    max-width: 100%;
+}
+
+.imagenLI{
+    height: 80%;
+}
+
+.textoLI{
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+}
+
 ul li a:visited{
     text-decoration: none;
     text-decoration-line: none;
@@ -234,7 +255,7 @@ ul li a:visited{
 .catalogo img{
     width: 13em;
     height: 20em;
-    margin-top: 10px;
+    margin-top: 0.5em;
     z-index: 1;
 }
 
@@ -249,15 +270,18 @@ ul li a:visited{
     opacity: 1;
 }
 
-@media screen and (max-width: 600px){
+@media screen and 
+(max-width: 600px) and
+(min-width: 350px) {
 
     ul.catalogo{
         padding-left: 0.5em;
     }
 
     ul.catalogo li{
-        width: 40%;
-        height: 21.5em;
+        width: 47%;
+        height: auto;
+        /*19.7*/
         margin-top: 0em;
         margin-left: 0em;
         margin-bottom: 0.3em;
@@ -268,7 +292,7 @@ ul li a:visited{
         max-width: 200px;
         height: auto;
         min-height: 240px;
-        margin-top: 10px;
+        margin-top: 0.3em;
         z-index: 1;
         overflow: auto;
     }
@@ -276,24 +300,74 @@ ul li a:visited{
     .sidenav{
         display: inline-block;
         padding-top: 3em;
-        margin-left: 1em;
+        margin-left: 0.7em;
     }
 
     nav {
         margin-left: 0.5em;
     }
 
+    .textoLI{
+        font-size: 1.2em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+
+    .dropdown{
+        width: 49%;
+
+        overflow: hidden;
+        float: left;
+        clear: none;
+    }
+
+    .dropbtn {
+        padding: 0.7em;
+        margin-right: 0.5em;
+        margin-bottom: 0.3em;
+        font-size: 16px;
+    }
+
+    .botonOrdenar{
+        width: 49%;
+        float: left;
+        clear: none;
+        font-size: 0.7em;
+    }
+
+    .filtroTexto{
+        width: 99%;
+        overflow: hidden;
+        float: left;
+        clear: none;
+    }
+
+    #filtroTexto {
+        padding: 0.2em;
+        margin-right: 0.2em;
+        margin-bottom: 0.2em;
+        font-size: 1em;
+    }
+
+    #botonOrdenar{
+        padding: 0.2em;
+        margin-right: 0.2em;
+        margin-bottom: 0.2em;
+    }
+
 }
 
-@media screen and (max-width: 300px){
+@media screen and 
+(max-width: 349px) and
+(min-width: 150px){
 
     ul.catalogo{
         padding-left: 0.2em;
     }
 
     ul.catalogo li{
-        width: 47%;
-        height: 20em;
+        width: 47.3%;
+        height: 19em;
         margin-top: 0em;
         margin-left: 0em;
         margin-bottom: 0.3em;
@@ -308,7 +382,22 @@ ul li a:visited{
         z-index: 1;
         overflow: auto;
     }
+    
+    .sidenav{
+        display: inline-block;
+        /*text-align: center;*/
+        padding-top: 3em;
+        margin-left: 0.5em;
+    }
 
+    nav {
+        margin-left: 0.5em;
+    }
+
+    .textoLI{
+        font-size: 1.2em;
+        padding-top: 0.2em;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
