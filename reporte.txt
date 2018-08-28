@@ -1,0 +1,10 @@
+Entrega CSS:
+
+La principal dificultad fue hacer coincidir todos los elementos, respetando su posicion y tamaño.
+Requirió varios intentos, ensayo y error para lograr una armonía y que no se rompa la página.
+El layout para moviles también supuso una dificultad ya que hay distintos tamaños de pantalla y se debe adaptar el contenido pensado para pc al movil.
+Fue necesario investigar sobre varias propiedades de CSS.
+Se le dio funcionalidad como por ejemplo busqueda por texto y ordenar alfabeticamente.
+En un futuro se va a poder filtrar por categoria de juego.
+El unico juego con vista detallada es Skyrim por ahora y se necesitan algunas mejoras para ser 100% responsive.
+Se realizaron varios slideshows con css
