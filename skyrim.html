@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="script.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +20,9 @@
     <header>
         <div class="navbar" id="miNavbar">
             <nav>
+                <a href="index.html">
+                    <img id="icon" src="img/icon.png">
+                </a>
                 <a href="index.html">Juegos</a>
                 <a href="registro.html">Registrarse</a>
                 <a href="comentarios.html">Comentarios</a>
@@ -31,81 +36,77 @@
 
     <div id="slider">
         <figure>
+            <img src="img/skyrim/4.jpg" alt="a">
             <img src="img/skyrim/2.jpg" alt="a">
             <img src="img/skyrim/3.jpg" alt="a">
-            <img src="img/skyrim/2.jpg" alt="a">
-            <img src="img/skyrim/3.jpg" alt="a">
-            <img src="img/skyrim/2.jpg" alt="a">
+            <img src="img/skyrim/4.jpg" alt="a">
+            <img src="img/skyrim/5.jpg" alt="a">
         </figure>
     </div>
 <br>
-    <div class="articulojuego">
-         <div id="titulo">
-            <h1>The Elder Scrolls V: Skyrim</h1>
-        </div>
 
-        <div id="videoJuego">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JSRtYpNRoN0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
 
-        <div id="imagenPortada">
-            <img src="img/skyrim.jpg" alt="portada de skyrim">
-        </div>
-        
-        <div class="detallesJuego">
-            <h4>Categoría: Acción</h4>
-            <br>
-            <dl>
-                <dt>Valoración:</dt>
-                <dd>8.4/10</dd>
-            </dl>
-            <br>
-            <dl>
-                <dt>Precio:</dt>
-                <dd>$25</dd>
-            </dl>
-        </div>
-
-        <div class="descipcionJuego">
-            <dl>
-                <dt>Descripción:</dt>
-                <dd>    
-                    The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game
-                    Studios y publicado por Bethesda Softworks.
-                    Es la quinta entrega de videojuegos de acción y fantasía de la serie The Elder Scrolls. Skyrim salió a la venta el
-                    11 de noviembre de 20111​ para las plataformas: Microsoft Windows, Xbox 360 y PlayStation 3.
-                </dd>
-            </dl>
-        </div>
-
-        <div class="content-all">
-            <div class="content-img" id="img1">
-                <a href="#img3" class="icon-left-open">&#60</a>
-                <img src="img/skyrim/1.jpg" alt="">
-                <a href="#img2" class="icon-right-open">&#62</a>
-            </div>
-
-            <div class="content-img" id="img2">
-                <a href="#img1" class="icon-left-open">&#60</a>
-                <img src="img/skyrim/2.jpg" alt="">
-                <a href="#img3" class="icon-right-open">&#62</a>
-            </div>
-
-            <div class="content-img" id="img3">
-                <a href="#img2" class="icon-left-open">&#60</a>
-                <img src="img/skyrim/3.jpg" alt="">
-                <a href="#img1" class="icon-right-open">&#62</a>
-            </div>
-        </div>
-
-        <div id="botonComprar">
-            <form action="url" target="pago" method="POST">
-                <input type="image" name="submit" src="img/botonCompra.png" alt="Comprar" width="150px">
-            </form>
-        </div>
-
+    <div id="titulo">
+        <h1>The Elder Scrolls V: Skyrim</h1>
     </div>
 
+    <div id="videoJuego">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JSRtYpNRoN0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
+    <aside>            
+        <dl>
+            <dt>Categoría: </dt>
+            <dd>Acción</dd>
+        </dl>
+        
+        <dl>
+            <dt>Valoración:</dt>
+            <dd>8.4/10</dd>
+        </dl>
+        
+        <dl>
+            <dt>Precio:</dt>
+            <dd>$25</dd>
+        </dl>
+
+        <form action="url" target="pago" method="POST">
+            <input type="image" name="submit" src="img/botonCompra.png" alt="Comprar" width="150px">
+        </form>
+    </aside>
+<br>
+    <article>
+        <dl>
+            <dt>Descripción:</dt>
+            <dd>    
+                The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game
+                Studios y publicado por Bethesda Softworks.
+                Es la quinta entrega de videojuegos de acción y fantasía de la serie The Elder Scrolls. Skyrim salió a la venta el
+                11 de noviembre de 20111​ para las plataformas: Microsoft Windows, Xbox 360 y PlayStation 3.
+            </dd>
+        </dl>
+    </article>
+
+    <section>
+    <div class="content-all">
+        <div class="content-img" id="img1">
+            <a href="#img3" class="icon-left-open">&#60</a>
+            <img src="img/skyrim/1.jpg" alt="">
+            <a href="#img2" class="icon-right-open">&#62</a>
+        </div>
+
+        <div class="content-img" id="img2">
+            <a href="#img1" class="icon-left-open">&#60</a>
+            <img src="img/skyrim/2.jpg" alt="">
+            <a href="#img3" class="icon-right-open">&#62</a>
+        </div>
+
+        <div class="content-img" id="img3">
+            <a href="#img2" class="icon-left-open">&#60</a>
+            <img src="img/skyrim/3.jpg" alt="">
+            <a href="#img1" class="icon-right-open">&#62</a>
+        </div>
+    </div>
+    </section>
 
 </body>

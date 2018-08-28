@@ -48,8 +48,11 @@ nav a.active{
     display: none;
 }
 
- /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
- Show the link that contains should open and close the topnav (.icon) */
+#icon{
+    width: 1.5em;
+    height: 1em;
+}
+
  @media screen and (max-width: 600px) {
     .navbar a:not(.active) {display: none;}
     .navbar a.icono {
@@ -58,8 +61,6 @@ nav a.active{
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
-  This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive a.icono {
@@ -140,7 +141,7 @@ nav a.active{
     .dropdown:hover .dropdown-content {display: block;}
 
     /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn {background-color: rgb(43, 128, 255);}
+    .dropdown:hover .dropbtn {background-color: aqua;}
 
 /*Filtrar por busqueda de texto*/
 .filtroTexto{
@@ -159,6 +160,7 @@ nav a.active{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
 }
+
 
 /*Boton para ordenar alfabeticamente*/
 .botonOrdenar{
@@ -183,30 +185,6 @@ nav a.active{
     font-weight: 500;
 }
 
-/*//////////////////////////////////////////////////////////////////////////////////////////////*/  
-
-/*Parallax*/
-
-.parallax {
-    /* The image used */
-    background-image: url("/img/parallax.jpg");
-
-    /* Set a specific height */
-    height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
@@ -215,15 +193,14 @@ nav a.active{
 ul.catalogo li {
     width: 14em;
     height: auto;
-    /*24*/
     margin-top: 2em;
-    display: inline-block; /* efecto catalogo */
-    text-align: center; /* imagen centrada */
+    display: inline-block;
+    text-align: center;
     vertical-align: middle;
     background-color:#282828 ;
     font-family: "Trebuchet MS", Helvetica, sans-serif; 
     font-size: 1em;
-    border-radius: 10px; /* bordes redondeados */
+    border-radius: 10px;
     border: 3px solid rgb(0, 10, 14);
     /*border: 2px solid #585858;*/
     margin-left: 2px;
@@ -292,7 +269,6 @@ ul li a:visited{
         width: 100%;
         max-width: 100%;
         display: inline-block;
-        
     }
     
     .bottomSidenav{
@@ -307,7 +283,6 @@ ul li a:visited{
     ul.catalogo li{
         width: 47%;
         height: auto;
-        /*19.7*/
         margin-top: 0em;
         margin-left: 0em;
         margin-bottom: 0.3em;
@@ -353,7 +328,6 @@ ul li a:visited{
         position: relative;
         overflow: hidden;
         text-align: center;
-
     }
 
     .botonOrdenar{
@@ -367,8 +341,9 @@ ul li a:visited{
         float: right;
     }
 
-
-
+    #slider{
+        display: none;
+    }
 }
 
 @media screen and 
@@ -407,7 +382,6 @@ ul li a:visited{
         width: 100%;
         max-width: 100%;
         display: inline-block;
-        
     }
     
     .bottomSidenav{
@@ -437,6 +411,10 @@ ul li a:visited{
         align-items: center;
         justify-content: center;
     }
+
+    #slider{
+        display: none;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
@@ -459,7 +437,7 @@ ul li a:visited{
 }
 
 .registro input{
-    width: 26em;
+    width: 20em;
     height: 2em;
 }
 
@@ -499,7 +477,7 @@ input:focus, textarea:focus{
 }
 
 .comentarios input{
-    width: 26em;
+    width: 22em;
     height: 2em;
 }
 
@@ -523,8 +501,8 @@ input:focus, textarea:focus{
 
 .comentarios textarea{
     padding-top: 4px;
-    width: 430px;
-    height: 300px;
+    width: 22em;
+    height: 16em;
 }
 
 /*Imagenes*/
@@ -536,7 +514,6 @@ input:focus, textarea:focus{
 img{
     height: 300px;
 }
-
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
@@ -555,10 +532,10 @@ img{
     position: relative;
     display: flex;
     margin: auto;
-    margin-top: 5%;
     overflow: hidden;
     perspective: 800px;
     box-shadow: 0 20px 40px 0 black;
+
 }
 
 .content-img{
@@ -623,6 +600,7 @@ img{
 
 #slider{
     overflow: hidden;
+    margin-top: 2.15em;
 }
 
 #slider figure img{
@@ -642,31 +620,23 @@ img{
 
 /*Articulo juego*/
 
-.articuloJuego{
-    display: inline-block;
-    position: relative;
-    max-width: 100%;
-
-}
-
 #titulo{
-    margin-left: 2em;
+    width: 100%;
 }
 
 #videoJuego{
-    margin-left: 2em;
+    width: 30%;
+    display: inline-block;
 }
 
-#imagenPortada{
-    margin-left: 2em;
+aside{
+    width: 60%;
+    display: inline-block;
 }
 
-.detallesJuego{
-    margin-left: 2em;
-}
-
-.descipcionJuego{
-    margin-left: 2em;
+article{
+    width: 50%;
+    display: inline-block;
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
