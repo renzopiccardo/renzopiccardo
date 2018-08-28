@@ -646,22 +646,27 @@ img{
     display: inline-block;
     position: relative;
     max-width: 100%;
+
 }
 
 #titulo{
+    margin-left: 2em;
+}
 
+#videoJuego{
+    margin-left: 2em;
 }
 
 #imagenPortada{
-
+    margin-left: 2em;
 }
 
 .detallesJuego{
-
+    margin-left: 2em;
 }
 
 .descipcionJuego{
-    
+    margin-left: 2em;
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
