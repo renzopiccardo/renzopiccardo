@@ -4,8 +4,14 @@
 }
 
 html, body{
-    background-color: rgb(20, 20, 20);
+    /*background-color: rgb(20, 20, 20);
+    background: linear-gradient(to bottom right, black, rgb(0, 14, 26), black);
+    background: linear-gradient(to bottom, black, rgb(0, 35, 59));
+    background-color: #1d1d21;
+    */
+    background-image: radial-gradient(black, rgb(0, 35, 59));
     margin: 0 auto;
+    height: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
@@ -19,7 +25,8 @@ header{
     margin-top: 0;
     padding-top: 0;
     border-top: 2px solid #33ccff; 
-    background: rgba(30,30,30,.95);
+    /*background: rgba(30,30,30,.95);*/
+    background: rgba(0, 8, 20, 0.900);
     position: fixed;
     z-index: 15;
     /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
@@ -62,7 +69,8 @@ nav a.active{border-bottom: 2px solid skyblue;}
     position: relative;
     text-align: center;
     padding-top: 2em;
-    margin-left: 3em;
+    /*margin-left: 3em;*/
+    margin-left: 0.6em;
     max-width: 100%;
     clear: none;
 }
@@ -73,14 +81,22 @@ nav a.active{border-bottom: 2px solid skyblue;}
 
 /* Dropdown*/
 .dropbtn {
+    /*
     background-color: rgb(30, 172, 228);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
     color: black;
+    */
+
+    background-color: rgb(0, 14, 27);
+    border: 2px solid #116888;
+    color: rgb(179, 212, 255);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.7em;
     margin-right: 0.5em;
     margin-bottom: 0.3em;
     font-size: 16px;
-    border: none;
+    
 }
 
 .dropdown {
@@ -110,7 +126,10 @@ nav a.active{border-bottom: 2px solid skyblue;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: aqua;}
+.dropdown:hover .dropbtn {
+    background-color: #199ece;
+    color: white;
+}
 
 /*Filtrar por busqueda de texto*/
 .filtroTexto{
@@ -120,14 +139,22 @@ nav a.active{border-bottom: 2px solid skyblue;}
 }
 
 #filtroTexto {
+    /*
     background-color: rgb(30, 172, 228);
     color: black;
+    border: none;
+    */
+
+    background-color: rgb(0, 14, 27);
+    border: 2px solid #116888;
+    color: rgb(179, 212, 255);
+
     padding: 0.7em;
     margin-right: 0.5em;
     margin-bottom: 0.3em;
     font-size: 1em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: none;
+    
 }
 
 /*Boton para ordenar alfabeticamente*/
@@ -138,18 +165,28 @@ nav a.active{border-bottom: 2px solid skyblue;}
 }
 
 #botonOrdenar{
+
+    /*
     background-color: rgb(30, 172, 228);
     color: black;
+    border: none;
+    */
+
+    background-color: rgb(0, 14, 27);
+    border: 2px solid #116888;
+    color: rgb(179, 212, 255);
+    
     padding: 0.7em;
     margin-right: 0.5em;
     margin-bottom: 0.3em;
     font-size: 1em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: none;
+    
 }
 
 #botonOrdenar:hover{
-    background-color: aqua;
+    background-color: #199ece;
+    color: white;
     font-weight: 500;
 }   
 
@@ -165,11 +202,13 @@ ul.catalogo li {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    background-color:#282828 ;
+    /*background-color:#282828 ;*/
+    background-color: rgb(0, 14, 27);
     font-family: "Trebuchet MS", Helvetica, sans-serif; 
     font-size: 1em;
     border-radius: 10px;
-    border: 3px solid rgb(0, 10, 14);
+    /*border: 3px solid rgb(0, 10, 14);*/
+    border: 3px solid #116888;
 }
 
 ul.catalogo li a{
@@ -229,10 +268,12 @@ ul li a:visited{
 
 .registro input, textarea{
     border-radius: 5px;
-    border-color: black;
-    border-inline-start-color: black;
-    border-inline-end-color: black;
+    border-color: #6c6b68;
+    /*border-inline-start-color: black;
+    border-inline-end-color: black;*/
     border-style: solid;
+    color: #c3b49e;
+    background-color: #212127;
 }
 
 .registro input{
@@ -259,10 +300,12 @@ ul li a:visited{
 
 .comentarios input, textarea{
     border-radius: 5px;
-    border-color: black;
-    border-inline-start-color: black;
-    border-inline-end-color: black;
+    border-color: #6c6b68;
+    /*border-inline-start-color: black;
+    border-inline-end-color: black;*/
     border-style: solid;
+    color: #c3b49e;
+    background-color: #212127;
 }
 
 .comentarios form{
