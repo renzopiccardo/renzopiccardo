@@ -1,0 +1,6 @@
+change banner
+change banner size with width
+h1 and label positioning, size and margin
+tags category
+description
+

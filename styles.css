@@ -273,7 +273,7 @@ ul li a:visited{
     border-inline-end-color: black;*/
     border-style: solid;
     color: #c3b49e;
-    background-color: #212127;
+    background-color: #000f19;
 }
 
 .registro input{
@@ -287,16 +287,18 @@ ul li a:visited{
 }
 
 .registro input[type=submit]{
-    width: 6em;
+    width: 7em;
     height: 3em;
+    border: 3px solid rgb(0, 77, 0);
 }
 
 .registro input[type=reset]{
-    width: 6em;
+    width: 7em;
     height: 3em; 
+    border: 3px solid rgb(65, 0, 0);
 }
 
-/*Comentarios*/
+ Comentarios
 
 .comentarios input, textarea{
     border-radius: 5px;
@@ -327,6 +329,7 @@ ul li a:visited{
     width: 6em;
     height: 3em;
 }
+
 
 /*
 .comentarios label{
