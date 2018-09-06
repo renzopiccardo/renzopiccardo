@@ -464,24 +464,56 @@ ul li a:visited{
 
 /*Articulo juego*/
 
-#titulo{
+.contenedorJuego{
+    
+    display: inline-block;
+    padding: 2em;
+    max-width: 1200px;
     width: 100%;
+    height: 100%;
 }
 
-#videoJuego{
-    width: 30%;
-    display: inline-block;
+.tituloJuego{
+    display: inherit;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 1em;
 }
 
-aside{
-    width: 60%;
-    display: inline-block;
+.video{
+    display: inherit;
+    position: relative;
+    padding: 1em;
 }
 
-article{
-    width: 50%;
-    display: inline-block;
+.caracteristicas{
+    display: inherit;
+    position: relative;
+    padding: 1em;
 }
+
+.descripcion{
+    display: inherit;
+    position: relative;
+    padding: 1em;
+}
+
+.requerimientos{
+    display: inherit;
+    position: relative;
+    padding: 1em;
+}
+
+.reviews{
+    display: inherit;
+    position: relative;
+    padding: 1em;
+}
+
+.content-all{
+
+}
+
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 /*Navbar responsive*/
@@ -593,29 +625,6 @@ article{
 
     #slider{display: none;}
 
-    #titulo{width: 100%;}
-    
-    #videoJuego{
-        float: left;
-        display: inline-flex;
-        width: 100%;
-        max-width: 100%;  
-    }
-    
-    aside{
-        float: left;
-        display: inline-flex;
-        width: 100%;
-        margin-top: 20em;
-    }
-    
-    article{
-        float: left;
-        display: block;
-        width: 100%;
-        min-width: 24em;
-        margin-left: 3em;
-    }
 
     .encabezado h1{
         margin-left: 1.75em;
@@ -686,30 +695,6 @@ article{
     }
 
     #slider{display: none;}
-
-    #titulo{width: 100%;}
-    
-    #videoJuego{
-        float: left;
-        display: inline-flex;
-        width: 100%;
-        max-width: 100%;  
-    }
-    
-    aside{
-        float: left;
-        display: inline-flex;
-        width: 100%;
-        margin-top: 20em;
-    }
-    
-    article{
-        float: left;
-        display: block;
-        width: 100%;
-        min-width: 23em;
-        margin-left: 1em;
-    }
 
     .encabezado h1{
         margin-left: 1.75em;
