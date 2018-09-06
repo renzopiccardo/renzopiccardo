@@ -260,11 +260,15 @@ ul li a:visited{
 /*Registro/Comentarios*/
 
 .encabezado h1{
-    margin-left: 1.75em;
-    padding-top: 1.5em;
+    margin-left: 2em;
+    padding-top: 2.5em;
 }
 
 /*Registro*/
+
+.registro{
+    margin-left: 2em;
+}
 
 .registro input, textarea{
     border-radius: 5px;
@@ -298,7 +302,11 @@ ul li a:visited{
     border: 3px solid rgb(65, 0, 0);
 }
 
- Comentarios
+ /*Comentarios*/
+
+ .comentarios{
+     margin-left: 2em;
+ }
 
 .comentarios input, textarea{
     border-radius: 5px;
@@ -307,7 +315,7 @@ ul li a:visited{
     border-inline-end-color: black;*/
     border-style: solid;
     color: #c3b49e;
-    background-color: #212127;
+    background-color: #000f19;
 }
 
 .comentarios form{
@@ -323,11 +331,13 @@ ul li a:visited{
 .comentarios input[type=submit]{
     width: 6em;
     height: 3em;
+    border: 3px solid rgb(0, 77, 0);
 }
 
 .comentarios input[type=reset]{
     width: 6em;
     height: 3em;
+    border: 3px solid rgb(65, 0, 0);
 }
 
 
@@ -606,6 +616,11 @@ article{
         min-width: 24em;
         margin-left: 3em;
     }
+
+    .encabezado h1{
+        margin-left: 1.75em;
+        padding-top: 1.5em;
+    }
 }
 
 @media screen and 
@@ -694,6 +709,11 @@ article{
         width: 100%;
         min-width: 23em;
         margin-left: 1em;
+    }
+
+    .encabezado h1{
+        margin-left: 1.75em;
+        padding-top: 1.5em;
     }
 }
 
