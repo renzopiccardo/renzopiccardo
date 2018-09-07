@@ -494,6 +494,11 @@ ul li a:visited{
     margin-right: 0.5em;
 }
 
+iframe{
+    width: 560px;
+    height: 315px;
+}
+
 .informacion{
     display: flex;
     float: left;
@@ -826,6 +831,11 @@ ul li a:visited{
     }
     .content-img{
         padding-top: 0.5em;
+    }
+
+    iframe{
+        width: 320px;
+        height: 180px;
     }
 }
 
