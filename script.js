@@ -1,3 +1,28 @@
+function leerArchivoJSON(archivo, callback) 
+{
+  var archivoOriginal = new XMLHttpRequest();
+  archivoOriginal.overrideMimeType("application/json");
+  archivoOriginal.open("GET", archivo, true);
+  archivoOriginal.onreadystatechange = () => 
+  {
+      if (archivoOriginal.readyState === 4 && archivoOriginal.status == "200") 
+      {
+        callback(archivoOriginal.responseText);
+      }
+  }
+  archivoOriginal.send(null);
+}
+
+document.addEventListener("DOMContentLoaded", function () 
+{
+  leerArchivoJSON("json.json", function (text) 
+  {
+      var prueba = document.getElementById("demo");
+      var parsedJSON = JSON.parse(text);
+      prueba.innerHTML = parsedJSON[0].nombre;
+  });
+});
+
 function filtrarJuegos() 
 {
     // Variables
