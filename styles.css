@@ -1,9 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0;padding: 0;border: 0;}
 
-html, body{
+body{
     /*
     background-color: rgb(20, 20, 20);
     background: linear-gradient(to bottom right, black, rgb(0, 14, 26), black);
@@ -22,38 +19,54 @@ html, body{
 
 header{
     width: 100%;
-    max-width: 100%;
-    margin-top: 0;
-    padding-top: 0;
+    height: 50px;
+    position: fixed;
+    top: 0;
     border-top: 2px solid #33ccff; 
     background: rgba(0, 8, 20, 0.900);
-    position: fixed;
+    overflow: auto;
     z-index: 15;
     /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
 }
 
-nav{
-    margin-left: 2.5em;
-    margin-right: 1em;
+header nav ul{
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0 50px;
+    height: 50px;
 }
 
-nav a{
-    display: block;
+header nav ul li{
     float: left;
-    padding: 14px 16px;
+    padding-top: 15px;
+    margin-right: 40px;
+}
+
+header nav ul li a{
+    display: block;
+    color: white; 
     font: 1.3em/1em sans-serif;   
     text-align: center;
     text-decoration: none;
-    color: white; 
+    height: 50px;
 }
 
-nav a:hover{color: lightblue;}
+header nav ul li a:hover{
+    color: rgb(0, 193, 219);
+}
 
-nav a.active{border-bottom: 2px solid skyblue;}
+header nav ul li a.active{
+    border-bottom: 2px solid skyblue;
+    padding-bottom: 7px;
+}
 
-.navbar .icono {display: none;}
+#iconoJoystick{
+    width: 30px;
+}
 
-#icon{
+#iconoHamburguesa{
+    float: right;
+    display: none;
     width: 1.5em;
     height: 1em;
 }
@@ -580,6 +593,7 @@ iframe{
   
   @media screen and (max-width: 600px) {
     .navbar.responsive {position: relative;}
+    /*iconoHamburguesa*/
     .navbar.responsive a.icono {
       position: absolute;
       right: 0;

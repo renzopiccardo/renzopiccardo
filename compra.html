@@ -19,16 +19,40 @@
 
 <body>
 
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img id="iconoJoystick" src="img/icon.png">
+                    </a>
+                </li>
+
+                <li><a class="active" href="index.html">Juegos</a></li>
+
+                <li><a href="registro.html">Registrarse</a></li>
+
+                <li><a href="comentarios.html">Comentarios</a></li>
+
+                <li>
+                    <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <br>
 
     <form action="">
-        <li> <label for="cantidad">Cantidad</label>
-            <input type="number" name="" id="">
+        <li>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" name="cantidad" id="cantidadJuegos" value="1" required>
         </li>
 
         <li>
             <label for="medio-pago">Medio de pago: </label>
-            <select name="medio-pago" id="">
+            <select name="medio-pago" id="medioPagoCompra" required>
                 <option value="Visa">Visa</option>
                 <option value="MasterCard">MasterCard</option>
             </select>
@@ -36,42 +60,48 @@
 
         <li>
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre">
+            <input type="text" name="nombre" id="nombreComprador" required>
         </li>
 
         <li>
             <label for="apellido">Apellido</label>
-            <input type="text" name="apellido">
+            <input type="text" name="apellido" id="apellidoComprador" required>
         </li>
 
         <li>
             <label for="email">Email</label>
-            <input type="email" name="email" id="">
+            <input type="email" name="email" id="emailComprador" required>
         </li>
 
-        <li> 
+        <li>
             <label for="tipo-juego">Digital</label>
-            <input type="radio" name="tipo-juego" id="">
+            <input type="radio" name="tipo-juego" id="selectDigital">
 
             <label for="tipo-juego">Fisico</label>
-            <input type="radio" name="tipo-juego" id="">
+            <input type="radio" name="tipo-juego" id="selectFisico">
         </li>
 
         <li>
             <label for="direccion">Direccion</label>
-            <input type="text" name="direccion" id="">
+            <input type="text" name="direccion" id="direccionComprador" required>
         </li>
 
         <li>
             <label for="metodo-envio">Metodo de envío</label>
-            <select name="metodo-envio" id="">
+            <select name="metodo-envio" id="metodoCompra" required>
                 <option value="comun">Común</option>
                 <option value="especial">Especial</option>
                 <option value="premium">Premium</option>
             </select>
         </li>
 
+        <li>
+            <button type="submit">Comprar</button>
+        </li>
+
     </form>
+
+
 
 </body>
 

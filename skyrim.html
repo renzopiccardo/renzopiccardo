@@ -19,19 +19,27 @@
 
 <body>
     <header>
-        <div class="navbar" id="miNavbar">
-            <nav>
-                <a href="index.html">
-                    <img id="icon" src="img/icon.png">
-                </a>
-                <a href="index.html">Juegos</a>
-                <a href="registro.html">Registrarse</a>
-                <a href="comentarios.html">Comentarios</a>
-                <a href="javascript:void(0);" class="icono" onclick="abrirMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img id="iconoJoystick" src="img/icon.png">
+                    </a>
+                </li>
+
+                <li><a href="index.html">Juegos</a></li>
+
+                <li><a href="registro.html">Registrarse</a></li>
+
+                <li><a href="comentarios.html">Comentarios</a></li>
+
+                <li>
+                    <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <br>
 
@@ -90,11 +98,12 @@
                     <dd></dd>
                 </dl>
 
-                <form action="url" target="pago" method="POST">
-                    <input type="image" name="submit" src="img/botonCompra.png" alt="Comprar" width="150px">
-                </form>
+                <figure>
+                    <a href="compra.html" onclick="return enviarJuego();">
+                        <img src="img/botonCompra.png" alt="comprar" width="150px">
+                    </a>
+                </figure>
 
-                <button>Comprar</button>
             </div>
         </div>
 
@@ -103,14 +112,21 @@
                 <dt>Descripción:</dt>
                 <dd>
                     <p>
-                        The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios
-                        y publicado por Bethesda Softworks. Es la quinta entrega de videojuegos de acción y fantasía de la serie
-                        The Elder Scrolls y es posterior a The Elder Scrolls IV: Oblivion y predecesor de The Elder Scrolls Online.
-                        
-                        Skyrim salió a la venta el 11 de noviembre de 2011 para las plataformas: Microsoft Windows, Xbox 360
-                        y PlayStation 3. El 26 de julio de 2012 fueron lanzados al mercado tres expansiones que son descargables:
-                        Dawnguard, Hearthfire y Dragonborn. El 28 de octubre de 2016 fue lanzada una remasterización llamada:
-                        Skyrim Special Edition HD. Esta incluye el juego original y los complementos, así como nuevas características:
+                        The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto
+                        desarrollado por Bethesda Game Studios
+                        y publicado por Bethesda Softworks. Es la quinta entrega de videojuegos de acción y fantasía de
+                        la serie
+                        The Elder Scrolls y es posterior a The Elder Scrolls IV: Oblivion y predecesor de The Elder
+                        Scrolls Online.
+
+                        Skyrim salió a la venta el 11 de noviembre de 2011 para las plataformas: Microsoft Windows,
+                        Xbox 360
+                        y PlayStation 3. El 26 de julio de 2012 fueron lanzados al mercado tres expansiones que son
+                        descargables:
+                        Dawnguard, Hearthfire y Dragonborn. El 28 de octubre de 2016 fue lanzada una remasterización
+                        llamada:
+                        Skyrim Special Edition HD. Esta incluye el juego original y los complementos, así como nuevas
+                        características:
                         gráficos y efectos renovados.
                     </p>
                 </dd>
@@ -140,7 +156,7 @@
                 <dt>Storage:</dt>
                 <dd>12 GB available space</dd>
             </dl>
-            
+
             <h4>RECOMMENDED:</h4>
             <dl>
                 <dt>OS:</dt>
@@ -170,12 +186,18 @@
             </blockquote>
 
             <blockquote>
-                -I understand why there are certain users giving this version of skyrim a thumbs down, due to bethesda's... bad decisions
-                here and there... suffice to say. However, I feel that those users are purely giving a review on the company
-                itself, rather than the actual game. But, I do understand where those people are coming from. Still, instead
-                of only ranting how evil bethesda is, I'll talk about some of the positives about this particular version
-                of skyrim... and also about the negatives that come with this version and what bethesda should have done
-                better or left out entirely, don't worry there aren't too many negatives, but there are still negatives that
+                -I understand why there are certain users giving this version of skyrim a thumbs down, due to
+                bethesda's... bad decisions
+                here and there... suffice to say. However, I feel that those users are purely giving a review on the
+                company
+                itself, rather than the actual game. But, I do understand where those people are coming from. Still,
+                instead
+                of only ranting how evil bethesda is, I'll talk about some of the positives about this particular
+                version
+                of skyrim... and also about the negatives that come with this version and what bethesda should have
+                done
+                better or left out entirely, don't worry there aren't too many negatives, but there are still negatives
+                that
                 need to be addressed.
 
             </blockquote>
