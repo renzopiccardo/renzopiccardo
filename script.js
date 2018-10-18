@@ -17,15 +17,16 @@ document.addEventListener("DOMContentLoaded", function (){
 
   leerArchivoJSON("json.json", function (text) 
   {
-      var prueba = document.getElementById("demo");
-      var parsedJSON = JSON.parse(text);
-      prueba.innerHTML = parsedJSON[0].nombre;
+    var parsedJSON = JSON.parse(text);
+    var ulJuegos = document.getElementById("ulJuegos");
+      
+    ulJuegos.innerHTML = parsedJSON[0].nombre;
   });
 
   var botonCompra = document.getElementById("comprar");
 
   botonCompra.addEventListener("click", function(){
-    
+
   })
 
 

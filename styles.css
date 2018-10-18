@@ -14,6 +14,12 @@ body{
     color: white;
 }
 
+ul li a:visited{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+}
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 /*Navbar*/
 
@@ -32,7 +38,7 @@ header{
 header nav ul{
     overflow: hidden;
     list-style-type: none;
-    padding: 0 50px;
+    padding: 0 5.5em;
     height: 50px;
 }
 
@@ -71,8 +77,6 @@ header nav ul li a.active{
     height: 1em;
 }
 
-.mainpanel{text-align: center;}
-
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
 /*Second bar*/
@@ -82,10 +86,9 @@ header nav ul li a.active{
     position: relative;
     text-align: center;
     padding-top: 2em;
-    /*margin-left: 3em;*/
-    margin-left: 0.6em;
     max-width: 100%;
     clear: none;
+    margin-left: 5.5em;
 }
 
 .topSidenav{display: inline-block;}
@@ -182,7 +185,9 @@ header nav ul li a.active{
 
 /*Lista juegos*/
 
-ul.catalogo li {
+main {text-align: center;}
+
+main ul li {
     width: 14em;
     height: auto;
     margin-top: 2em;
@@ -197,7 +202,7 @@ ul.catalogo li {
     border: 3px solid #116888;
 }
 
-ul.catalogo li a{
+main ul li a{
     text-decoration: none;
     color: white;
 }
@@ -215,12 +220,6 @@ ul.catalogo li a{
     font-weight: 700;
     padding-top: 0.2em;
     padding-bottom: 0.5em;
-}
-
-ul li a:visited{
-    text-decoration: none;
-    text-decoration-line: none;
-    color: white;
 }
 
 .catalogo img{
