@@ -578,6 +578,24 @@ iframe{
     padding-top: 0.5em;
 }
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/  
+/*Pagina compra*/
+
+#main-compra{
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: left;
+    list-style-type: none;
+}
+
+#main-compra form li{
+    margin-bottom: 5px;
+}
+
+#divDireccionMetodo{
+    display: none;
+}
+
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 /*Navbar responsive*/

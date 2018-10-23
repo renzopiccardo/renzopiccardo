@@ -8,7 +8,7 @@
     <!--Icono para menu responsive a la derecha-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="script.js"></script>
+    <script src="scriptCompra.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -44,62 +44,82 @@
     </header>
     <br>
 
-    <form action="">
-        <li>
-            <label for="cantidad">Cantidad</label>
-            <input type="number" name="cantidad" id="cantidadJuegos" value="1" required>
-        </li>
+    <main id="main-compra">
 
-        <li>
-            <label for="medio-pago">Medio de pago: </label>
-            <select name="medio-pago" id="medioPagoCompra" required>
-                <option value="Visa">Visa</option>
-                <option value="MasterCard">MasterCard</option>
-            </select>
-        </li>
+        <h3>Compra Skyrim</h3>
+        <br>
 
-        <li>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombreComprador" required>
-        </li>
+        <form action="" id="form-compra">
+            <li>
+                <label for="cantidad">Cantidad: </label>
+                <br>
+                <input type="number" name="cantidad" id="cantidadJuegos" value="1" required>
+            </li>
 
-        <li>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellidoComprador" required>
-        </li>
+            <li>
+                <label for="medio-pago">Medio de pago: </label>
+                <br>
+                <select name="medio-pago" id="medioPagoCompra" required>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                </select>
+            </li>
 
-        <li>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="emailComprador" required>
-        </li>
+            <li>
+                <label for="nombre">Nombre: </label>
+                <br>
+                <input type="text" name="nombre" id="nombreComprador" required>
+            </li>
 
-        <li>
-            <label for="tipo-juego">Digital</label>
-            <input type="radio" name="tipo-juego" id="selectDigital">
+            <li>
+                <label for="apellido">Apellido: </label>
+                <br>
+                <input type="text" name="apellido" id="apellidoComprador" required>
+            </li>
 
-            <label for="tipo-juego">Fisico</label>
-            <input type="radio" name="tipo-juego" id="selectFisico">
-        </li>
+            <li>
+                <label for="email">Email: </label>
+                <br>
+                <input type="email" name="email" id="emailComprador" required>
+            </li>
 
-        <li>
-            <label for="direccion">Direccion</label>
-            <input type="text" name="direccion" id="direccionComprador" required>
-        </li>
+            <li>
+                <label for="">Tipo de juego: </label>
+                <br>
+                <label for="tipo-juego">Digital</label>
+                <input type="radio" name="tipo-juego" id="selectDigital">
 
-        <li>
-            <label for="metodo-envio">Metodo de envío</label>
-            <select name="metodo-envio" id="metodoCompra" required>
-                <option value="comun">Común</option>
-                <option value="especial">Especial</option>
-                <option value="premium">Premium</option>
-            </select>
-        </li>
+                <label for="tipo-juego">Fisico</label>
+                <input type="radio" name="tipo-juego" id="selectFisico">
+            </li>
 
-        <li>
-            <button type="submit">Comprar</button>
-        </li>
+            <div id="divDireccionMetodo">
+                <li>
+                    <label for="direccion">Direccion: </label>
+                    <br>
+                    <input type="text" name="direccion" id="direccionComprador" required>
+                </li>
 
-    </form>
+                <li>
+                    <label for="metodo-envio">Metodo de envío: </label>
+                    <br>
+                    <select name="metodo-envio" id="metodoCompra" required>
+                        <option value="comun">Común</option>
+                        <option value="especial">Especial</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </li>
+            </div>
+
+            <p id="subtotal">Subtotal: </p>
+
+            <li>
+                <button type="submit">Comprar</button>
+            </li>
+
+        </form>
+    </main>
+
 
 
 
