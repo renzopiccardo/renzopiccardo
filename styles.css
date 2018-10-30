@@ -194,7 +194,7 @@ main ul li {
     margin-left: 2px;
     display: inline-block;
     text-align: center;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     background-color: rgb(0, 14, 27);
     font-family: "Trebuchet MS", Helvetica, sans-serif; 
     font-size: 1em;
@@ -338,6 +338,42 @@ main ul li a{
     width: 22em;
     height: 16em;
 }
+
+
+#form-compra{
+    padding-top: 2em;
+    margin-left: 2em;
+}
+
+#form-compra input{
+    width: 20em;
+    height: 2em;
+    border-radius: 5px;
+    border-color: #6c6b68;
+    /*border-inline-start-color: black;
+    border-inline-end-color: black;*/
+    border-style: solid;
+    color: #c3b49e;
+    background-color: #000f19;
+}
+
+#form-compra input[type=submit]{
+    width: 6em;
+    height: 3em;
+    border: 3px solid rgb(0, 77, 0);
+}
+
+#form-compra input[type=reset]{
+    width: 6em;
+    height: 3em;
+    border: 3px solid rgb(65, 0, 0);
+}
+
+#form-compra input[type=radio]{
+    width: 2em;
+    
+}
+
 
 /*Imagenes*/
 .slideshow img{
