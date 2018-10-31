@@ -13,6 +13,8 @@ function leerArchivoJSON(archivo, callback)
   archivoOriginal.send(null);
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function (){
 
   leerArchivoJSON("json.json", function (text) 

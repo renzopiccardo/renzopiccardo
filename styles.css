@@ -339,6 +339,13 @@ main ul li a{
     height: 16em;
 }
 
+#main-compra{
+    min-height: 40em;
+}
+
+#main-compra h3{
+    margin-left: 1.7em;
+}
 
 #form-compra{
     padding-top: 2em;
@@ -370,10 +377,33 @@ main ul li a{
 }
 
 #form-compra input[type=radio]{
-    width: 2em;
+    width: 1em;
+    margin-bottom: 1em;
+}
+
+#form-compra input[type="number"]{
+    background-color: #000f19;
+    width: 5em;
     
 }
 
+#form-compra select{
+    background-color: #000f19;
+    color: white;
+    
+}
+
+#form-compra select:after{
+    border-color: aquamarine;
+}
+
+#metodoEnvio{
+    margin-bottom: 1.5em;
+}
+
+#subtotal{
+    margin-bottom: 1em;
+}
 
 /*Imagenes*/
 .slideshow img{
