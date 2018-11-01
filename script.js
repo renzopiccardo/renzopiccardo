@@ -1,34 +1,30 @@
 function leerJSONLocal(file, callback) {
-  var jsonOriginal = new XMLHttpRequest();
-  jsonOriginal.overrideMimeType("application/json");
-  jsonOriginal.open("GET", file, true);
-  jsonOriginal.onreadystatechange = () => {
-      if (jsonOriginal.readyState === 4 && jsonOriginal.status == "200") {
-          callback(jsonOriginal.responseText);
-      }
+
+  if(localStorage.getItem("juegos") == undefined)
+  {
+    var jsonOriginal = new XMLHttpRequest();
+    jsonOriginal.overrideMimeType("application/json");
+    jsonOriginal.open("GET", file, true);
+    jsonOriginal.onreadystatechange = () => {
+        if (jsonOriginal.readyState === 4 && jsonOriginal.status == "200") {
+            localStorage.setItem("juegos", jsonOriginal.responseText);
+            callback(jsonOriginal.responseText);
+        }
+    }
+    jsonOriginal.send(null);
   }
-  jsonOriginal.send(null);
-}
+    else{
+      callback(localStorage.getItem("juegos"));
+    }
+  }
 
 document.addEventListener("DOMContentLoaded", function (){
 
-  /*
-  leerJSONLocal("json.json", function (text) 
-  {
-    var parsedJSON = JSON.parse(text);
-    var ulJuegos = document.getElementById("ulJuegos");
-      
-    ulJuegos.innerHTML = parsedJSON[0].nombre;
-  });
 
-  var botonCompra = document.getElementById("comprar");
-
-  botonCompra.addEventListener("click", function(){
-
-  })
-  */
 
 });
+
+//https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters
 
 function filtrarJuegos() 
 {

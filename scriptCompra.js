@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var botonDigital = document.getElementById("selectDigital");
     var metodoEnvio = document.getElementById("metodoEnvio");
 
-
-
     CalcularSubtotal();
 
     cantidadJuegos.addEventListener("click", function () {
@@ -45,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var subtotalAMostrar = document.getElementById("subtotal");
 
             var subtotal = precioJuego;
-            var cantidadJuegos = parseInt(cantidadJuegos.value, 10)
+            var cantidadJuegos = cantidadJuegos.value
             subtotal = subtotal * cantidadJuegos;
 
             if (botonFisico.checked) {
