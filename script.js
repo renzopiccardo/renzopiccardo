@@ -1,23 +1,19 @@
-function leerArchivoJSON(archivo, callback) 
-{
-  var archivoOriginal = new XMLHttpRequest();
-  archivoOriginal.overrideMimeType("application/json");
-  archivoOriginal.open("GET", archivo, true);
-  archivoOriginal.onreadystatechange = () => 
-  {
-      if (archivoOriginal.readyState === 4 && archivoOriginal.status == "200") 
-      {
-        callback(archivoOriginal.responseText);
+function leerJSONLocal(file, callback) {
+  var jsonOriginal = new XMLHttpRequest();
+  jsonOriginal.overrideMimeType("application/json");
+  jsonOriginal.open("GET", file, true);
+  jsonOriginal.onreadystatechange = () => {
+      if (jsonOriginal.readyState === 4 && jsonOriginal.status == "200") {
+          callback(jsonOriginal.responseText);
       }
   }
-  archivoOriginal.send(null);
+  jsonOriginal.send(null);
 }
-
-
 
 document.addEventListener("DOMContentLoaded", function (){
 
-  leerArchivoJSON("json.json", function (text) 
+  /*
+  leerJSONLocal("json.json", function (text) 
   {
     var parsedJSON = JSON.parse(text);
     var ulJuegos = document.getElementById("ulJuegos");
@@ -30,9 +26,7 @@ document.addEventListener("DOMContentLoaded", function (){
   botonCompra.addEventListener("click", function(){
 
   })
-
-
-
+  */
 
 });
 
