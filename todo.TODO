@@ -1,0 +1,13 @@
+escribir to do y :
+new: ctrl enter
+done: alt d
+cancelled: alt c 
+tags @
+
+TODO:
+    ☐ Diseñar template juego en main index
+    ☐ Agregar nombre, foto al JSON
+    ☐ Descripcion
+    ☐ Tags categoria
+    ☐ Scrapper para datos juego de wikipedia
+    ☐ Arreglar banner 
