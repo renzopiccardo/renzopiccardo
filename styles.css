@@ -244,6 +244,10 @@ main ul li a{
 
 /*Registro/Comentarios*/
 
+textarea{
+    resize: none;
+}
+
 .encabezado h1{
     margin-left: 2em;
     padding-top: 2.5em;

@@ -1,13 +1,28 @@
 escribir to do y :
-new: ctrl enter
-done: alt d
-cancelled: alt c 
+new: ctrl+enter
+done: alt+d
+cancelled: alt+c
+started: alt+s
 tags @
 
-TODO:
-    ☐ Diseñar template juego en main index
-    ☐ Agregar nombre, foto al JSON
-    ☐ Descripcion
-    ☐ Tags categoria
-    ☐ Scrapper para datos juego de wikipedia
-    ☐ Arreglar banner 
+TODOS:
+    Priority:
+        ☐ Diseñar template juego en main index
+        ☐ Vista compacta y ampliada
+        ☐ Agregar nombre, foto y descripcion al JSON
+        ☐ Mejorar divs
+        ☐ Mejorar id y class
+        ☐ Tags categoria
+        ☐ Arreglar banner
+        ☐ Arreglar Menu Hamburguesa
+        ✔ Textarea resize none @done(18-11-01 23:54)
+        ☐ Problemas de seguridad de chrome
+        ☐ https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters
+
+    Medium:
+        ☐ Arreglar media query
+        ☐ Arreglar filtro y busqueda
+
+    Avanzado:
+        ☐ Scrapper para datos juego de wikipedia
+        ☐ Filtrar por tags
