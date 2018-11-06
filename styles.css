@@ -14,6 +14,11 @@ body{
     color: white;
 }
 
+nav ul{
+    overflow: hidden;
+    list-style-type: none;
+}
+
 ul li a:visited{
     text-decoration: none;
     text-decoration-line: none;
@@ -30,15 +35,34 @@ header{
     top: 0;
     border-top: 2px solid #33ccff; 
     background: rgba(0, 8, 20, 0.900);
-    overflow: auto;
+    overflow: hidden;
     z-index: 15;
     /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
 }
 
+#joystick{
+    float: left;
+    padding-left: 5.5em;
+    padding-top: 15px;
+}
+
+#iconoJoystick{
+    width: 30px;
+}
+
+#iconoHamburguesa{
+    float: right;
+    display: none;
+    width: 1.5em;
+    height: 1em;
+}
+
+header nav{
+    float: left;
+}
+
 header nav ul{
-    overflow: hidden;
-    list-style-type: none;
-    padding: 0 5.5em;
+    padding: 0 5em;
     height: 50px;
 }
 
@@ -64,17 +88,6 @@ header nav ul li a:hover{
 header nav ul li a.active{
     border-bottom: 2px solid skyblue;
     padding-bottom: 7px;
-}
-
-#iconoJoystick{
-    width: 30px;
-}
-
-#iconoHamburguesa{
-    float: right;
-    display: none;
-    width: 1.5em;
-    height: 1em;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  

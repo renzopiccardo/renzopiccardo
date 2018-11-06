@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <script src="script.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,29 +17,29 @@
 </head>
 
 <body>
+
     <header>
+
+        <a href="index.html" id="joystick">
+            <img id="iconoJoystick" src="img/icon.png">
+        </a>
+
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">
-                        <img id="iconoJoystick" src="img/icon.png">
-                    </a>
-                </li>
-
                 <li><a href="index.html">Juegos</a></li>
 
                 <li><a class="active" href="registro.html">Registrarse</a></li>
 
                 <li><a href="comentarios.html">Comentarios</a></li>
-
-                <li>
-                    <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
             </ul>
         </nav>
+
+        <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+
     </header>
+
     <br>
 
     <div class="encabezado">
@@ -51,31 +51,36 @@
             <div>
                 <label for="campo1">Nombre</label>
                 <br>
-                <input placeholder="Ingrese su nombre..." type="text" id="campo1" name="nombre" pattern="[A-Za-z]+" maxlength="30" required autofocus>
+                <input placeholder="Ingrese su nombre..." type="text" id="campo1" name="nombre" pattern="[A-Za-z]+"
+                    maxlength="30" required autofocus>
             </div>
             <br>
             <div>
                 <label for="campo2">Apellido</label>
                 <br>
-                <input placeholder="Ingrese su apellido..." type="text" id="campo2" name="apellido" pattern="[A-Za-z]+" maxlength="30" required>
+                <input placeholder="Ingrese su apellido..." type="text" id="campo2" name="apellido" pattern="[A-Za-z]+"
+                    maxlength="30" required>
             </div>
             <br>
             <div>
                 <label for="campo3">Email</label>
                 <br>
-                <input placeholder="Ingrese su email..." type="email" id="campo3" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                <input placeholder="Ingrese su email..." type="email" id="campo3" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    required>
             </div>
             <br>
             <div>
                 <label for="campo4">Contraseña</label>
                 <br>
-                <input placeholder="Ingrese su contraseña..." type="password" id="campo4" name="contrasena" pattern="[A-Za-z0-9]+" minlength="8" maxlength="24" required>
+                <input placeholder="Ingrese su contraseña..." type="password" id="campo4" name="contrasena" pattern="[A-Za-z0-9]+"
+                    minlength="8" maxlength="24" required>
             </div>
             <br>
             <div>
                 <label for="campo5">Repetir contraseña</label>
                 <br>
-                <input placeholder="Repita su contraseña..." type="password" id="campo5" name="repContrasena" pattern="[A-Za-z0-9]+" minlength="8" maxlength="24" required>
+                <input placeholder="Repita su contraseña..." type="password" id="campo5" name="repContrasena" pattern="[A-Za-z0-9]+"
+                    minlength="8" maxlength="24" required>
             </div>
             <br>
             <input type="submit" value="Guardar">

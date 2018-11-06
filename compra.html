@@ -21,28 +21,27 @@
 <body>
 
     <header>
+
+        <a href="index.html" id="joystick">
+            <img id="iconoJoystick" src="img/icon.png">
+        </a>
+
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">
-                        <img id="iconoJoystick" src="img/icon.png">
-                    </a>
-                </li>
-
                 <li><a class="active" href="index.html">Juegos</a></li>
 
                 <li><a href="registro.html">Registrarse</a></li>
 
                 <li><a href="comentarios.html">Comentarios</a></li>
-
-                <li>
-                    <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
             </ul>
         </nav>
+
+        <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+
     </header>
+
     <br>
 
     <main id="main-compra">
@@ -81,14 +80,15 @@
             <li>
                 <label for="email">Email: </label>
                 <br>
-                <input type="email" name="email" id="emailComprador" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                <input type="email" name="email" id="emailComprador" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    required>
             </li>
 
             <li>
                 <label for="">Tipo de juego: </label>
                 <br>
                 <label for="tipo-juego">Digital</label>
-                <input type="radio" name="tipo-juego" id="selectDigital" >
+                <input type="radio" name="tipo-juego" id="selectDigital">
 
                 <label for="tipo-juego">Fisico</label>
                 <input type="radio" name="tipo-juego" id="selectFisico">
