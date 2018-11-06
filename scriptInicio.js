@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     leerJSONLocal('json.json', function (text) {
-
+        //localstorage
+        
         var jsonParsed = JSON.parse(text);
+    });
+
         var ul = document.getElementById("ulJuegos");
 
         jsonParsed.forEach(element => {
