@@ -1,6 +1,7 @@
 [
     {
         "titulo":"The Elder Scrolls V: Skyrim",
+        "nombre": "Skyrim",
         "video":"https://www.youtube.com/embed/JSRtYpNRoN0",
         "imagen":"img/skyrim.jpg",
         "alt":"portada skyrim",
@@ -10,6 +11,7 @@
         "desarrollador":"Bethesda",
         "fecha de lanzamiento":"11 de noviembre de 2011",
         "descripcion" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios y publicado por Bethesda Softworks. Es la quinta entrega de videojuegos de acción y fantasía de la serie. The Elder Scrolls y es posterior a The Elder Scrolls IV: Oblivion y predecesor de The Elder Scrolls Online. Skyrim salió a la venta el 11 de noviembre de 2011 para las plataformas: Microsoft Windows, Xbox 360 y PlayStation 3. El 26 de julio de 2012 fueron lanzados al mercado tres expansiones que son descargables: Dawnguard, Hearthfire y Dragonborn. El 28 de octubre de 2016 fue lanzada una remasterización llamada Skyrim Special Edition HD. Esta incluye el juego original y los complementos, así como nuevas características: gráficos y efectos renovados",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios",
         "requerimientos" : [
             {
                 "OS-m" : "Windows 7/8.1/10 (64-bit Version)",
@@ -35,6 +37,8 @@
 
     },
     {
-
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "demo"
     }
 ]

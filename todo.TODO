@@ -8,6 +8,7 @@ tags @
 TODOS:
     Priority:
         ☐ Diseñar template juego en main index
+        ☐ Comentarios en scriptInicio
         ☐ Vista compacta y ampliada
         ☐ Agregar nombre, foto y descripcion al JSON
         ☐ Mejorar divs

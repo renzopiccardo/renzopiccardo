@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="script.js"></script>
+    <script src="scriptInicio.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,27 +21,25 @@
 <body>
 
     <header>
+
+        <a href="index.html" id="joystick">
+            <img id="iconoJoystick" src="img/icon.png">
+        </a>
+
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">
-                        <img id="iconoJoystick" src="img/icon.png">
-                    </a>
-                </li>
-
                 <li><a class="active" href="index.html">Juegos</a></li>
 
                 <li><a href="registro.html">Registrarse</a></li>
 
                 <li><a href="comentarios.html">Comentarios</a></li>
-
-                <li>
-                    <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
             </ul>
         </nav>
+
+        <a href="javascript:void(0);" id="iconoHamburguesa" onclick="abrirMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+
     </header>
 
     <br>
@@ -82,394 +81,11 @@
     </div>
 
     <main>
+
         <ul id="ulJuegos">
-            <li>
-                <a href="skyrim.html">
-                    <article class="juego">
-                        <figure class="imagenLI">
-                            <img src="img/skyrim.jpg" alt="portada de skyrim" class="portada">
-                            <figcaption class="textoLI">Skyrim</figcaption>
-                        </figure>
-                    </article>
-                </a>
-            </li>
-
-            <li>
-                <a href="destiny.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/destiny.jpg" alt="portada de destiny" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Destiny
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="watch.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/watch.jpg" alt="portada de watch dogs" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Watch Dogs
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="zelda.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/zelda.jpg" alt="portada de zelda" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Zelda
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="rdr.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/rdr.jpg" alt="portada de red dead redemption 2" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Red Dead Redemption 2
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="nms.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/nms.jpg" alt="portada de no man's sky" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            No Man's Sky
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="cities.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/cities.jpg" alt="portada de Cities Skylines" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Cities Skylines
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="fifa.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/fifa.jpg" alt="portada de fifa 18" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            FIFA 18
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="gta.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/gta.jpg" alt="portada de gta 5" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            GTA V
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="rainbow.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/rainbow.jpg" alt="portada de Rainbow Six Siege" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Rainbow Six Siege
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="rocket.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/rocket.jpg" alt="portada de Rocket League" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Rocket League
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="sims.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/sims.jpg" alt="portada de Sims 4" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Sims 4
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="bf1.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/bf1.jpg" alt="portada de Battlefield 1" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Battlefield 1
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="call.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/call.jpg" alt="portada de Call of Duty Black Ops" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Call of Duty Black Ops
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="skyrim.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/skyrim.jpg" alt="portada de skyrim" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Skyrim
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="destiny.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/destiny.jpg" alt="portada de destiny" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Destiny
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="watch.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/watch.jpg" alt="portada de watch dogs" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Watch Dogs
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="zelda.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/zelda.jpg" alt="portada de zelda" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Zelda
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="rdr.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/rdr.jpg" alt="portada de red dead redemption 2" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Red Dead Redemption 2
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="nms.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/nms.jpg" alt="portada de no man's sky" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            No Man's Sky
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="cities.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/cities.jpg" alt="portada de Cities Skylines" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Cities Skylines
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="fifa.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/fifa.jpg" alt="portada de fifa 18" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            FIFA 18
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="gta.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/gta.jpg" alt="portada de gta 5" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            GTA V
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="rainbow.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/rainbow.jpg" alt="portada de Rainbow Six Siege" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Rainbow Six Siege
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="rocket.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/rocket.jpg" alt="portada de Rocket League" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Rocket League
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="sims.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/sims.jpg" alt="portada de Sims 4" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Sims 4
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="bf1.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/bf1.jpg" alt="portada de Battlefield 1" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Battlefield 1
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="call.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/call.jpg" alt="portada de Call of Duty Black Ops" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Call of Duty Black Ops
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="gta.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/gta.jpg" alt="portada de gta 5" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            GTA V
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="rainbow.html">
-                    <div class="juego">
-                        <div class="imagenLI">
-                            <img src="img/rainbow.jpg" alt="portada de Rainbow Six Siege" class="portada">
-                        </div>
-                        <div class="textoLI">
-                            Rainbow Six Siege
-                        </div>
-                    </div>
-                </a>
-            </li>
+            
         </ul>
+
     </main>
 
 </body>
