@@ -1,21 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     leerJSONLocal('json.json', function (text) {
-        //localstorage
         
         var jsonParsed = JSON.parse(text);
-    });
-
         var ul = document.getElementById("ulJuegos");
-
-        jsonParsed.forEach(element => {
-            ul.innerHTML += "<li><a><article><figure><img></img><figcaption></figcaption></figure><p></p></article></a></li>";
-        });
 
         for(var i=0; i < jsonParsed.length; i++)
         {
-            
+            ul.innerHTML += "<li><a href='detalles.html?indice=" + i +"'><article class='juego'><figure class='imagenLI'><img src='" + jsonParsed[i].img + "'alt= +""></img><figcaption></figcaption></figure><p></p></article></a></li>";
         }
+
+        /* ul.innerHTML += "<li><a><article><figure><img>" + jsonParsed[i].imagen + "</img><figcaption>" + jsonParsed[i].nombre + "</figcaption></figure><p>" + jsonParsed[i].descripcionCorta + "</p></article></a></li>";} */
 
         var a = document.getElementsByTagName("a");
         var article = document.getElementsByTagName("article");
@@ -24,12 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
         var figcaption = document.getElementsByTagName("figcaption");
         var p = document.getElementsByTagName("p");
 
-        /*
+        
         a.forEach(element => {
             var href = jsonParsed[element].nombre + ".html";
-            a[element].setAttribute("href", href)
+            a[element].setAttribute("href", href);
         });
-        */
+
+        for(var i=0; i < jsonParsed.length; i++)
+        {
+            var figcaption = document.getElementsByTagName("figcaption");
+            figcaption[element].setAttribute("class", "nombreJuego");
+            figcaption[element].innerText = jsonParsed[element].nombre;
+        }
+        
 
         for(var i=0; i < a.length; i++)
         {
@@ -37,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
             a[i].setAttribute("href", href);
         }
 
-        /* 
+        
 
         article.forEach(element => {
             article[element].setAttribute("class", "juego");
@@ -65,9 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
         p.forEach(element => {
             p[element].innerText = jsonParsed[element].descripcionCorta;
         });
-*/
+
+
     });
-    
 
 
 });

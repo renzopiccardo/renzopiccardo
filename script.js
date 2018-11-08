@@ -21,9 +21,6 @@ function leerJSONLocal(file, callback)
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-
-});
 
 function filtrarJuegos() 
 {
