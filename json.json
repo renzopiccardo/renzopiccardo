@@ -1,11 +1,9 @@
 [
     {
-        "id":1,
         "titulo":"The Elder Scrolls V: Skyrim",
         "nombre": "Skyrim",
         "video":"https://www.youtube.com/embed/JSRtYpNRoN0",
         "imagen":"img/skyrim.jpg",
-        "alt":"portada skyrim",
         "genero":"Acción/RPG",
         "valoracion":8.4,
         "precio":25,
@@ -34,12 +32,141 @@
                 "2" : "-Spend the entire day setting up mods -Launch game -Instantly crashes ahhh.. just like I remember it."
             }
         ]
-
-
     },
     {
         "nombre": "Skyrim",
         "imagen":"img/skyrim.jpg",
-        "descripcionCorta" : "demo"
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
+    },
+    {
+        "nombre": "Skyrim",
+        "imagen":"img/skyrim.jpg",
+        "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     }
+    
 ]

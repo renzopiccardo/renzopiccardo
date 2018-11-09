@@ -1,76 +1,102 @@
+localStorage.clear();
+//eliminar
+
 document.addEventListener("DOMContentLoaded", function () {
 
     leerJSONLocal('json.json', function (text) {
-        
+
         var jsonParsed = JSON.parse(text);
         var ul = document.getElementById("ulJuegos");
 
-        for(var i=0; i < jsonParsed.length; i++)
+        for (var i = 0; i < jsonParsed.length; i++) 
         {
-            var juego = '';
-            ul.innerHTML += '<li><a href="juegoDetallado.html?indice=' + i +'"><article class="juego"><figure class="imagenLI"><img src="' + jsonParsed[i].imagen + '" alt="' + "portada de " + jsonParsed[i].nombre + '"></img><figcaption> ' + jsonParsed[i].nombre + "</figcaption></figure><p>" + jsonParsed[i].descripcionCorta +"</p></article></a></li>";
+            ul.innerHTML += '<li class="juegoLI"><a href="juegoDetallado.html?indice=' + i + '"><article class="juego"><figure class="imagenLI"><img src="' + jsonParsed[i].imagen + '" alt="' + "portada de " + jsonParsed[i].nombre + '"></img><figcaption class="figcaptionJuego"> ' + jsonParsed[i].nombre + "</figcaption></figure><p>" + jsonParsed[i].descripcionCorta + "</p></article></a></li>";
         }
-
-        /* ul.innerHTML += "<li><a><article><figure><img>" + jsonParsed[i].imagen + "</img><figcaption>" + jsonParsed[i].nombre + "</figcaption></figure><p>" + jsonParsed[i].descripcionCorta + "</p></article></a></li>";} */
-
-        var a = document.getElementsByTagName("a");
-        var article = document.getElementsByTagName("article");
-        var figure = document.getElementsByTagName("figure");
-        var img = document.getElementsByTagName("img");
-        var figcaption = document.getElementsByTagName("figcaption");
-        var p = document.getElementsByTagName("p");
-
-        
-        a.forEach(element => {
-            var href = jsonParsed[element].nombre + ".html";
-            a[element].setAttribute("href", href);
-        });
-
-        for(var i=0; i < jsonParsed.length; i++)
-        {
-            var figcaption = document.getElementsByTagName("figcaption");
-            figcaption[element].setAttribute("class", "nombreJuego");
-            figcaption[element].innerText = jsonParsed[element].nombre;
-        }
-        
-
-        for(var i=0; i < a.length; i++)
-        {
-            var href = jsonParsed[i].nombre + ".html";
-            a[i].setAttribute("href", href);
-        }
-
-        
-
-        article.forEach(element => {
-            article[element].setAttribute("class", "juego");
-        });
-
-        figure.forEach(element => {
-            figure[element].setAttribute("class", "imagenLI")
-        });
-
-        img.forEach(element => {
-            var src = jsonParsed[element].imagen;
-            var alt = "portada de " + jsonParsed[element].nombre;
-            img[element].setAttribute("src", src);
-            img[element].setAttribute("alt", alt);
-            img[element].setAttribute("class", "portada");
-        });
-
-        //textoLI css
-        figcaption.forEach(element => {
-            figcaption[element].setAttribute("class", "nombreJuego");
-            figcaption[element].innerText = jsonParsed[element].nombre;
-        });
-
-        //descripcionCorta en JSON
-        p.forEach(element => {
-            p[element].innerText = jsonParsed[element].descripcionCorta;
-        });
-
 
     });
 
+    document.getElementById("filtroTexto").addEventListener("change", function () {
+        filtrarJuegos();
+    });
 
 });
+
+function filtrarJuegos() {
+    // Variables
+    var input, filtro, lis, a, i;
+    input = document.getElementById("filtroTexto");
+    lis = document.getElementsByClassName("juegoLI");
+    filtro = input.value.toUpperCase();
+
+    // Loopear entre todos los elementos de la lista y ocultar los que no coinciden con la busqueda
+    for (i = 0; i < lis.length; i++) 
+    {
+        a = lis[i].getElementsByClassName("figcaptionJuego")[0];
+
+        if (a.innerHTML.toUpperCase().indexOf(filtro) > -1) 
+        {
+            lis[i].style.display = "";
+        }
+        else 
+        {
+            lis[i].style.display = "none";
+        }
+    }
+}
+
+function ordenarJuegos() {
+    var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+    list = document.getElementById("catalogo");
+    switching = true;
+    // orden ascendente
+    dir = "asc";
+    // Loop hasta que no se necesite mas switching
+    while (switching) {
+        // Empezar diciendo que no se va a hacer switching
+        switching = false;
+        b = list.getElementsByTagName("li");
+        // Loopear entre todos los li
+        for (i = 0; i < (b.length - 1); i++) {
+            shouldSwitch = false;
+            // Checkear si el siguente li tendria que cambiar lugar con el actual
+            if (dir == "asc") {
+                if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                    //Si el siguiente li es alfabeticamente menor que el actual, indicar switch y cortar el loop
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            else if (dir == "desc") {
+                if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+                    //Si el siguiente li es alfabeticamente mayor que el actual, indicar switch y cortar el loop
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+        if (shouldSwitch) {
+            //Si un switch fue marcado, hacer el switch e indicar que se hizo
+            b[i].parentNode.insertBefore(b[i + 1], b[i]);
+            switching = true;
+            //Cada vez que se hace un swiitch, incrementar en 1
+            switchcount++;
+        }
+        else {
+            // Si no se hizo switching y la direccion en ascendente, setear la direccion en descendente y hacer el loop de nuevo
+            if (switchcount == 0 && dir == "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+}
+
+function abrirMenu() {
+    var x = document.getElementById("miNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    }
+    else {
+        x.className = "navbar";
+    }
+} 
