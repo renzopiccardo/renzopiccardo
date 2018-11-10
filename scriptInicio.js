@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var jsonParsed = JSON.parse(text);
         var ul = document.getElementById("ulJuegos");
+        var ulD = document.getElementById("ulJuegosDetallado");
 
         for (var i = 0; i < jsonParsed.length; i++) 
         {

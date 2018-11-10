@@ -177,7 +177,7 @@ nav a.active{border-bottom: 2px solid skyblue;}
 
 main {text-align: center;}
 
-main ul li {
+main ul .juegoLI {
     width: 14em;
     height: auto;
     margin-top: 2em;
@@ -192,7 +192,7 @@ main ul li {
     border: 3px solid #116888;
 }
 
-main ul li a{
+main ul .juegoLI a{
     text-decoration: none;
     color: white;
 }
@@ -229,6 +229,12 @@ main ul li a{
     transform: scale(1.2, 1.2); 
     opacity: 1;
 }
+
+/*Lista juegos detallados*/
+
+
+
+/**/
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
