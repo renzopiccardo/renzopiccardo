@@ -20,3 +20,15 @@ function leerJSONLocal(file, callback)
     callback(localStorage.getItem("juegos"));
   }
 }
+
+function abrirMenu() {
+  var x = document.getElementById("miNavbar");
+  if (x.className === "navbar") 
+  {
+      x.className += " responsive";
+  } 
+  else 
+  {
+      x.className = "navbar";
+  }
+} 
