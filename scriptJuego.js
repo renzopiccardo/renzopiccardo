@@ -48,17 +48,18 @@ document.addEventListener("DOMContentLoaded", function () {
         var indiceJuego = jsonParsed.findIndex(obj => obj.nombre==juegoDeURL);
 
         tituloJuegoH1.innerHTML += jsonParsed[indiceJuego].titulo;
-        iframeJuego.innerHTML += jsonParsed[indiceJuego].titulo;
-        imagenJuegoPortadaImg.innerHTML += jsonParsed[indiceJuego].titulo;
+        iframeJuego.setAttribute("src", jsonParsed[indiceJuego].videoOOOOOOOOOOO); 
+        imagenJuegoPortadaImg.setAttribute("src", jsonParsed[indiceJuego].imagen);
+        imagenJuegoPortadaImg.setAttribute("alt", 'portada de ' + jsonParsed[indiceJuego].nombre); 
 
-        generoJuego.innerHTML += jsonParsed[indiceJuego].titulo;
-        valoracionJuego.innerHTML += jsonParsed[indiceJuego].titulo;
-        precioJuego.innerHTML += jsonParsed[indiceJuego].titulo;
-        desarrolladorJuego.innerHTML += jsonParsed[indiceJuego].titulo;
-        fechaLanzamientoJuego.innerHTML += jsonParsed[indiceJuego].titulo;
-        descripcionJuego.innerHTML += jsonParsed[indiceJuego].titulo;
+        generoJuego.innerHTML += jsonParsed[indiceJuego].genero;
+        valoracionJuego.innerHTML += jsonParsed[indiceJuego].valoracion;
+        precioJuego.innerHTML += jsonParsed[indiceJuego].precio;
+        desarrolladorJuego.innerHTML += jsonParsed[indiceJuego].desarrollador;
+        fechaLanzamientoJuego.innerHTML += jsonParsed[indiceJuego].fechaDeLanzamiento;
+        descripcionJuego.innerHTML += jsonParsed[indiceJuego].descripcion;
 
-        sistemaMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
+        sistemaMinimo.innerHTML += jsonParsed[indiceJuego].requerimientos[0].OS-m;
         procesadorMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
         memoriaMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
         tarjetaMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
@@ -70,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tarjetaRecomendado.innerHTML += jsonParsed[indiceJuego].titulo;
         almacenamientoRecomendado.innerHTML += jsonParsed[indiceJuego].titulo;
 
-        review1.innerHTML += jsonParsed[indiceJuego].titulo;
+        review1.innerHTML += jsonParsed[indiceJuego].reviews[0].uno;
         review2.innerHTML += jsonParsed[indiceJuego].titulo;
         review3.innerHTML += jsonParsed[indiceJuego].titulo;
 

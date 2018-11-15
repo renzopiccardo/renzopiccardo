@@ -177,8 +177,9 @@ nav a.active{border-bottom: 2px solid skyblue;}
 
 main {text-align: center;}
 
-main ul .juegoLI {
-    width: 14em;
+main ul li.juegoLI {
+    /*14em*/
+    width: 40em;
     height: auto;
     margin-top: 2em;
     margin-left: 2px;
@@ -192,9 +193,21 @@ main ul .juegoLI {
     border: 3px solid #116888;
 }
 
-main ul .juegoLI a{
+main ul li.juegoLI a{
     text-decoration: none;
     color: white;
+}
+
+main ul li.juegoLI article.juego{
+
+}
+
+main ul li.juegoLI article.juego figure.imagenLI figcaption.figcaptionJuego{
+    float: right;
+}
+
+main ul li.juegoLI article.juego p{
+    float: right;
 }
 
 .juego{max-width: 100%;}

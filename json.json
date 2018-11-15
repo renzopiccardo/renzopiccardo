@@ -8,12 +8,12 @@
         "valoracion":8.4,
         "precio":25,
         "desarrollador":"Bethesda",
-        "fecha de lanzamiento":"11 de noviembre de 2011",
+        "fechaDeLanzamiento":"11 de noviembre de 2011",
         "descripcion" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios y publicado por Bethesda Softworks. Es la quinta entrega de videojuegos de acción y fantasía de la serie. The Elder Scrolls y es posterior a The Elder Scrolls IV: Oblivion y predecesor de The Elder Scrolls Online. Skyrim salió a la venta el 11 de noviembre de 2011 para las plataformas: Microsoft Windows, Xbox 360 y PlayStation 3. El 26 de julio de 2012 fueron lanzados al mercado tres expansiones que son descargables: Dawnguard, Hearthfire y Dragonborn. El 28 de octubre de 2016 fue lanzada una remasterización llamada Skyrim Special Edition HD. Esta incluye el juego original y los complementos, así como nuevas características: gráficos y efectos renovados",
         "descripcionCorta" : "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios",
         "requerimientos" : [
             {
-                "OS-m" : "Windows 7/8.1/10 (64-bit Version)",
+                "OS-m":"Windows 7/8.1/10 (64-bit Version)",
                 "Processor-m":"Intel i5-750/AMD Phenom II X4-945",
                 "Memory-m" : "8 GB RAM",
                 "Graphics-m" : "NVIDIA GTX 470 1GB /AMD HD 7870 2GB",
@@ -28,8 +28,8 @@
         ],
         "reviews" : [
             {
-                "1" : "-I understand why there are certain users giving this version of skyrim a thumbs down, due to bethesda's... bad decisions here and there... suffice to say. However, I feel that those users are purely giving a review on the company itself, rather than the actual game. But, I do understand where those people are coming from. Still, instead of only ranting how evil bethesda is, I'll talk about some of the positives about this particular version of skyrim... and also about the negatives that come with this version and what bethesda should have done better or left out entirely, don't worry there aren't too many negatives, but there are still negatives that need to be addressed.",
-                "2" : "-Spend the entire day setting up mods -Launch game -Instantly crashes ahhh.. just like I remember it."
+                "uno" : "-I understand why there are certain users giving this version of skyrim a thumbs down, due to bethesda's... bad decisions here and there... suffice to say. However, I feel that those users are purely giving a review on the company itself, rather than the actual game. But, I do understand where those people are coming from. Still, instead of only ranting how evil bethesda is, I'll talk about some of the positives about this particular version of skyrim... and also about the negatives that come with this version and what bethesda should have done better or left out entirely, don't worry there aren't too many negatives, but there are still negatives that need to be addressed.",
+                "dos" : "-Spend the entire day setting up mods -Launch game -Instantly crashes ahhh.. just like I remember it."
             }
         ]
     },

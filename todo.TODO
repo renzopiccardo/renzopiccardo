@@ -7,10 +7,10 @@ tags @
 
 TODOS:
     Priority:
-        ☐ https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters
-        ☐ Al hacer click en un juego enviar parametros => vista detallada de juego vacia => scriptjuego.js => obtener parametros url, json lookup => rellenar layout juego vacia
+        ✔ https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters @done(18-11-15 18:26)
+        ✔ Al hacer click en un juego enviar parametros => vista detallada de juego vacia => scriptjuego.js => obtener parametros url, json lookup => rellenar layout juego vacia @done(18-11-15 18:26)
         ✔ Diseñar template juego en main index @done(18-11-08 23:26)
-        ☐ CSS Main Index
+        ☐ Mejorar CSS Main Index
         ✔ Comentarios en scriptInicio @done(18-11-08 23:27)
         ☐ Vista compacta y ampliada
         ✔ Agregar nombre, foto y descripcion al JSON @done(18-11-08 23:26)
