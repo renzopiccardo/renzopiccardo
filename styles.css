@@ -178,11 +178,11 @@ nav a.active{border-bottom: 2px solid skyblue;}
 main {text-align: center;}
 
 main ul li.juegoLI {
-    /*14em*/
-    width: 40em;
+    /*14 40em*/
+    width: 14em;
     height: auto;
-    margin-top: 2em;
-    margin-left: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     display: inline-block;
     text-align: center;
     /*vertical-align: middle;*/
@@ -201,7 +201,7 @@ main ul li.juegoLI a{
 main ul li.juegoLI article.juego{
 
 }
-
+/*
 main ul li.juegoLI article.juego figure.imagenLI figcaption.figcaptionJuego{
     float: right;
 }
@@ -209,6 +209,7 @@ main ul li.juegoLI article.juego figure.imagenLI figcaption.figcaptionJuego{
 main ul li.juegoLI article.juego p{
     float: right;
 }
+*/
 
 .juego{max-width: 100%;}
 
@@ -217,7 +218,7 @@ main ul li.juegoLI article.juego p{
 .textoLI{
     height: 20%;
     margin: 0;
-    padding: 0;
+    padding: 150px;
     font-size: 1.2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
@@ -225,22 +226,23 @@ main ul li.juegoLI article.juego p{
     padding-bottom: 0.5em;
 }
 
-.catalogo img{
+.juegoLI img{
     width: 13em;
     height: 20em;
     margin-top: 0.5em;
     z-index: 1;
 }
 
-.portada {
+.juegoLI {
     position: relative;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
-.portada:hover {
+.juegoLI:hover {
     transform: scale(1.2, 1.2); 
     opacity: 1;
+    z-index: 20;
 }
 
 /*Lista juegos detallados*/

@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     leerJSONLocal('json.json', function (text) {
 
+        localStorage.clear();
+
         var imagenSliderJuego1 = document.getElementById("imagenSliderJuego1");
         var imagenSliderJuego2 = document.getElementById("imagenSliderJuego2");
         var imagenSliderJuego3 = document.getElementById("imagenSliderJuego3");
@@ -59,21 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
         fechaLanzamientoJuego.innerHTML += jsonParsed[indiceJuego].fechaDeLanzamiento;
         descripcionJuego.innerHTML += jsonParsed[indiceJuego].descripcion;
 
-        sistemaMinimo.innerHTML += jsonParsed[indiceJuego].requerimientos[0].OS-m;
-        procesadorMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
-        memoriaMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
-        tarjetaMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
-        almacenamientoMinimo.innerHTML += jsonParsed[indiceJuego].titulo;
+        sistemaMinimo.innerHTML += jsonParsed[indiceJuego].OSm;
+        procesadorMinimo.innerHTML += jsonParsed[indiceJuego].Processorm;
+        memoriaMinimo.innerHTML += jsonParsed[indiceJuego].Memorym;
+        tarjetaMinimo.innerHTML += jsonParsed[indiceJuego].Graphicsm;
+        almacenamientoMinimo.innerHTML += jsonParsed[indiceJuego].Storagem;
 
-        sistemaRecomendado.innerHTML += jsonParsed[indiceJuego].titulo;
-        procesadorRecomendado.innerHTML += jsonParsed[indiceJuego].titulo;
-        memoriaRecomendado.innerHTML += jsonParsed[indiceJuego].titulo;
-        tarjetaRecomendado.innerHTML += jsonParsed[indiceJuego].titulo;
-        almacenamientoRecomendado.innerHTML += jsonParsed[indiceJuego].titulo;
+        sistemaRecomendado.innerHTML += jsonParsed[indiceJuego].OS;
+        procesadorRecomendado.innerHTML += jsonParsed[indiceJuego].Processor;
+        memoriaRecomendado.innerHTML += jsonParsed[indiceJuego].Memory;
+        tarjetaRecomendado.innerHTML += jsonParsed[indiceJuego].Graphics;
+        almacenamientoRecomendado.innerHTML += jsonParsed[indiceJuego].Storage;
 
-        review1.innerHTML += jsonParsed[indiceJuego].reviews[0].uno;
-        review2.innerHTML += jsonParsed[indiceJuego].titulo;
-        review3.innerHTML += jsonParsed[indiceJuego].titulo;
+        review1.innerHTML += jsonParsed[indiceJuego].uno;
+        review2.innerHTML += jsonParsed[indiceJuego].dos;
+        review3.innerHTML += jsonParsed[indiceJuego].uno;
 
         imagenGaleria1.innerHTML += jsonParsed[indiceJuego].titulo;
         imagenGaleria2.innerHTML += jsonParsed[indiceJuego].titulo;
@@ -84,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         imagenSliderJuego3.innerHTML += jsonParsed[indiceJuego].titulo;
         imagenSliderJuego4.innerHTML += jsonParsed[indiceJuego].titulo;
         imagenSliderJuego5.innerHTML += jsonParsed[indiceJuego].titulo;
-        a
+        
 
 
     });
