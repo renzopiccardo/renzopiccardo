@@ -24,7 +24,7 @@
         <div class="navbar" id="miNavbar">
             <nav>
                 <a href="index.html">
-                    <img id="icon" src="img/icon.png">
+                    <img id="icono" src="img/icon.png">
                 </a>
                 <a class="active" href="index.html">Juegos</a>
                 <a href="registro.html">Registrarse</a>
@@ -48,17 +48,17 @@
         </figure>
     </div>
 
-    <div class="sidenav">
+    <div class="barraOpciones">
 
-        <div class="topSidenav">
+        <div class="barraOpcionesTop">
 
             <div class="botonOrdenar">
                 <button id="botonOrdenar" onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
             </div>
 
             <div class="dropdown">
-                <button class="dropbtn">Categoría &#9660;</button>
-                <div class="dropdown-content">
+                <button class="dropdownBoton">Categoría &#9660;</button>
+                <div class="dropdownOpciones">
                     <a href="#">Acción</a>
                     <a href="#">Aventura</a>
                     <a href="#">FPS</a>
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="bottomSidenav">
+        <div class="barraOpcionesBottom">
             <div class="filtroTexto">
                 <input type="text" id="filtroTexto" placeholder="Buscar...">
             </div>
@@ -76,20 +76,7 @@
 
     <main>
 
-        <ul id="ulJuegos">
-            <li>
-                <article class="articuloJuego">
-                    <h4 class="tituloJuego"></h4>
-                    <figure class="contenedorImagenJuego">
-                        <img src="" alt="">
-                    </figure>
-
-
-                    <p class="descripcionJuego"></p>
-
-                </article>
-            </li>
-        </ul>
+        <ul id="ulJuegos"></ul>
 
     </main>
 

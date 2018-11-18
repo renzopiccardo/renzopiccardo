@@ -59,19 +59,16 @@ nav a.active{border-bottom: 2px solid skyblue;}
 
 .navbar .icono {display: none;}
 
-#icon{
+#icono{
     width: 1.5em;
     height: 1em;
 }
 
-.mainpanel{text-align: center;}
-
-
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
-/*Second bar*/
+/*Barra de opciones*/
 
-.sidenav{
+.barraOpciones{
     display: inline-block;
     position: relative;
     text-align: center;
@@ -81,12 +78,12 @@ nav a.active{border-bottom: 2px solid skyblue;}
     margin-left: 5.5em;
 }
 
-.topSidenav{display: inline-block;}
+.barraOpcionesTop{display: inline-block;}
 
-.bottomSidenav{display: inline-block;}
+.barraOpcionesBottom{display: inline-block;}
 
 /* Dropdown*/
-.dropbtn {
+.dropdownBoton{
     background-color: rgb(0, 14, 27);
     border: 2px solid #116888;
     color: rgb(179, 212, 255);
@@ -97,13 +94,13 @@ nav a.active{border-bottom: 2px solid skyblue;}
     font-size: 16px;
 }
 
-.dropdown {
+.dropdown{
     position: relative;
     display: inline-block;
     z-index: 9;
 }
 
-.dropdown-content {
+.dropdownOpciones{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -112,7 +109,7 @@ nav a.active{border-bottom: 2px solid skyblue;}
     z-index: 9;
 }
 
-.dropdown-content a {
+.dropdownOpciones a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -120,11 +117,11 @@ nav a.active{border-bottom: 2px solid skyblue;}
     z-index: 9;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdownOpciones a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdownOpciones {display: block;}
 
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropdownBoton {
     background-color: #199ece;
     color: white;
 }
@@ -715,13 +712,13 @@ iframe{
         opacity: 1;
     }
 
-    .topSidenav{
+    .barraOpcionesTop{
         width: 100%;
         max-width: 100%;
         display: inline-block;
     }
     
-    .bottomSidenav{
+    .barraOpcionesBottom{
         width: 100%;
         display: inline-block;
     }
@@ -747,14 +744,14 @@ iframe{
         overflow: auto;
     }
 
-    .sidenav{
+    .barraOpciones{
         display: inline-block;
         margin: 0 auto;
         padding-top: 3em;
         margin-left: 0.7em;
     }
 
-    nav {margin-left: 0.5em;}
+    nav{margin-left: 0.5em;}
 
     .textoLI{
         font-size: 1.2em;
@@ -787,7 +784,6 @@ iframe{
     }
 
     #slider{display: none;}
-
 
     .encabezado h1{
         margin-left: 1.75em;
@@ -853,7 +849,6 @@ iframe{
     }
     
     .descripcion{
-
         padding: 0.5em;
         max-width: 100%;
         border: 2px solid #116888;
@@ -873,7 +868,6 @@ iframe{
     }
     
     .requerimientos{
-
         padding: 1em;
         border: 2px solid #116888;
         border-radius: 10px;
@@ -883,7 +877,6 @@ iframe{
     .requerimientos h4{
         margin: 0.4em;
         color: rgb(16, 96, 150);
-        
     }
     
     .requerimientos dt{
@@ -897,7 +890,6 @@ iframe{
     }
     
     .reviews{
-
         padding: 1em;
         border: 2px solid #116888;
         border-radius: 10px;
@@ -952,18 +944,18 @@ iframe{
         overflow: auto;
     }
 
-    .topSidenav{
+    .barraOpcionesTop{
         width: 100%;
         max-width: 100%;
         display: inline-block;
     }
     
-    .bottomSidenav{
+    .barraOpcionesBottom{
         width: 100%;
         display: inline-block;
     }
     
-    .sidenav{
+    .barraOpciones{
         display: inline-block;
         text-align: center;
         margin: 0 auto;
@@ -971,7 +963,7 @@ iframe{
         margin-left: 0.5em;
     }
 
-    nav {margin-left: 0.5em;}
+    nav{margin-left: 0.5em;}
 
     .textoLI{
         font-size: 1.2em;
@@ -1077,7 +1069,6 @@ iframe{
     }
     
     .requerimientos{
-
         padding: 1em;
         border: 2px solid #116888;
         border-radius: 10px;
@@ -1087,7 +1078,6 @@ iframe{
     .requerimientos h4{
         margin: 0.4em;
         color: rgb(16, 96, 150);
-        
     }
     
     .requerimientos dt{
@@ -1101,7 +1091,6 @@ iframe{
     }
     
     .reviews{
-
         padding: 1em;
         border: 2px solid #116888;
         border-radius: 10px;
