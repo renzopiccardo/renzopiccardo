@@ -24,7 +24,7 @@
         <div class="navbar" id="miNavbar">
             <nav>
                 <a href="index.html">
-                    <img id="icono" src="img/icon.png">
+                    <img id="icon" src="img/icon.png">
                 </a>
                 <a class="active" href="index.html">Juegos</a>
                 <a href="registro.html">Registrarse</a>
@@ -48,17 +48,17 @@
         </figure>
     </div>
 
-    <div class="barraOpciones">
+    <div class="sidenav">
 
-        <div class="barraOpcionesTop">
+        <div class="topSidenav">
 
             <div class="botonOrdenar">
                 <button id="botonOrdenar" onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
             </div>
 
             <div class="dropdown">
-                <button class="dropdownBoton">Categoría &#9660;</button>
-                <div class="dropdownOpciones">
+                <button class="dropbtn">Categoría &#9660;</button>
+                <div class="dropdown-content">
                     <a href="#">Acción</a>
                     <a href="#">Aventura</a>
                     <a href="#">FPS</a>
@@ -66,13 +66,21 @@
             </div>
         </div>
 
-        <div class="barraOpcionesBottom">
+        <div class="bottomSidenav">
             <div class="filtroTexto">
-                <input type="text" id="filtroTexto" placeholder="Buscar...">
+                <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar...">
             </div>
         </div>
 
+        <div id="toggleVista">
+            <span>Vista:</span>
+            <button id="vistaCompacta" onclick="vistaCompacta()">Compacta</button>
+            <button id="vistaDetallada" onclick="vistaDetallada()">Detallada</button>
+        </div>
+
     </div>
+
+    <br>
 
     <main>
 

@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var jsonParsed = JSON.parse(text);
         var ul = document.getElementById("ulJuegos");
-        var ulD = document.getElementById("ulJuegosDetallado");
 
         for (var i = 0; i < jsonParsed.length; i++) 
         {
@@ -20,6 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("filtroTexto").addEventListener("change", function () {
         filtrarJuegos();
     });
+
+    /*
+    document.getElementById("vistaCompacta").addEventListener("click", function(){
+
+    })
+    */
+
+
     
 
 });
@@ -91,5 +98,25 @@ function ordenarJuegos() {
                 switching = true;
             }
         }
+    }
+}
+
+function vistaCompacta(){
+    var fig = document.getElementsByTagName("figcaption");
+    var p = document.getElementsByTagName("p");
+
+    for(var i=0; i < fig.length; i++){
+        fig[i].style.display = 'none';
+        p[i].style.display = 'none';
+    }
+}
+
+function vistaDetallada(){
+    var fig = document.getElementsByTagName("figcaption");
+    var p = document.getElementsByTagName("p");
+
+    for(var i=0; i < fig.length; i++){
+        fig[i].style.display = 'block';
+        p[i].style.display = 'block';
     }
 }
