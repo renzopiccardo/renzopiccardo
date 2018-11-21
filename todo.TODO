@@ -10,9 +10,9 @@ TODOS:
         ✔ https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters @done(18-11-15 18:26)
         ✔ Al hacer click en un juego enviar parametros => vista detallada de juego vacia => scriptjuego.js => obtener parametros url, json lookup => rellenar layout juego vacia @done(18-11-15 18:26)
         ✔ Diseñar template juego en main index @done(18-11-08 23:26)
-        ☐ Mejorar CSS Main Index
+        ✔ Mejorar CSS Main Index @done(18-11-20 23:25)
         ✔ Comentarios en scriptInicio @done(18-11-08 23:27)
-        ☐ Vista compacta y ampliada
+        ☐ Mejorar Vista compacta y ampliada
         ✔ Agregar nombre, foto y descripcion al JSON @done(18-11-08 23:26)
         ☐ Mejorar divs
         ☐ Mejorar id y class
@@ -24,9 +24,11 @@ TODOS:
     Medium:
         ☐ Arreglar media query
         ✔ Arreglar busqueda @done(18-11-08 23:26)
-        ☐ Arreglar filtro
+        ✔ Arreglar filtro @done(18-11-20 23:25)
         ☐ Footer
         ☐ Carpetas js y css
+        ☐ Icono cargando cuando tocas comprar
+        ☐ Mejores imagenes
 
     Avanzado:
         ☐ Scrapper para datos juego de wikipedia

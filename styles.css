@@ -268,12 +268,6 @@ main ul li.juegoLI article.juego p{
     font-family: 'Share Tech', sans-serif;
 }
 
-/*Lista juegos detallados*/
-
-
-
-/**/
-
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
 /*Registro/Comentarios*/
@@ -327,9 +321,9 @@ textarea{
 
  /*Comentarios*/
 
- .comentarios{
-     margin-left: 2em;
- }
+.comentarios{
+    margin-left: 2em;
+}
 
 .comentarios input, textarea{
     border-radius: 5px;
@@ -556,7 +550,7 @@ textarea{
     max-width: 1200px;
     width: 100%;
     height: 100%;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     align-content: center;
     margin: 0 auto;
 }
@@ -619,19 +613,21 @@ iframe{
 }
 
 .descripcion{
+    width: 97%;
     float: left;
     padding: 1em;
-    max-width: 100%;
     border: 2px solid #116888;
     border-radius: 10px;
     margin-top: 0.5em;
+    column-count: 2;
+    box-sizing: border-box;
 }
 
 .caracteristicas dl dt{
     display: inline-block;
     margin: 0.5em;
     color: #c7f1ff;
-    font-weight: 600;
+    font-size: 20px;
 }
 
 .caracteristicas dl dd{
@@ -649,7 +645,6 @@ iframe{
 .requerimientos h4{
     margin: 0.4em;
     color: rgb(16, 96, 150);
-    
 }
 
 .requerimientos dt{
@@ -664,10 +659,12 @@ iframe{
 
 .reviews{
     float: left;
+    width: 95%;
     padding: 1em;
     border: 2px solid #116888;
     border-radius: 10px;
     margin-top: 0.5em;
+    box-sizing: border-box
 }
 
 .reviews blockquote{
@@ -680,6 +677,10 @@ iframe{
 }
 .content-img{
     padding-top: 0.5em;
+}
+
+#fechaLanzamientoJuego{
+    margin-left: 11px;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
@@ -732,6 +733,12 @@ iframe{
 @media screen and 
 (max-width: 600px) and
 (min-width: 350px) {
+
+    .contenedor{
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     .portada:hover {
         transform: scale(1, 1); 
@@ -880,6 +887,7 @@ iframe{
         border: 2px solid #116888;
         border-radius: 10px;
         margin-top: 0.5em;
+        column-count: 1;
     }
     
     .caracteristicas dl dt{
@@ -943,6 +951,12 @@ iframe{
 @media screen and 
 (max-width: 349px) and
 (min-width: 150px){
+
+    .contenedor{
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 
     .portada:hover {
         transform: scale(1, 1); 
@@ -1073,6 +1087,7 @@ iframe{
         border: 2px solid #116888;
         border-radius: 10px;
         margin-top: 0.5em;
+        column-count: 1;
     }
 
     .descripcion dl dd p{

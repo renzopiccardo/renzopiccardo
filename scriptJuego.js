@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         localStorage.clear();
 
+        var tituloHTML = document.getElementById("tituloJuegoHead");
+
         var imagenSliderJuego1 = document.getElementById("imagenSliderJuego1");
         var imagenSliderJuego2 = document.getElementById("imagenSliderJuego2");
         var imagenSliderJuego3 = document.getElementById("imagenSliderJuego3");
@@ -49,8 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var indiceJuego = jsonParsed.findIndex(obj => obj.nombre==juegoDeURL);
 
+        tituloHTML.innerHTML += jsonParsed[indiceJuego].nombre;
+
         tituloJuegoH1.innerHTML += jsonParsed[indiceJuego].titulo;
-        iframeJuego.setAttribute("src", jsonParsed[indiceJuego].videoOOOOOOOOOOO); 
+        iframeJuego.setAttribute("src", jsonParsed[indiceJuego].video); 
         imagenJuegoPortadaImg.setAttribute("src", jsonParsed[indiceJuego].imagen);
         imagenJuegoPortadaImg.setAttribute("alt", 'portada de ' + jsonParsed[indiceJuego].nombre); 
 
@@ -77,17 +81,23 @@ document.addEventListener("DOMContentLoaded", function () {
         review2.innerHTML += jsonParsed[indiceJuego].dos;
         review3.innerHTML += jsonParsed[indiceJuego].uno;
 
-        imagenGaleria1.innerHTML += jsonParsed[indiceJuego].titulo;
-        imagenGaleria2.innerHTML += jsonParsed[indiceJuego].titulo;
-        imagenGaleria3.innerHTML += jsonParsed[indiceJuego].titulo;
+        imagenGaleria1.setAttribute("src", jsonParsed[indiceJuego].banner1);
+        imagenGaleria1.setAttribute("alt", 'imagen de ' + jsonParsed[indiceJuego].nombre + ' 1'); 
+        imagenGaleria2.setAttribute("src", jsonParsed[indiceJuego].banner4);
+        imagenGaleria2.setAttribute("alt", 'imagen de ' + jsonParsed[indiceJuego].nombre + ' 2'); 
+        imagenGaleria3.setAttribute("src", jsonParsed[indiceJuego].banner5);
+        imagenGaleria3.setAttribute("alt", 'imagen de ' + jsonParsed[indiceJuego].nombre + ' 3'); 
 
-        imagenSliderJuego1.innerHTML += jsonParsed[indiceJuego].titulo;
-        imagenSliderJuego2.innerHTML += jsonParsed[indiceJuego].titulo;
-        imagenSliderJuego3.innerHTML += jsonParsed[indiceJuego].titulo;
-        imagenSliderJuego4.innerHTML += jsonParsed[indiceJuego].titulo;
-        imagenSliderJuego5.innerHTML += jsonParsed[indiceJuego].titulo;
-        
-
+        imagenSliderJuego1.setAttribute("src", jsonParsed[indiceJuego].banner4);
+        imagenSliderJuego1.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 1'); 
+        imagenSliderJuego2.setAttribute("src", jsonParsed[indiceJuego].banner2);
+        imagenSliderJuego2.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 2'); 
+        imagenSliderJuego3.setAttribute("src", jsonParsed[indiceJuego].banner3);
+        imagenSliderJuego3.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 3'); 
+        imagenSliderJuego4.setAttribute("src", jsonParsed[indiceJuego].banner4);
+        imagenSliderJuego4.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 4'); 
+        imagenSliderJuego5.setAttribute("src", jsonParsed[indiceJuego].banner5);
+        imagenSliderJuego5.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 5'); 
 
     });
 
