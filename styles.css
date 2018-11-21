@@ -75,6 +75,57 @@ nav a.active{border-bottom: 2px solid skyblue;}
     height: 1em;
 }
 
+/**/
+
+.bannerParallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 46px;
+}
+
+.parallax{
+    height: 620px;
+    padding: 50px;
+}
+
+#uno{
+    background-image: url("img/2.jpg");
+}
+
+#tres{
+    background-image: url("img/1.jpeg");
+}
+
+#cinco{
+    background-image: url("img/3.jpeg");
+}
+
+.ofertas{
+    list-style-type: none;
+}
+
+.ofertas li{
+    float: left;
+}
+
+.ofertas article{
+    width: 500px;
+    margin-right: 50px;
+}
+
+.imagenOferta{
+    width: 500px;
+}
+
+
+
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
 /*Barra de opciones*/

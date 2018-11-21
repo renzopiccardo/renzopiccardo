@@ -8,14 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
         var jsonParsed = JSON.parse(text);
         var ul = document.getElementById("ulJuegos");
 
-        for (var i = 0; i < jsonParsed.length; i++) 
-        {
+        for (var i = 0; i < jsonParsed.length; i++) {
             ul.innerHTML += '<li class="juegoLI"><a href="juegoDetallado.html?juego=' + jsonParsed[i].nombre + '"><article class="juego"><figure class="imagenLI"><img src="' + jsonParsed[i].imagen + '" alt="' + "portada de " + jsonParsed[i].nombre + '"></img><figcaption class="figcaptionJuego"> ' + jsonParsed[i].nombre + '</figcaption></figure><p class="pJuego">' + jsonParsed[i].descripcionCorta + "</p></article></a></li>";
         }
 
     });
 
-    
+
     document.getElementById("filtroTexto").addEventListener("change", function () {
         filtrarJuegos();
     });
@@ -27,8 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     */
 
 
-    
-
 });
 
 function filtrarJuegos() {
@@ -39,16 +36,13 @@ function filtrarJuegos() {
     filtro = input.value.toUpperCase();
 
     // Loopear entre todos los elementos de la lista y ocultar los que no coinciden con la busqueda
-    for (i = 0; i < lis.length; i++) 
-    {
+    for (i = 0; i < lis.length; i++) {
         a = lis[i].getElementsByClassName("figcaptionJuego")[0];
 
-        if (a.innerHTML.toUpperCase().indexOf(filtro) > -1) 
-        {
+        if (a.innerHTML.toUpperCase().indexOf(filtro) > -1) {
             lis[i].style.display = "";
         }
-        else 
-        {
+        else {
             lis[i].style.display = "none";
         }
     }
@@ -101,21 +95,21 @@ function ordenarJuegos() {
     }
 }
 
-function vistaCompacta(){
+function vistaCompacta() {
     var fig = document.getElementsByTagName("figcaption");
     var p = document.getElementsByTagName("p");
 
-    for(var i=0; i < fig.length; i++){
+    for (var i = 0; i < fig.length; i++) {
         fig[i].style.display = 'none';
         p[i].style.display = 'none';
     }
 }
 
-function vistaDetallada(){
+function vistaDetallada() {
     var fig = document.getElementsByTagName("figcaption");
     var p = document.getElementsByTagName("p");
 
-    for(var i=0; i < fig.length; i++){
+    for (var i = 0; i < fig.length; i++) {
         fig[i].style.display = 'block';
         p[i].style.display = 'block';
     }
