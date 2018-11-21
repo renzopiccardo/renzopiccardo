@@ -8,6 +8,8 @@
     <!--Icono para menu responsive a la derecha-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Share+Tech" rel="stylesheet"> 
+
     <script src="script.js"></script>
     <script src="scriptInicio.js"></script>
 
@@ -22,7 +24,7 @@
 
     <header>
         <div class="navbar" id="miNavbar">
-            <nav>
+            <nav class="contenedor">
                 <a href="index.html">
                     <img id="icon" src="img/icon.png">
                 </a>
@@ -48,7 +50,7 @@
         </figure>
     </div>
 
-    <div class="sidenav">
+    <div class="sidenav contenedor">
 
         <div class="topSidenav">
 
@@ -74,15 +76,15 @@
 
         <div id="toggleVista">
             <span>Vista:</span>
-            <button id="vistaCompacta" onclick="vistaCompacta()">Compacta</button>
-            <button id="vistaDetallada" onclick="vistaDetallada()">Detallada</button>
+            <button id="vistaCompacta" onclick="vistaCompacta()">C</button>
+            <button id="vistaDetallada" onclick="vistaDetallada()">D</button>
         </div>
 
     </div>
 
     <br>
 
-    <main>
+    <main class="contenedor">
 
         <ul id="ulJuegos"></ul>
 

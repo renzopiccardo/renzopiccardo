@@ -10,7 +10,12 @@ body{
     background-image: radial-gradient(black, rgb(0, 35, 59));
     margin: 0 auto;
     height: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    
+    
+    font-family: 'Exo 2', sans-serif;
+
+
     color: white;
 }
 
@@ -23,6 +28,12 @@ ul li a:visited{
     text-decoration: none;
     text-decoration-line: none;
     color: white;
+}
+
+.contenedor{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
@@ -39,15 +50,15 @@ header{
 }
 
 nav{
-    margin-left: 2.5em;
-    margin-right: 1em;
+    /*margin-left: 2.5em;
+    margin-right: 1em;*/
 }
 
 nav a{
     display: block;
     float: left;
     padding: 14px 16px;
-    font: 1.3em/1em sans-serif;   
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     color: white; 
@@ -72,13 +83,13 @@ nav a.active{border-bottom: 2px solid skyblue;}
     width: 100%;
     float: left;
     padding-top: 2em;
-    max-width: 100%;
     /*clear: none;*/
     box-sizing: border-box; 
+    margin-bottom: 40px;
 }
 
+/*display: inline-block???*/
 .topSidenav{display: inline-block;}
-
 .bottomSidenav{display: inline-block;}
 
 /* Dropdown*/
@@ -86,7 +97,6 @@ nav a.active{border-bottom: 2px solid skyblue;}
     background-color: rgb(0, 14, 27);
     border: 2px solid #116888;
     color: rgb(179, 212, 255);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.7em;
     margin-right: 0.5em;
     margin-bottom: 0.3em;
@@ -138,7 +148,6 @@ nav a.active{border-bottom: 2px solid skyblue;}
     margin-right: 0.5em;
     margin-bottom: 0.3em;
     font-size: 1em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /*Boton para ordenar alfabeticamente*/
@@ -155,7 +164,6 @@ nav a.active{border-bottom: 2px solid skyblue;}
     margin-right: 0.5em;
     margin-bottom: 0.3em;
     font-size: 1em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #botonOrdenar:hover{
@@ -167,23 +175,28 @@ nav a.active{border-bottom: 2px solid skyblue;}
 #toggleVista{
     float: right;
     z-index: 3;
+    margin-right: 10em;
 }
 
 #toggleVista span{
     color: rgb(179, 212, 255);
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #toggleVista button{
-    width: 90px;
+    width: 30px;
     background-color: rgb(0, 14, 27);
     border: 2px solid #116888;
     color: rgb(179, 212, 255);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.7em;
     margin-bottom: 0.3em;
     font-size: 16px;
+}
+
+#toggleVista button:hover{
+    background-color: #199ece;
+    color: white;
+    cursor: pointer;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
@@ -191,8 +204,7 @@ nav a.active{border-bottom: 2px solid skyblue;}
 /*Lista juegos*/
 
 main {
-    text-align: center;
-    margin-top: 20px;
+    /*text-align: center;*/
 }
 
 main ul li.juegoLI {
@@ -205,7 +217,6 @@ main ul li.juegoLI {
     text-align: center;
     /*vertical-align: middle;*/
     background-color: rgb(0, 14, 27);
-    font-family: "Trebuchet MS", Helvetica, sans-serif; 
     font-size: 1em;
     border-radius: 10px;
     border: 3px solid #116888;
@@ -229,38 +240,32 @@ main ul li.juegoLI article.juego p{
 }
 */
 
-.juego{max-width: 100%;}
-
-.imagenLI{height: 80%;}
-
-.textoLI{
-    height: 20%;
-    margin: 0;
-    padding: 150px;
-    font-size: 1.2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 700;
-    padding-top: 0.2em;
-    padding-bottom: 0.5em;
-}
-
 .juegoLI img{
     width: 13em;
     height: 20em;
     margin-top: 0.5em;
-    z-index: 1;
 }
 
 .juegoLI {
     position: relative;
     transition: 0.3s ease;
-    cursor: pointer;
 }
 
 .juegoLI:hover {
     transform: scale(1.2, 1.2); 
     opacity: 1;
     z-index: 20;
+}
+
+.figcaptionJuego{
+    font-size: 22px;
+}
+
+.pJuego{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Share Tech', sans-serif;
 }
 
 /*Lista juegos detallados*/
