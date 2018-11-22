@@ -45,7 +45,7 @@ header{
     top: 0;
     border-top: 2px solid #33ccff; 
     background: rgba(0, 8, 20, 0.900);
-    z-index: 15;
+    z-index: 50;
     /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
 }
 
@@ -108,15 +108,35 @@ nav a.active{border-bottom: 2px solid skyblue;}
 
 .ofertas{
     list-style-type: none;
+    max-width: 100%;
+    max-height: 650px;
+    overflow: hidden;
 }
 
 .ofertas li{
     float: left;
+    overflow: hidden;
+    margin: 5px;
+    box-sizing: border-box;
 }
 
 .ofertas article{
     width: 500px;
     margin-right: 50px;
+}
+
+.ofertas img{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.ofertas h3{
+    text-align: center;
+}
+
+.ofertas p{
+    text-align: center;
 }
 
 .imagenOferta{
