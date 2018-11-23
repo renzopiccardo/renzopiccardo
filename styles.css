@@ -770,6 +770,226 @@ iframe{
     }
 }
 
+@media screen and 
+(max-width: 600px) and
+(min-width: 250px) {
+
+    #slider figure img{
+        width: 20%;
+        height: 180px;
+        float: left;
+    }
+
+    .sidenav{
+        width: 100%;;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .contenedor{
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #toggleVista{
+        display: none;
+    }
+
+    #filtroTexto{
+        width: 400px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: inline-block;
+        float: none;
+        text-align: center;
+    }
+
+    .dropdown{
+        float: left;
+    }
+
+    .botonOrdenar{
+        float: right;
+    }
+
+    /*Listado juegos*/
+    main {
+        text-align: center;
+    }
+
+    main ul li.juegoLI{
+        width: 12em;
+        margin-right: 3px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+
+    .juegoLI img{
+        width: 11em;
+        height: 18em;
+        margin-top: 0.3em;
+        box-sizing: border-box;
+    }
+
+    .juegoLI:hover {
+        transform: scale(1.0, 1.0); 
+    }
+
+    .figcaptionJuego{
+        font-size: 18px;
+    }
+    
+    .pJuego{
+        margin-top: 2px;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    /*Parallax*/
+
+    .bannerParallax{
+        height: 80px;
+        font-size: 26px;
+    }
+
+    .parallax{
+        padding: 10px;
+    }
+
+    .parallax{
+        text-align: center;
+    }
+
+    .ofertas article{
+        width: 200px;
+        margin-right: 10px;
+        
+    }
+    
+    .ofertas img{
+        width: 200px;
+    }
+
+    /*Juego detallado*/
+
+    .contenedorJuego{
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0.3em;
+    }
+
+    .video{
+        box-sizing: border-box;
+        padding: 0.3em;
+        margin-right: 0.2em;
+    }
+
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+
+    .informacion{
+        display: flex;
+        float: left;
+        padding: 0.2em;
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .descripcion{
+        padding: 0.3em;
+        margin-top: 0.2em;
+        column-count: 1;
+    }
+
+    .caracteristicas dl dt{
+        margin: 0.2em;
+        font-size: 16px;
+    }
+
+    .requerimientos{
+        padding: 0.3em;
+        margin-top: 0.2em;
+    }
+    
+    .requerimientos h4{
+        margin: 0.2em;
+    }
+    
+    .reviews{
+        padding: 0.3em;
+        margin-top: 0.2em;
+    }
+    
+    .reviews blockquote{
+        margin-bottom: 0.3em;
+        text-indent: 4px;
+    }
+
+    .content-all{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .content-img{
+        padding-top: 0.5em;
+        width: 100%;  
+    }
+
+    /*Compra*/
+
+    #main-compra h3{
+        margin-left: 1em;
+    }
+
+    #form-compra{
+        padding-top: 1em;
+        margin-left: 1em;
+    }
+
+    #form-compra input{
+        width: 20em;
+        height: 2em;
+        border-radius: 5px;
+    }
+    
+    #form-compra input[type=submit]{
+        width: 6em;
+        height: 3em;
+        border: 3px solid rgb(0, 77, 0);
+    }
+    
+    #form-compra input[type=reset]{
+        width: 6em;
+        height: 3em;
+        border: 3px solid rgb(65, 0, 0);
+    }
+    
+    #form-compra input[type=radio]{
+        width: 1em;
+        margin-bottom: 1em;
+    }
+    
+    #form-compra input[type="number"]{
+        background-color: #000f19;
+        width: 5em;
+    }
+    
+    #form-compra select{
+        background-color: #000f19;
+        color: white;
+    }
+    
+    #form-compra select:after{
+        border-color: aquamarine;
+    }
+    
+
+}
+
 
 
 /*------------------------------------------------------------------------------------------------------------*/
