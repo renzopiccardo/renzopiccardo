@@ -807,7 +807,7 @@ iframe{
     }
 
     #filtroTexto{
-        width: 400px;
+        width: 100%;
         box-sizing: border-box;
         overflow: hidden;
         display: inline-block;
@@ -872,12 +872,12 @@ iframe{
     }
 
     .ofertas article{
-        width: 150px;
+        width: 120px;
         margin-right: 10px;
     }
     
     .ofertas img{
-        width: 150px;
+        width: 120px;
     }
 
     /*Juego detallado*/
