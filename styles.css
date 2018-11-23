@@ -782,7 +782,7 @@ iframe{
 
 @media screen and 
 (max-width: 600px) and
-(min-width: 150px) {
+(min-width: 350px) {
 
     #slider figure img{
         width: 20%;
@@ -829,15 +829,15 @@ iframe{
     }
 
     main ul li.juegoLI{
-        width: 10em;
+        width: 12em;
         margin-right: 2px;
         margin-bottom: 5px;
         box-sizing: border-box;
     }
 
     .juegoLI img{
-        width: 9em;
-        height: 16em;
+        width: 11em;
+        height: 15em;
         margin-top: 0.2em;
         box-sizing: border-box;
     }
@@ -998,6 +998,25 @@ iframe{
     }
     
 
+}
+
+@media screen and 
+(max-width: 349px) and
+(min-width: 150px){
+
+    main ul li.juegoLI{
+        width: 10em;
+        margin-right: 2px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+
+    .juegoLI img{
+        width: 9em;
+        height: 13em;
+        margin-top: 0.2em;
+        box-sizing: border-box;
+    }
 }
 
 
