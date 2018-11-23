@@ -859,8 +859,8 @@ iframe{
     /*Parallax*/
 
     .bannerParallax{
-        height: 80px;
-        font-size: 26px;
+        height: 130px;
+        font-size: 22px;
     }
 
     .parallax{
@@ -872,13 +872,12 @@ iframe{
     }
 
     .ofertas article{
-        width: 200px;
+        width: 150px;
         margin-right: 10px;
-        
     }
     
     .ofertas img{
-        width: 200px;
+        width: 150px;
     }
 
     /*Juego detallado*/
