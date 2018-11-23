@@ -260,16 +260,13 @@ main ul li.juegoLI article.juego{
 }
 
 #uno{
-    background-image: url("img/2.jpg");
+    background-image: url("img/parallax2.jpg");
 }
 
 #tres{
-    background-image: url("img/1.jpeg");
+    background-image: url("img/parallax2.jpg");
 }
 
-#cinco{
-    background-image: url("img/3.jpeg");
-}
 
 .ofertas{
     list-style-type: none;
