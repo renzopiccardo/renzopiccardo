@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    /*Cargar imagen de fondo*/
+    leerJSONLocal('json.json', function (text) {
+        var jsonParsed = JSON.parse(text);
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var juegoDeURL = url.searchParams.get("juego");
+        var indiceJuego = jsonParsed.findIndex(obj => obj.nombre==juegoDeURL);
+        var bodyCompra = document.getElementById("bodyCompra");
+        bodyCompra.style.backgroundImage += "url( "+ jsonParsed[indiceJuego].imagenFondo + ")";
+    });
+    /**/
+
     var cantidadJuegos = document.getElementById("cantidadJuegos")
     var botonFisico = document.getElementById("selectFisico");
     var botonDigital = document.getElementById("selectDigital");

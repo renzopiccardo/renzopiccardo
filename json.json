@@ -12,11 +12,17 @@
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios",
 
         "imagen": "img/skyrim.jpg",
+        "imagenFondo": "img/skyrim/6e.jpg",
         "banner1": "img/skyrim/1.jpg",
         "banner2": "img/skyrim/2.jpg",
         "banner3": "img/skyrim/3.jpg",
         "banner4": "img/skyrim/4.jpg",
         "banner5": "img/skyrim/5.jpg",
+        "bannerx": "img/skyrim/5.jpg",
+        "bannery": "img/skyrim/5.jpg",
+        "banner9": "img/skyrim/9.jpg",
+        "banner11": "img/skyrim/11.jpg",
+        
         
         "OSm": "Windows 7/8.1/10 (64-bit Version)",
         "Processorm": "Intel i5-750/AMD Phenom II X4-945",

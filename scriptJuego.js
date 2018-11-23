@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var tituloHTML = document.getElementById("tituloJuegoHead");
 
+        var bodyJuego = document.getElementById("bodyJuegoDetallado");
+
         var imagenSliderJuego1 = document.getElementById("imagenSliderJuego1");
         var imagenSliderJuego2 = document.getElementById("imagenSliderJuego2");
         var imagenSliderJuego3 = document.getElementById("imagenSliderJuego3");
@@ -43,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var imagenGaleria2 = document.getElementById("imagenGaleria2");
         var imagenGaleria3 = document.getElementById("imagenGaleria3");
 
+        var enlaceBotonCompra = document.getElementById("enlaceBotonCompra");
+
         var jsonParsed = JSON.parse(text);
 
         var url_string = window.location.href;
@@ -52,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var indiceJuego = jsonParsed.findIndex(obj => obj.nombre==juegoDeURL);
 
         tituloHTML.innerHTML += jsonParsed[indiceJuego].nombre;
+        bodyJuego.setAttribute("src", jsonParsed[indiceJuego].video); 
 
         tituloJuegoH1.innerHTML += jsonParsed[indiceJuego].titulo;
         iframeJuego.setAttribute("src", jsonParsed[indiceJuego].video); 
@@ -90,14 +95,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         imagenSliderJuego1.setAttribute("src", jsonParsed[indiceJuego].banner4);
         imagenSliderJuego1.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 1'); 
-        imagenSliderJuego2.setAttribute("src", jsonParsed[indiceJuego].banner2);
+        imagenSliderJuego2.setAttribute("src", jsonParsed[indiceJuego].banner11); /*2*/
         imagenSliderJuego2.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 2'); 
-        imagenSliderJuego3.setAttribute("src", jsonParsed[indiceJuego].banner3);
+        imagenSliderJuego3.setAttribute("src", jsonParsed[indiceJuego].banner9); /*3*/
         imagenSliderJuego3.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 3'); 
         imagenSliderJuego4.setAttribute("src", jsonParsed[indiceJuego].banner4);
         imagenSliderJuego4.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 4'); 
-        imagenSliderJuego5.setAttribute("src", jsonParsed[indiceJuego].banner5);
+        imagenSliderJuego5.setAttribute("src", jsonParsed[indiceJuego].banner11);
         imagenSliderJuego5.setAttribute("alt", 'banner de ' + jsonParsed[indiceJuego].nombre + ' 5'); 
+
+        bodyJuego.style.backgroundImage += "url( "+ jsonParsed[indiceJuego].imagenFondo + ")";
+
+        enlaceBotonCompra.setAttribute("href", 'compra.html?juego=' + jsonParsed[indiceJuego].nombre);
 
     });
 

@@ -576,6 +576,16 @@ textarea{
 
 /*Articulo juego*/
 
+#bodyJuegoDetallado{
+    background: #000000 no-repeat left;
+    background-size: cover;
+}
+
+#bodyCompra{
+    background: #000000 no-repeat left;
+    background-size: cover;
+}
+
 .contenedorJuego{
     padding: 1em;
     max-width: 1200px;
