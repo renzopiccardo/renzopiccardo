@@ -41,67 +41,80 @@
     },
     {
         "nombre": "Battlefield 1",
-        "imagen": "img/juegos/bf1.jpg",
+        "imagen": "../img/juegos/bf1.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Call of Duty",
         "imagen": "img/juegos/call.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Cities Skylines",
         "imagen": "img/juegos/cities.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Destiny",
         "imagen": "img/juegos/destiny.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "FIFA 18",
         "imagen": "img/juegos/fifa.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "GTA V",
         "imagen": "img/juegos/gta.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "No Man's Sky",
         "imagen": "img/juegos/nms.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Rainbow Six Siege",
         "imagen": "img/juegos/rainbow.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Red Dead Redemption",
         "imagen": "img/juegos/rdr.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Rocket League",
         "imagen": "img/juegos/rocket.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Sims 4",
         "imagen": "img/juegos/sims.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Watch Dogs",
         "imagen": "img/juegos/watch.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },
     {
         "nombre": "Zelda",
         "imagen": "img/juegos/zelda.jpg",
+        "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     }
 

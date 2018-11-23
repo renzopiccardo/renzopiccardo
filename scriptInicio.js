@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var ul = document.getElementById("ulJuegos");
 
         for (var i = 0; i < jsonParsed.length; i++) {
-            ul.innerHTML += '<li class="juegoLI"><a href="juegoDetallado.html?juego=' + jsonParsed[i].nombre + '"><article class="juego"><figure class="imagenLI"><img src="' + jsonParsed[i].imagen + '" alt="' + "portada de " + jsonParsed[i].nombre + '"></img><figcaption class="figcaptionJuego"> ' + jsonParsed[i].nombre + '</figcaption></figure><p class="pJuego">' + jsonParsed[i].descripcionCorta + "</p></article></a></li>";
+            ul.innerHTML += '<li class="juegoLI"><a href="juegoDetallado.html?juego=' + jsonParsed[i].nombre + '"><article class="juego"><figure class="imagenLI"><img src="' + jsonParsed[i].imagen + '" alt="' + "portada de " + jsonParsed[i].nombre + '"><figcaption class="figcaptionJuego"> ' + jsonParsed[i].nombre + '</figcaption></figure><p class="pJuego">' + jsonParsed[i].descripcionCorta + '</p><div class="tag">'+ 'U$D ' + jsonParsed[i].precio +'</div></article></a></li>';
         }
 
     });

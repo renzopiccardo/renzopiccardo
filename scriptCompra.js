@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var botonFisico = document.getElementById("selectFisico");
     var botonDigital = document.getElementById("selectDigital");
     var metodoEnvio = document.getElementById("metodoEnvio");
+    var desgloseCantidad = document.getElementById("desgloseCantidad");
+    var desgloseMetodo = document.getElementById("desgloseMetodo");
+    var desgloseImpuestos = document.getElementById("desgloseImpuestos");
 
     CalcularSubtotal();
 
@@ -53,10 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
             var cantidadJuegos = document.getElementById("cantidadJuegos");
             var botonFisico = document.getElementById("selectFisico");
             var subtotalAMostrar = document.getElementById("subtotal");
+            var desgloseBase = document.getElementById("desgloseBase");
+            var desgloseCantidad = document.getElementById("desgloseCantidad");
+            var metodoE = document.getElementById("metodoE");
+            var desgloseMetodo = document.getElementById("desgloseMetodo");
+            var desgloseImpuestos = document.getElementById("desgloseImpuestos");
 
-            var subtotal = precioJuego;
-            var cantidadJuegos = cantidadJuegos.value
-            subtotal = subtotal * cantidadJuegos;
+            var cantidadJuegos = cantidadJuegos.value;
+            var PrecioXCantidad = precioJuego * cantidadJuegos;
+            var subtotal = PrecioXCantidad;
+
 
             if (botonFisico.checked) {
 
@@ -64,23 +73,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 var valorSeleccionado = metodoEnvio.options[metodoEnvio.selectedIndex].text;
 
                 if (valorSeleccionado === "Común") {
-                    subtotal = subtotal * 1.005;
+                    subtotal = PrecioXCantidad * 1.005;
                 }
                 else if (valorSeleccionado === "Especial") {
-                    subtotal = subtotal * 1.02;
+                    subtotal = PrecioXCantidad * 1.02;
                 }
                 else if (valorSeleccionado === "Premium") {
-                    subtotal = subtotal * 1.05;
+                    subtotal = PrecioXCantidad * 1.05;
                 }
                 else {
-                    subtotal = subtotal * 1.005;
+                    subtotal = PrecioXCantidad * 1.005;
                 }
             }
 
             var impuesto = 1.22;
-            subtotal = subtotal * impuesto;
+            var total = subtotal * impuesto;
 
-            subtotalAMostrar.innerText = "Subtotal: U$D " + subtotal.toFixed(2);
+            desgloseBase.innerHTML = "U$D " + precioJuego;
+            desgloseCantidad.innerHTML = cantidadJuegos;
+
+            metodoE.style.display = "none";
+
+            if(botonFisico.checked){
+                metodoE.style.display = "block";
+                desgloseMetodo.innerHTML = ("U$D " + (subtotal-PrecioXCantidad).toFixed(2));
+            }
+            
+            desgloseImpuestos.innerHTML = "U$D " + (total-subtotal).toFixed(2);
+            subtotalAMostrar.innerText = "Total: U$D " + total.toFixed(2);
 
         });
 

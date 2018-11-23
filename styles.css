@@ -902,6 +902,15 @@ footer{
         margin-right: 2px;
         margin-bottom: 5px;
         box-sizing: border-box;
+
+    }
+
+    .juegoLI article{
+        position: relative;
+    }
+
+    .intentoTag{
+        position: relative;
     }
 
     .juegoLI img{
@@ -913,6 +922,11 @@ footer{
 
     .juegoLI:hover {
         transform: scale(1.0, 1.0); 
+    }
+
+    .tag{
+        position: absolute;
+        bottom: 0;
     }
 
     .figcaptionJuego{
