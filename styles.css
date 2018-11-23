@@ -829,16 +829,16 @@ iframe{
     }
 
     main ul li.juegoLI{
-        width: 12em;
-        margin-right: 3px;
+        width: 10em;
+        margin-right: 2px;
         margin-bottom: 5px;
         box-sizing: border-box;
     }
 
     .juegoLI img{
-        width: 11em;
-        height: 18em;
-        margin-top: 0.3em;
+        width: 9em;
+        height: 16em;
+        margin-top: 0.2em;
         box-sizing: border-box;
     }
 
