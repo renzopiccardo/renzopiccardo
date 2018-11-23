@@ -1,6 +1,3 @@
-localStorage.clear();
-//eliminar
-
 document.addEventListener("DOMContentLoaded", function () {
 
     leerJSONLocal('json.json', function (text) {

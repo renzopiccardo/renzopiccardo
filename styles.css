@@ -90,7 +90,7 @@ nav a.active{border-bottom: 2px solid skyblue;}
 }
 
 .parallax{
-    height: 620px;
+    /*height: 620px;*/
     padding: 50px;
 }
 
@@ -109,8 +109,8 @@ nav a.active{border-bottom: 2px solid skyblue;}
 .ofertas{
     list-style-type: none;
     max-width: 100%;
-    max-height: 650px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .ofertas li{
@@ -121,12 +121,12 @@ nav a.active{border-bottom: 2px solid skyblue;}
 }
 
 .ofertas article{
-    width: 500px;
+    width: 400px;
     margin-right: 50px;
 }
 
 .ofertas img{
-    width: 300px;
+    width: 400px;
     display: block;
     margin: 0 auto;
 }
@@ -894,6 +894,17 @@ iframe{
         padding-top: 1.5em;
     }
 
+    /*Ofertas*/
+
+    .ofertas article{
+        width: 180px;
+        margin-right: 20px;
+    }
+    
+    .ofertas img{
+        width: 180px;
+    }
+
     /*Juego*/
 
     .contenedorJuego{
@@ -1016,6 +1027,14 @@ iframe{
     iframe{
         width: 360px;
         height: 210px;
+    }
+}
+
+@media screen and 
+(max-width: 1480px) and
+(min-width: 150px){
+    #article3{
+        display: none;
     }
 }
 
