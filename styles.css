@@ -422,6 +422,10 @@ textarea{
     background-color: #000f19;
 }
 
+#medioPagoCompra{
+    width: 110px;
+}
+
 #form-compra input[type=submit]{
     width: 6em;
     height: 3em;
@@ -457,6 +461,7 @@ textarea{
 
 #metodoEnvio{
     margin-bottom: 1.5em;
+    width: 110px;
 }
 
 #subtotal{
