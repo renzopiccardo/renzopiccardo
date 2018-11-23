@@ -1,0 +1,97 @@
+@media screen and 
+(max-width: 600px) and
+(min-width: 350px) {
+
+    .sidenav{
+        width: 100%;;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .contenedor{
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #toggleVista{
+        display: none;
+    }
+
+    #filtroTexto{
+        width: 400px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: inline-block;
+        float: none;
+        text-align: center;
+    }
+
+    .dropdown{
+        float: left;
+    }
+
+    .botonOrdenar{
+        float: right;
+    }
+
+    /*Listado juegos*/
+    main {
+        text-align: center;
+    }
+
+    main ul li.juegoLI{
+        width: 12em;
+        margin-right: 3px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+
+    .juegoLI img{
+        width: 11em;
+        height: 18em;
+        margin-top: 0.3em;
+        box-sizing: border-box;
+    }
+
+    .juegoLI:hover {
+        transform: scale(1.0, 1.0); 
+    }
+
+    .figcaptionJuego{
+        font-size: 18px;
+    }
+    
+    .pJuego{
+        margin-top: 2px;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    /**/
+
+    .bannerParallax{
+        height: 80px;
+        font-size: 26px;
+    }
+
+    .parallax{
+        padding: 10px;
+    }
+
+    /**/
+
+    .parallax{
+        text-align: center;
+    }
+
+    .ofertas article{
+        width: 200px;
+        margin-right: 10px;
+        
+    }
+    
+    .ofertas img{
+        width: 200px;
+    }
+}

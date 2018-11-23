@@ -1,9 +1,21 @@
 *{margin: 0;padding: 0;border: 0;}
 
 body{
+    /*
+    background-color: rgb(20, 20, 20);
+    background: linear-gradient(to bottom right, black, rgb(0, 14, 26), black);
+    background: linear-gradient(to bottom, black, rgb(0, 35, 59));
+    background-color: #1d1d21;
+    */
     background-image: radial-gradient(black, rgb(0, 35, 59));
     margin: 0 auto;
+    height: 100%;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    
+    
     font-family: 'Exo 2', sans-serif;
+
+
     color: white;
 }
 
@@ -34,6 +46,12 @@ header{
     border-top: 2px solid #33ccff; 
     background: rgba(0, 8, 20, 0.900);
     z-index: 50;
+    /*box-shadow: 0 10px 20px rgba(0, 56, 109, 0.95);*/
+}
+
+nav{
+    /*margin-left: 2.5em;
+    margin-right: 1em;*/
 }
 
 nav a{
@@ -56,6 +74,77 @@ nav a.active{border-bottom: 2px solid skyblue;}
     width: 1.5em;
     height: 1em;
 }
+
+/**/
+
+.bannerParallax{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 46px;
+}
+
+.parallax{
+    /*height: 620px;*/
+    padding: 50px;
+}
+
+#uno{
+    background-image: url("img/2.jpg");
+}
+
+#tres{
+    background-image: url("img/1.jpeg");
+}
+
+#cinco{
+    background-image: url("img/3.jpeg");
+}
+
+.ofertas{
+    list-style-type: none;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.ofertas li{
+    float: left;
+    overflow: hidden;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.ofertas article{
+    width: 400px;
+    margin-right: 50px;
+}
+
+.ofertas img{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.ofertas h3{
+    text-align: center;
+}
+
+.ofertas p{
+    text-align: center;
+}
+
+.imagenOferta{
+    width: 500px;
+}
+
+
+
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
@@ -187,16 +276,17 @@ nav a.active{border-bottom: 2px solid skyblue;}
 
 main {
     /*text-align: center;*/
-    padding-bottom: 15px;
 }
 
-main ul li.juegoLI{
+main ul li.juegoLI {
+    /*14 40em*/
     width: 14em;
     height: auto;
     margin-right: 10px;
     margin-bottom: 10px;
     display: inline-block;
     text-align: center;
+    /*vertical-align: middle;*/
     background-color: rgb(0, 14, 27);
     font-size: 1em;
     border-radius: 10px;
@@ -211,6 +301,15 @@ main ul li.juegoLI a{
 main ul li.juegoLI article.juego{
 
 }
+/*
+main ul li.juegoLI article.juego figure.imagenLI figcaption.figcaptionJuego{
+    float: right;
+}
+
+main ul li.juegoLI article.juego p{
+    float: right;
+}
+*/
 
 .juegoLI img{
     width: 13em;
@@ -240,74 +339,6 @@ main ul li.juegoLI article.juego{
     font-family: 'Share Tech', sans-serif;
 }
 
-/**/
-
-.bannerParallax{
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #000000;
-    background-size: cover;
-    height: 200px;
-    width: 100%;
-    text-align: center;
-    font-size: 46px;
-}
-
-.parallax{
-    /*height: 620px;*/
-    padding: 50px;
-}
-
-#uno{
-    background-image: url("img/2.jpg");
-}
-
-#tres{
-    background-image: url("img/1.jpeg");
-}
-
-#cinco{
-    background-image: url("img/3.jpeg");
-}
-
-.ofertas{
-    list-style-type: none;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.ofertas li{
-    display: inline-block;
-    overflow: hidden;
-    margin: 5px;
-    box-sizing: border-box;
-}
-
-.ofertas article{
-    width: 400px;
-    margin-right: 50px;
-}
-
-.ofertas img{
-    width: 400px;
-    display: block;
-    margin: 0 auto;
-}
-
-.ofertas h3{
-    text-align: center;
-}
-
-.ofertas p{
-    text-align: center;
-}
-
-.imagenOferta{
-    width: 500px;
-}
-
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/  
 
 /*Registro/Comentarios*/
@@ -330,6 +361,8 @@ textarea{
 .registro input, textarea{
     border-radius: 5px;
     border-color: #6c6b68;
+    /*border-inline-start-color: black;
+    border-inline-end-color: black;*/
     border-style: solid;
     color: #c3b49e;
     background-color: #000f19;
@@ -366,6 +399,8 @@ textarea{
 .comentarios input, textarea{
     border-radius: 5px;
     border-color: #6c6b68;
+    /*border-inline-start-color: black;
+    border-inline-end-color: black;*/
     border-style: solid;
     color: #c3b49e;
     background-color: #000f19;
@@ -393,6 +428,14 @@ textarea{
     border: 3px solid rgb(65, 0, 0);
 }
 
+/*
+.comentarios label{
+    display:inline-block;
+    padding-top: 0px;
+    font-size: 1em;
+}
+*/
+
 .comentarios textarea{
     padding-top: 4px;
     width: 22em;
@@ -417,6 +460,8 @@ textarea{
     height: 2em;
     border-radius: 5px;
     border-color: #6c6b68;
+    /*border-inline-start-color: black;
+    border-inline-end-color: black;*/
     border-style: solid;
     color: #c3b49e;
     background-color: #000f19;
@@ -579,7 +624,6 @@ textarea{
     font-family: 'Exo 2', sans-serif;
     align-content: center;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .tituloJuego{
@@ -765,6 +809,442 @@ iframe{
     }
 }
 
+@media screen and 
+(max-width: 600px) and
+(min-width: 350px) {
 
+    .contenedor{
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .portada:hover {
+        transform: scale(1, 1); 
+        opacity: 1;
+    }
+
+    .barraOpcionesTop{
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+    }
+    
+    .barraOpcionesBottom{
+        width: 100%;
+        display: inline-block;
+    }
+
+    ul.catalogo{padding-left: 0.5em;}
+
+    ul.catalogo li{
+        width: 47%;
+        height: auto;
+        margin-top: 0em;
+        margin-left: 0em;
+        margin-bottom: 0.3em;
+        vertical-align: top;
+    }
+
+    .catalogo img{
+        width: 95%;
+        max-width: 200px;
+        height: auto;
+        min-height: 240px;
+        margin-top: 0.3em;
+        z-index: 1;
+        overflow: auto;
+    }
+
+    .barraOpciones{
+        display: inline-block;
+        margin: 0 auto;
+        padding-top: 3em;
+        margin-left: 0.7em;
+    }
+
+    nav{margin-left: 0.5em;}
+
+    .textoLI{
+        font-size: 1.2em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+
+    .filtroTexto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filtroTexto input{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .botonOrdenar{
+        display: inline-block;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .dropdown{
+        display: inline-flex;
+        float: right;
+    }
+
+    #slider{display: none;}
+
+    .encabezado h1{
+        margin-left: 1.75em;
+        padding-top: 1.5em;
+    }
+
+    /*Ofertas*/
+
+    .ofertas article{
+        width: 150px;
+        margin-right: 5px;
+    }
+    
+    .ofertas img{
+        width: 150px;
+    }
+
+    /*Juego*/
+
+    .contenedorJuego{
+        padding: 1em;
+        max-width: fit-content;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        margin: 0 auto;
+    }
+    
+    .tituloJuego{
+        width: 100%;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-left: 0.5em;
+    }
+    
+    .video{
+        padding: 1em;
+        max-width: 560px;
+        overflow: hidden;
+        clear: none;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-right: 0.5em;
+    }
+    
+    .informacion{
+        padding-right: 0.5em;
+        max-width: 360px;
+        border: 2px solid #116888;
+        border-radius: 10px;
+    }
+    
+    .imagenJuegoPortada{
+        display: block;
+        max-width: 320px;
+        border: 2px solid #116888;
+        border-radius: 10px;
+    }
+    
+    .imagenJuegoPortada img{
+        width: 100%;
+        max-width: 220px;
+        border-radius: 10px;
+    }
+    
+    .caracteristicas{
+        display: block;
+        width: 100%;
+        margin-left: 0.2em;
+        padding-left: 0.2em;
+        border: 2px solid #116888;
+        border-radius: 10px;
+    }
+    
+    .descripcion{
+        padding: 0.5em;
+        max-width: 100%;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-top: 0.5em;
+        column-count: 1;
+    }
+    
+    .caracteristicas dl dt{
+        display: inline-block;
+        margin: 0.5em;
+        color: #c7f1ff;
+        font-weight: 600;
+    }
+    
+    .caracteristicas dl dd{
+        display: inline-block;
+    }
+    
+    .requerimientos{
+        padding: 1em;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-top: 0.5em;
+    }
+    
+    .requerimientos h4{
+        margin: 0.4em;
+        color: rgb(16, 96, 150);
+    }
+    
+    .requerimientos dt{
+        color: #8fe1ff;
+        font-weight: 600;
+        padding: 0.2em;
+    }
+    
+    .requerimientos dd{
+        
+    }
+    
+    .reviews{
+        padding: 1em;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-top: 0.5em;
+    }
+    
+    .reviews blockquote{
+        margin-bottom: 1em;
+        text-indent: 5px;
+    }
+    
+    .content-all{
+        display: none;
+    }
+    .content-img{
+        padding-top: 0.5em;
+    }
+
+    iframe{
+        width: 360px;
+        height: 210px;
+    }
+}
+
+
+
+@media screen and 
+(max-width: 349px) and
+(min-width: 150px){
+
+    .contenedor{
+        margin: 0 auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .portada:hover {
+        transform: scale(1, 1); 
+        opacity: 1;
+    }
+
+    ul.catalogo{padding-left: 0.2em;}
+
+    ul.catalogo li{
+        width: 47.3%;
+        height: 19em;
+        margin-top: 0em;
+        margin-left: 0em;
+        margin-bottom: 0.3em;
+        vertical-align: top;
+    }
+
+    .catalogo img{
+        width: 95%;
+        max-width: 200px;
+        height: auto;
+        min-height: 240px;
+        margin-top: 10px;
+        z-index: 1;
+        overflow: auto;
+    }
+
+    .barraOpcionesTop{
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+    }
+    
+    .barraOpcionesBottom{
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .barraOpciones{
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 3em;
+        margin-left: 0.5em;
+    }
+
+    nav{margin-left: 0.5em;}
+
+    .textoLI{
+        font-size: 1.2em;
+        padding-top: 0.2em;
+    }
+
+    .filtroTexto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #slider{display: none;}
+
+    .encabezado h1{
+        margin-left: 1.75em;
+        padding-top: 1.5em;
+    }
+
+    /*Juego*/
+
+    .contenedorJuego{
+        padding: 1em;
+        max-width: fit-content;
+        width: 100%;
+        height: 100%;
+        font-family: 'Muli', sans-serif;
+        align-content: center;
+        margin: 0 auto;
+    }
+    
+    .tituloJuego{
+        width: 100%;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-left: 0.5em;
+    }
+    
+    .video{
+        padding: 1em;
+        max-width: 560px;
+        overflow: hidden;
+        clear: none;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-right: 0.5em;
+    }
+    
+    .informacion{
+        padding-right: 0.5em;
+        max-width: 360px;
+        border: 2px solid #116888;
+        border-radius: 10px;
+    }
+    
+    .imagenJuegoPortada{
+        display: block;
+        max-width: 320px;
+        border: 2px solid #116888;
+        border-radius: 10px;
+    }
+    
+    .imagenJuegoPortada img{
+        width: 100%;
+        max-width: 220px;
+        border-radius: 10px;
+    }
+    
+    .caracteristicas{
+        display: block;
+        width: 100%;
+        margin-left: 0.2em;
+        padding-left: 0.2em;
+        border: 2px solid #116888;
+        border-radius: 10px;
+    }
+    
+    .descripcion{
+        padding: 0.5em;
+        max-width: 100%;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-top: 0.5em;
+        column-count: 1;
+    }
+
+    .descripcion dl dd p{
+        column-count: 2;
+        column-width: 200px;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        -webkit-column-width: 200px;
+    }
+    
+    .caracteristicas dl dt{
+        display: inline-block;
+        margin: 0.5em;
+        color: #c7f1ff;
+        font-weight: 600;
+    }
+    
+    .caracteristicas dl dd{
+        display: inline-block;
+    }
+    
+    .requerimientos{
+        padding: 1em;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-top: 0.5em;
+    }
+    
+    .requerimientos h4{
+        margin: 0.4em;
+        color: rgb(16, 96, 150);
+    }
+    
+    .requerimientos dt{
+        color: #8fe1ff;
+        font-weight: 600;
+        padding: 0.2em;
+    }
+    
+    .requerimientos dd{
+        
+    }
+    
+    .reviews{
+        padding: 1em;
+        border: 2px solid #116888;
+        border-radius: 10px;
+        margin-top: 0.5em;
+    }
+    
+    .reviews blockquote{
+        margin-bottom: 1em;
+        text-indent: 5px;
+    }
+    
+    .content-all{
+        display: none;
+    }
+    .content-img{
+        padding-top: 0.5em;
+    }
+
+    iframe{
+        width: 320px;
+        height: 180px;
+    }
+}
 
 /*------------------------------------------------------------------------------------------------------------*/
