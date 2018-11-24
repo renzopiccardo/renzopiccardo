@@ -16,9 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
     var botonFisico = document.getElementById("selectFisico");
     var botonDigital = document.getElementById("selectDigital");
     var metodoEnvio = document.getElementById("metodoEnvio");
+
+    var nombreComprador = document.getElementById("nombreComprador");
+    var apellidoComprador = document.getElementById("apellidoComprador");
+    var emailComprador = document.getElementById("emailComprador");
+
     var desgloseCantidad = document.getElementById("desgloseCantidad");
     var desgloseMetodo = document.getElementById("desgloseMetodo");
     var desgloseImpuestos = document.getElementById("desgloseImpuestos");
+    var realizarCompra = document.getElementById("realizarCompra");
+
+    realizarCompra.addEventListener("click", function(){
+        if(nombreComprador.innerHTML != "" && apellidoComprador.innerHTML != "" && emailComprador.innerHTML != ""){
+            alert("Compra efectuada correctamente");
+        }
+    });
 
     CalcularSubtotal();
 
