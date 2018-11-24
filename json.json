@@ -41,7 +41,7 @@
     },
     {
         "nombre": "Battlefield 1",
-        "imagen": "../img/juegos/bf1.jpg",
+        "imagen": "img/juegos/bf1.jpg",
         "precio": 25,
         "descripcionCorta": "The Elder Scrolls V : Skyrim es un videojuego de rol de acción del tipo mundo abierto desarrollado por Bethesda Game Studios"
     },

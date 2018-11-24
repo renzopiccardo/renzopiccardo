@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var bodyCompra = document.getElementById("bodyCompra");
         bodyCompra.style.backgroundImage += "url( "+ jsonParsed[indiceJuego].imagenFondo + ")";
     });
-    /**/
+    
 
     var cantidadJuegos = document.getElementById("cantidadJuegos")
     var botonFisico = document.getElementById("selectFisico");
@@ -22,13 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     CalcularSubtotal();
 
+    /*Listeners a todos los elementos que puedan modificar el precio*/
+
     cantidadJuegos.addEventListener("click", function () {
         CalcularSubtotal();
     })
 
     botonFisico.addEventListener("change", function () {
 
-        if (botonFisico.checked) {
+        if (botonFisico.checked) 
+        {
             divDireccionMetodo.style.display = 'block';
         }
         CalcularSubtotal();
@@ -36,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     botonDigital.addEventListener("change", function () {
 
-        if (botonDigital.checked) {
+        if (botonDigital.checked) 
+        {
             divDireccionMetodo.style.display = 'none';
         }
         CalcularSubtotal();
@@ -46,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
         CalcularSubtotal();
     })
 
-    function CalcularSubtotal() {
-
+    function CalcularSubtotal() 
+    {
         leerJSONLocal('json.json', function (text) {
             var jsonParsed = JSON.parse(text);
 
@@ -88,6 +92,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             var impuesto = 1.22;
             var total = subtotal * impuesto;
+
+
+            /*Desglose de precios*/
 
             desgloseBase.innerHTML = "U$D " + precioJuego;
             desgloseCantidad.innerHTML = cantidadJuegos;

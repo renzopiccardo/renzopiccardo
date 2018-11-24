@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     leerJSONLocal('json.json', function (text) {
 
-        localStorage.clear();
-
         var tituloHTML = document.getElementById("tituloJuegoHead");
 
         var bodyJuego = document.getElementById("bodyJuegoDetallado");
@@ -47,14 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var enlaceBotonCompra = document.getElementById("enlaceBotonCompra");
 
+        /*Obtengo JSON*/
         var jsonParsed = JSON.parse(text);
 
+        /*Obtengo parametros de url, en este caso el juego*/
         var url_string = window.location.href;
         var url = new URL(url_string);
         var juegoDeURL = url.searchParams.get("juego");
 
+        /*Teniendo el nombre del juego, busco el indice en el array de juegos donde el objeto tenga nombre = juego de la url*/
         var indiceJuego = jsonParsed.findIndex(obj => obj.nombre==juegoDeURL);
 
+        /*En el HTML tengo varios atributos cuyo contenido depende de cada juego, relleno los elementos con sus propiedades correspondientes al juego*/
         tituloHTML.innerHTML += jsonParsed[indiceJuego].nombre;
         bodyJuego.setAttribute("src", jsonParsed[indiceJuego].video); 
 
@@ -106,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         bodyJuego.style.backgroundImage += "url( "+ jsonParsed[indiceJuego].imagenFondo + ")";
 
+        /*Enviar enlace custom a la pagina de compra para saber que juego se va a comprar*/
         enlaceBotonCompra.setAttribute("href", 'compra.html?juego=' + jsonParsed[indiceJuego].nombre);
 
     });

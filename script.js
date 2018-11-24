@@ -1,3 +1,9 @@
+/*
+
+Funcion que llama una sola vez al json local y lo guarda en el localStorage del navegador
+
+*/
+
 function leerJSONLocal(file, callback) 
 {
   if (localStorage.getItem("juegos") == undefined) 
@@ -21,7 +27,8 @@ function leerJSONLocal(file, callback)
   }
 }
 
-function abrirMenu() {
+function abrirMenu() 
+{
   var x = document.getElementById("miNavbar");
   if (x.className === "navbar") 
   {

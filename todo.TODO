@@ -21,7 +21,7 @@ TODOS:
         ✔ Textarea resize none @done(18-11-01 23:54)
         ☐ Problemas de seguridad de chrome
         ☐ https://stackoverflow.com/questions/32500073/request-header-field-access-control-allow-headers-is-not-allowed-by-itself-in-pr
-        ☐ Desglose precios
+        ✔ Desglose precios @done(18-11-23 20:22)
         ✔ Mejor boton no rojo @done(18-11-23 19:41)
 
     Medium:
