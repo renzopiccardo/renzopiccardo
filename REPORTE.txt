@@ -33,7 +33,3 @@ Como funcionan los scripts desde que se carga el index hasta que se le da a comp
 -Tambien envia un enlace custom a la pagina de compra para saber que juego se va a comprar compra.html?juego="nombre_juego"
 -En compra se obtiene el juego y su precio y dependiendo de la cantidad, digital/fisico y el metodo de envio se calcula su precio+impuestos.
 -Los datos se envian por POST y quedan a disposicion de ser usados.
-
-
-
-
