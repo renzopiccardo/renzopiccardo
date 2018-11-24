@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
         imagenJuegoPortadaImg.setAttribute("alt", 'portada de ' + jsonParsed[indiceJuego].nombre); 
 
         generoJuego.innerHTML += jsonParsed[indiceJuego].genero;
-        valoracionJuego.innerHTML += jsonParsed[indiceJuego].valoracion;
-        precioJuego.innerHTML += jsonParsed[indiceJuego].precio;
+        valoracionJuego.innerHTML += jsonParsed[indiceJuego].valoracion + "/10";
+        precioJuego.innerHTML += "U$D " + jsonParsed[indiceJuego].precio;
         desarrolladorJuego.innerHTML += jsonParsed[indiceJuego].desarrollador;
         fechaLanzamientoJuego.innerHTML += jsonParsed[indiceJuego].fechaDeLanzamiento;
         descripcionJuego.innerHTML += jsonParsed[indiceJuego].descripcion;

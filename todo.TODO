@@ -33,7 +33,7 @@ TODOS:
         ☐ Icono cargando cuando tocas comprar
         ☐ Mejores imagenes
         ☐ Arreglar keyframes
-        ☐ Tags precio
+        ✔ Tags precio @done(18-11-23 21:36)
         ☐ css minified
 
     Avanzado:
@@ -42,7 +42,7 @@ TODOS:
         ☐ Filtrar por tags
 
     Media query:
-        ☐ En comentarios/registro padding-left menor
+        ✔ En comentarios/registro padding-left menor @done(18-11-23 21:48)
         ✔ Video muy ancho @done(18-11-23 18:54)
         ✔ Mejorar ofertas @done(18-11-23 18:54)
         ✔ Compra no se ven los campos, otro fondo y mas grandes @done(18-11-23 18:54)
