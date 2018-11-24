@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var realizarCompra = document.getElementById("realizarCompra");
 
     realizarCompra.addEventListener("click", function(){
-        if(nombreComprador.innerHTML != "" && apellidoComprador.innerHTML != "" && emailComprador.innerHTML != ""){
+        if(nombreComprador.value != "" && apellidoComprador.value != "" && emailComprador.value != "")
+        {
             alert("Compra efectuada correctamente");
         }
     });
