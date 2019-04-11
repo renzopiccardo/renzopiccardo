@@ -1,0 +1,35 @@
+body{
+	/*
+	background-image: radial-gradient(rgb(255, 255, 255), rgb(255, 212, 188));
+	font-family: 'Poppins', sans-serif;
+	*/
+	background-color: rgb(255, 253, 66);
+	font-family: 'Indie Flower', cursive;
+}
+
+#mainn{
+
+
+}
+
+#mainn3{
+	background-color: rgb(255, 123, 0);
+	float: left;
+}
+
+#mainn3 h1{
+	float: left;
+	
+}
+
+#my-canvas{
+	
+	position: relative;
+}
+
+#h11{
+	position: absolute;
+
+	text-align: center;
+	padding-top: 200px;
+}
