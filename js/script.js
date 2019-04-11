@@ -2,7 +2,7 @@ function cargar2(){
     $("#mainn").addClass('d-none');
     $("#mainn").removeClass('d-block');
     $("#mainn2").removeClass('d-none');
-    setTimeout(fc, 4000);
+    setTimeout(fc, 3000);
 }
 
 function fc(){
