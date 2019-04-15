@@ -1,0 +1,48 @@
+escribir to do y :
+new: ctrl+enter
+done: alt+d
+cancelled: alt+c
+started: alt+s
+tags @
+
+TODOS:
+    Priority:
+        ✔ https://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters @done(18-11-15 18:26)
+        ✔ Al hacer click en un juego enviar parametros => vista detallada de juego vacia => scriptjuego.js => obtener parametros url, json lookup => rellenar layout juego vacia @done(18-11-15 18:26)
+        ✔ Diseñar template juego en main index @done(18-11-08 23:26)
+        ✔ Mejorar CSS Main Index @done(18-11-20 23:25)
+        ✔ Comentarios en scriptInicio @done(18-11-08 23:27)
+        ✔ Mejorar vista compacta y ampliada @done(18-11-23 18:54)
+        ✔ Agregar nombre, foto y descripcion al JSON @done(18-11-08 23:26)
+        ☐ Mejorar divs
+        ☐ Mejorar id y class
+        ✔ Arreglar banner @done(18-11-08 23:27)
+        ✔ Arreglar Menu Hamburguesa @done(18-11-09 22:05)
+        ✔ Textarea resize none @done(18-11-01 23:54)
+        ☐ Problemas de seguridad de chrome
+        ☐ https://stackoverflow.com/questions/32500073/request-header-field-access-control-allow-headers-is-not-allowed-by-itself-in-pr
+        ✔ Desglose precios @done(18-11-23 20:22)
+        ✔ Mejor boton no rojo @done(18-11-23 19:41)
+
+    Medium:
+        ✔ Arreglar media query @done(18-11-23 00:30)
+        ✔ Arreglar busqueda @done(18-11-08 23:26)
+        ✔ Arreglar filtro @done(18-11-20 23:25)
+        ✔ Footer @done(18-11-23 18:54)
+        ✔ Carpetas js y css @done(18-11-23 22:56)
+        ☐ Icono cargando cuando tocas comprar
+        ☐ Mejores imagenes
+        ☐ Arreglar keyframes
+        ✔ Tags precio @done(18-11-23 21:36)
+        ✔ css minified @done(18-11-23 22:56)
+
+    Avanzado:
+        ☐ Scrapper para datos juego de wikipedia
+        ☐ Resize las imagenes
+        ☐ Filtrar por tags
+
+    Media query:
+        ✔ En comentarios/registro padding-left menor @done(18-11-23 21:48)
+        ✔ Video muy ancho @done(18-11-23 18:54)
+        ✔ Mejorar ofertas @done(18-11-23 18:54)
+        ✔ Compra no se ven los campos, otro fondo y mas grandes @done(18-11-23 18:54)

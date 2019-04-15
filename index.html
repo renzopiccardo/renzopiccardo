@@ -3,61 +3,178 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <!--Icono para menu responsive a la derecha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Share+Tech" rel="stylesheet">
+
+    <script src="js/script.js"></script>
+    <script src="js/scriptInicio.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>fc</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/confetti.js"></script>
-    <script src="js/script.js"></script>
-
-
+    <title>Renzo's marketplace</title>
+    <meta name="description" content="Tienda online de videojuegos">
 </head>
 
-<body>
+<body id="index">
 
-    <div class="container-fluid">
-
-        <div id="mainn" class="row justify-content-center d-block" onclick="cargar2();">
-            <div class="col">
-                <img src="img/gift.png" alt="g">
-            </div>
+    <header>
+        <div class="navbar" id="miNavbar">
+            <nav class="contenedor">
+                <a href="index.html">
+                    <img id="icon" src="img/icon.png">
+                </a>
+                <a class="active" href="index.html">Juegos</a>
+                <a href="registro.html">Registrarse</a>
+                <a href="comentarios.html">Comentarios</a>
+                <a href="javascript:void(0);" class="icono" onclick="abrirMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
         </div>
+    </header>
 
-        <div id="mainn2" class="row justify-content-center d-none">
-            <div class="col">
-                <img src="img/gif.gif" alt="g">
+    <br>
+
+    <div id="slider">
+        <figure>
+            <img src="img/banner/6.jpg" alt="banner1">
+            <img src="img/banner/4.jpg" alt="banner1">
+            <img src="img/banner/9a.jpg" alt="banner2">
+            <img src="img/banner/7.jpg" alt="banner3">
+            <img src="img/banner/6.jpg" alt="banner4">
+        </figure>
+    </div>
+
+    <div class="sidenav contenedor">
+
+        <div class="topSidenav">
+
+            <div class="botonOrdenar">
+                <button id="botonOrdenar" onclick="ordenarJuegos()">Ordenar Alfabéticamente</button>
             </div>
-        </div>
 
-        <div id="mainn3" class="row justify-content-center d-none">
-            <div class="col">
-                <div class="col justify-content-center" id="h11">
-                    <h1>FELIZ  </h1>
-                    <br>
-                    <h1>CUMPLE</h1>
-                    <br>
-                    <h1>MAI!!!!</h1>
+            <div class="dropdown">
+                <button class="dropbtn">Categoría &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="#">Acción</a>
+                    <a href="#">Aventura</a>
+                    <a href="#">FPS</a>
                 </div>
-
-                <canvas id="my-canvas">
-                </canvas>
-
-
-
-
-
-
             </div>
         </div>
 
+        <div class="bottomSidenav">
+            <div class="filtroTexto">
+                <input type="text" id="filtroTexto" onkeyup="filtrarJuegos()" placeholder="Buscar...">
+            </div>
+        </div>
 
+        <div id="toggleVista">
+            <span>Vista:</span>
+            <button id="vistaCompacta" onclick="vistaCompacta()">
+                <img src="img/compacta.png" alt="iconoCompacto">
+            </button>
+            <button id="vistaDetallada" onclick="vistaDetallada()">
+                <img src="img/detallada.png" alt="iconoDetallado">
+            </button>
+        </div>
 
     </div>
+
+    <br>
+
+    <main class="contenedor">
+        <ul id="ulJuegos"></ul>
+    </main>
+
+    <div class="paral">
+        <h1>Últimas novedades</h1>
+    </div>
+
+    <div class="parallax" id="dos">
+        <ul class="ofertas">
+            <li class="animated infinite jackInTheBox">
+                <article>
+                    <figure>
+                        <img src="img/civ6.png" alt="a" class="imagenOferta">
+                    </figure>
+                </article>
+            </li>
+
+            <li class="animated infinite jackInTheBox">
+                <article>
+                    <figure>
+                        <img src="img/hell.jpg" alt="a" class="imagenOferta">
+                    </figure>
+                </article>
+            </li>
+
+            <li id="article3" class="animated infinite jackInTheBox">
+                <article>
+                    <figure>
+                        <img src="img/r.jpg" alt="a" class="imagenOferta">
+                    </figure>
+                </article>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="paral">
+        <h1>Ofertas</h1>
+    </div>
+
+
+    <div class="parallax" id="cuatro">
+        <ul class="ofertas">
+            <li class="animated infinite jackInTheBox">
+                <article>
+                    <figure>
+                        <img src="img/civ6.png" alt="a" class="imagenOferta">
+                    </figure>
+                </article>
+            </li>
+
+            <li class="animated infinite jackInTheBox">
+                <article>
+                    <figure>
+                        <img src="img/hell.jpg" alt="a" class="imagenOferta">
+                    </figure>
+                </article>
+            </li>
+
+            <li id="article3" class="animated infinite jackInTheBox">
+                <article>
+                    <figure>
+                        <img src="img/r.jpg" alt="a" class="imagenOferta">
+                    </figure>
+                </article>
+            </li>
+        </ul>
+    </div>
+    <br>
+
+    <footer>
+        <section class="contenedor">
+
+            <p id="bottomText">© Sitio con fines educativos, sin ánimos de lucro. Todas las imagenes son propiedad de
+                su autor.</p>
+
+            <nav id="social">
+                <ul>
+                    <li><a href="#fb"><img src="img/trans.png" alt="fb" id="logo1" class="logo"></a></li>
+                    <li><a href="#tw"><img src="img/trans.png" alt="tw" id="logo2" class="logo"></a></li>
+                    <li><a href="#pn"><img src="img/trans.png" alt="pn" id="logo3" class="logo"></a></li>
+                </ul>
+            </nav>
+
+        </section>
+    </footer>
 
 
 
