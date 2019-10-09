@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Montevideo Rock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=New+Rocker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+        <a class="navbar-brand abs" href="#">Montevideo Rock</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item active d-sm-none">
+                    <a class="nav-link" href="#informacion">Informacion <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item d-sm-none">
+                    <a class="nav-link" href="#bandas">Bandas</a>
+                </li>
+                <li class="nav-item d-sm-none">
+                    <a class="nav-link" href="#inscripcion">Inscripcion al sorteo</a>
+                </li>
+                <li class="nav-item d-sm-none">
+                    <a class="nav-link" href="#novedades">Novedades</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Container de toda la pagina-->
+    <div class="container-fluid pl-lg-5 pr-lg-5 pt-sm-5">
+
+        <!--4 botones menos en xs-->
+        <div class="row pt-sm-5" id="cuatroBotones">
+
+            <div class="col-6 col-md-3 d-none d-sm-block">
+                <a href="#informacion">
+                    <button type="button" class="btn btn-navegacion">Información</button>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 d-none d-sm-block">
+                <a href="#bandas">
+                    <button type="button" class="btn btn-navegacion">Bandas</button>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 d-none d-sm-block">
+                <a href="#inscripcion">
+                    <button type="button" class="btn btn-navegacion">Inscripción</button>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 d-none d-sm-block">
+                <a href="#novedades">
+                    <button type="button" class="btn btn-navegacion">Novedades</button>
+                </a>
+            </div>
+
+        </div>
+
+
+        <!--Carrusel imagenes menos en xs-->
+        <div class="row pt-sm-4" id="carrusel">
+            <div class="col d-none d-sm-block">
+                <!-- EMPIEZA SLIDER -->
+                <div id="miSlider" class="carousel slide w-100 carousel-fade" data-ride="carousel">
+                    <!--El ancho por defecto es 100% si le sacas el w-50 
+                carousel-fade hace que le agrege transicion
+                slide tambien hace efecto, se puede sacar-->
+
+                    <!-- Indicadores que estan debajo -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#miSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#miSlider" data-slide-to="1"></li>
+                        <li data-target="#miSlider" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- Los sliders -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/bn1.jpg" alt="Los Angeles" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h5>Cosquín Rock</h5>
+                                <p>Día 1</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img/bn2.jpg" alt="Chicago" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h5>Las Pastillas del Abuelo</h5>
+                                <p>25</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/bn3.jpg" alt="New York" class="img-responsive">
+                            <div class="carousel-caption">
+                                <h5>Cosquín Rock</h5>
+                                <p>Día 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flechas izq y derecha -->
+                    <a class="carousel-control-prev" href="#miSlider" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#miSlider" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+                <!-- TERMINA SLIDER -->
+            </div>
+        </div>
+
+        <!--Informacion-->
+        <div class="row pt-3 pt-sm-5" id="informacion">
+
+            <div class="col">
+                <h1>Información</h1>
+            </div>
+
+        </div>
+
+        <div class="row pt-3 pb-sm-5">
+
+            <!--texto en xs-->
+            <div class="col-12 d-block d-sm-none">
+                <h2>FESTIVAL POR LA CONVIVENCIA</h2>
+                <p>Los días 10, 17 y 18 de noviembre en la Rural del Prado (Lucas Obes 1011) se realizarán dos
+                    festivales musicales que celebran la convivencia en nuestra ciudad: Montevideo Rock y Montevideo
+                    Tropical.
+
+                    Ambos eventos forman parte de los Festivales por la Convivencia, iniciativa llevada adelante por
+                    nuestra Prosecretaría General en el marco de las actividades de #MontevideoConvivencia, que buscan
+                    valorizar la ciudad y sus espacios a través de diferentes expresiones artísticas.
+                    Con estos eventos se pretende ampliar las acciones que permitan el encuentro ciudadano de forma
+                    masiva, popular y accesible.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-5 d-sm-none d-md-block">
+                <h2 class="d-block d-sm-none">Lorem ipsum</h2>
+                <figure>
+                    <img src="img/est.jpg" id="img-informacion-grande" class="img-fluid" alt="informacion grande">
+                </figure>
+                <p class="d-block d-sm-none">Lorem ipsum</p>
+            </div>
+
+
+            <!--texto menos en xs-->
+            <div class="col col-md-6 col-lg-4">
+
+                <div class="col d-none d-sm-block">
+                    <h2>FESTIVAL POR LA CONVIVENCIA</h2>
+                    <p>Los días 11, 17 y 18 de noviembre en la Rural del Prado (Lucas Obes 1011) se realizarán dos
+                        festivales musicales que celebran la convivencia en nuestra ciudad: Montevideo Rock y
+                        Montevideo Tropical.
+
+                        Ambos eventos forman parte de los Festivales por la Convivencia, iniciativa llevada adelante
+                        por nuestra Prosecretaría General en el marco de las actividades de #MontevideoConvivencia, que
+                        buscan valorizar la ciudad y sus espacios a través de diferentes expresiones artísticas.
+                        Con estos eventos se pretende ampliar las acciones que permitan el encuentro ciudadano de forma
+                        masiva, popular y accesible.
+                    </p>
+                </div>
+
+                <!--texto menos en lg, sustituye imagenes de lg-->
+                <div class="col d-none d-sm-block d-lg-none">
+                    <div class="row">
+                        <div class="col">
+                            <h2>¿Dónde?</h2>
+                            <p>Rural del Prado (acceso por Avenida Buschental)</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3>¿Cuándo?</h3>
+                            <p>Sábado 10 de noviembre a partir de las 16 horas</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3>Costo</h3>
+                            <p>$300 o dos por $500 en venta vía web en <a href="http://reduts.com.uy/conciertos/montevideo-tropical-2018.html">RED
+                                    UTS</a> o en locales de cobranza de <a href="http://www.redpagos.com.uy/principal/#espectaculos">Red
+                                    Pagos</a> y en <a href="https://www.tiendainglesa.com.uy/"> locales de Tienda
+                                    Inglesa</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--consideraciones-->
+            <div class="col-3 d-none d-lg-block">
+                <div class="row">
+                    <div class="col">
+                        <h2>CONSIDERACIONES</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>No se permite</h3>
+                        <p>Ingreso de pirotecnia</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Se quitarán en la puerta</h3>
+                        <p>Elementos peligrosos</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Se controlará</h3>
+                        <p>El ingreso de cámara de fotos y vídeo</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Derechos</h3>
+                        <p>El evento puede ser filmado, por lo cual el público asistente cede sus derechos de imagen</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Ingreso</h3>
+                        <p>Entrada por Pelossi</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--2 imagenes informacion-->
+        <div class="row">
+
+            <!--Menos en lg-->
+            <div class="col-6 col-lg-4 d-none d-sm-block d-lg-none">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <figure>
+                            <img src="img/info_03.jpg" alt="escenario" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-4 d-none d-sm-block">
+                        <h4>Escenario</h4>
+                        <p class="d-none d-md-block">Rural del Prado (acceso por Avenida Buschental)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-4 d-none d-sm-block d-lg-none">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <figure>
+                            <img src="img/info_02.jpg" alt="publico" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-4 d-none d-sm-block">
+                        <h4>Todo publico</h4>
+                        <p class="d-none d-md-block">Sábado 17 y domingo 18 de noviembre a partir de las 17 horas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--En lg-->
+            <!--3 imagenes lg-->
+            <div class="col-6 col-lg-4 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <figure>
+                            <img src="img/icon1.jpg" alt="donde" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-6 d-none d-sm-block">
+                        <h4>¿Dónde?</h4>
+                        <p class="d-none d-md-block">Rural del Prado (acceso por Avenida Buschental)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-4 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <figure>
+                            <img src="img/icon2.jpg" alt="cuando" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-6 d-none d-sm-block">
+                        <h4>¿Cuándo?</h4>
+                        <p class="d-none d-md-block">Sábado 17 y domingo 18 de noviembre a partir de las 17 horas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <figure>
+                            <img src="img/icon3.jpg" alt="costo" class="img-fluid">
+                        </figure>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        <h4>Costo</h4>
+                        <p>$300 o dos por $500 en venta vía web en <a href="http://reduts.com.uy/conciertos/montevideo-tropical-2018.html">RED
+                                UTS</a> o en locales de cobranza de <a href="http://www.redpagos.com.uy/principal/#espectaculos">Red
+                                Pagos</a> y en <a href="https://www.tiendainglesa.com.uy/"> locales de Tienda
+                                Inglesa</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!---->
+
+        <!--Bandas-->
+        <div class="row pt-3 pt-sm-5" id="bandas">
+            <div class="col">
+                <h1>Bandas</h1>
+            </div>
+        </div>
+
+
+        <div class="row pt-3">
+            <!--tablas en xs-->
+            <div class="col">
+
+                <div class="row">
+                    <div class="col-12 d-block d-sm-none">
+                        <h2>Sábado 17</h2>
+                        <table class="table">
+
+                            <thead>
+                                <tr>
+                                    <th>ESCENARIO</th>
+                                    <th>ARTISTA</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>MANDRAKE WOLF Y LOS DRUIDAS</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Sponsor</td>
+                                    <td>CHALA MADRE</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>ARQUERO</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="col-12 d-block d-sm-none">
+                        <h2>Domingo 18</h2>
+                        <table class="table">
+
+                            <thead>
+                                <tr>
+                                    <th>ESCENARIO</th>
+                                    <th>ARTISTA</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>BUENOS MUCHACHOS</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>LA TRIPLE NELSON</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>LA TEJA PRIDE</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+                <!--tablas menos en xs-->
+                <div class="row">
+                    <div class="col-12 col-md-6 d-none d-sm-block">
+                        <h2>Sábado 17</h2>
+                        <table class="table">
+
+                            <thead>
+                                <tr>
+                                    <th>ESCENARIO</th>
+                                    <th>ARTISTA</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>MANDRAKE WOLF Y LOS DRUIDAS</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>REYTORO</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>EL CUARTETO DE NOS</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Sponsor</td>
+                                    <td>MOUNTAIN CASTLES</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Sponsor</td>
+                                    <td>CHALA MADRE</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>ARQUERO</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>Kung-Fú OmBijam</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>LA CHARLY</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="col-12 col-md-6 d-none d-sm-block">
+                        <h2>Domingo 18</h2>
+                        <table class="table">
+
+                            <thead>
+                                <tr>
+                                    <th>ESCENARIO</th>
+                                    <th>ARTISTA</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>BUENOS MUCHACHOS</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>LA TRIPLE NELSON</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Montevideo</td>
+                                    <td>FITO PAEZ</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Sponsor</td>
+                                    <td>MÓNICA NAVARRO</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Sponsor</td>
+                                    <td>LA SANTA</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>LA TEJA PRIDE</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>LOS BUENOS MODALES</td>
+                                </tr>
+                                <tr class="">
+                                    <td>Hip Hop</td>
+                                    <td>CROUPIER FUNK</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!---->
+
+        <div class="row pt-3 pt-sm-5" id="pedidos">
+
+            <div class="col-12 text-center pb-4">
+                <img src="img/pedidos/logo.png" alt="" class="img-fluid img-thumbnail logoRedondo">
+            </div>
+
+        </div>
+
+        <div class="row pedidosDiv">
+            <div class="col">
+
+                <div class="row pb-3 borde">
+
+                    <div class="col-6 d-none d-md-block">
+                        <figure>
+                            <img src="img/pedidos/pedidos.jpg" alt="" class="img-fluid img-thumbnail">
+                            <figcaption>La rapidez es un valor clave según PedidosYa</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h2>Con nueva imagen y negocios, Pedidos Ya redobla la apuesta al delivery</h2>
+                        <p>
+                            En sintonía con la afirmación popular de que «la comida entra por los ojos», los cambios
+                            que
+                            acomete PedidosYa también tienen una fuerte impronta visual.
+
+                            El más notorio es la renovación del logo. Hasta ahora, el diseño fusionaba la flecha de un
+                            mouse
+                            (en referencia a que en sus inicios, la plataforma canalizaba las órdenes a través de su
+                            sitio web)
+                            y una especie de mozo. Pero el logo dejó de representar adecuadamente a la compañía «a
+                            medida que
+                            fue evolucionando el negocio —explicó García—: hoy el 78% de los pedidos se hacen a través
+                            de
+                            dispositivos mobile entonces quedó muy atrasado ese icono».
+
+                            El nuevo logo, que debutó este miércoles, consiste en una «P» atravesada por la silueta de
+                            un
+                            tenedor. El concepto, diseñado por el estudio I+D, busca conectar a la plataforma de un
+                            modo «mucho
+                            más emocional con los consumidores y desde el lado de la comida que es lo que más nos
+                            importa»,
+                            indicó el empresario. Ese énfasis deriva de estudios de mercado que confirmaron que a los
+                            consumidores lo que más les importa es «comer rico, lisa y llanamente».
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col pt-4">
+                        <h2 id="restaurantes">Los Restaurantes más pedidos</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 d-block d-sm-none">
+                        <h3>Referencia de pedidos</h3>
+                        <table class="table" id="tablaPedidosYa">  
+
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Entrada</th>
+                                    <th>Plato principal</th>
+                                    <th>Postre</th>
+                                    <th>Bebida</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr class="">
+                                    <th>La Pasiva</th>
+                                    <td>$200</td>
+                                    <td>$500</td>
+                                    <td>$350</td>
+                                    <td>$100</td>
+                                </tr>
+                                <tr class="">
+                                    <th>Il mondo della pizza</th>
+                                    <td>$300</td>
+                                    <td>$600</td>
+                                    <td>$380</td>
+                                    <td>$120</td>
+                                </tr>
+                                <tr class="">
+                                    <th>El palenque</th>
+                                    <td>$400</td>
+                                    <td>$900</td>
+                                    <td>$550</td>
+                                    <td>$200</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+                <!--3 fotos-->
+                <div class="row borde">
+
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-sm-block">
+                        <img src="img/pedidos/lapasiva.jpg" alt="" class="img-fluid img-thumbnail">
+                        <h3>1 - La pasiva</h3>
+                        <p>La Pasiva es una de las marcas favoritas de los uruguayos. Habla de la identidad local, de
+                            lo que nos gusta comer, de como nos gusta encontrarnos con la familia y los amigos.
+
+                            Cada país desarrolla a lo largo de su historia sus platos típicos y formas de comer propias
+                            que forman parte de sus costumbres y le dan una identidad.
+
+                            Los chivitos, los sándwiches, la muzzarella y el fainá son algunas de las tradicionales
+                            minutas, comidas de paso, que forman parte de nuestro patrimonio gastronómico.</p>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-sm-block">
+                        <img src="img/pedidos/ilmondo.jpg" alt="" class="img-fluid img-thumbnail">
+                        <h3>2 - Il mondo della pizza</h3>
+                        <p>Surge a partir de dos jóvenes uruguayos con muchas ganas de comer pizza y aburridos de
+                            terminar siempre en la clásica porción de toda la vida, muy rica por cierto pero con ganas
+                            de probar algo diferente. La idea básicamente surge con la necesidad de cambio, de innovar.
+
+                            A fines del año 2008 empezamos con este pequeño gran emprendimiento sin tener mucha idea de
+                            lo que iba a pasar. Poco a poco todo fue tomando forma, especialmente las pizzas que nos
+                            costó mucho que salieran redondas.
+                        </p>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                        <img src="img/pedidos/elpalenque.jpg" alt="" class="img-fluid img-thumbnail">
+                        <h3>3 - El palenque</h3>
+                        <p>Don Emilio Portela llegó a Montevideo con 17 años, como inmigrante, con intención de
+                            trabajar. Ingresó como mozo a una pequeña parrillada el Mercado del Puerto llamada El
+                            Palenque.
+
+                            Años más tarde compró el negocio a plazos, con el fruto de su esfuerzo. Muchos años y miles
+                            de comensales han pasado hasta llegar a lo que hoy es El Palenque.
+
+                            Su tradicional restaurante en el Mercado del Puerto ha dejado de ser solamente una parrilla
+                            y se ha posicionado como un restaurante referente de conocedores gastronómicos.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--Inscripcion-->
+        <div class="row pt-3 pt-sm-5" id="inscripcion">
+
+            <div class="col">
+                <h1>Inscripción al sorteo</h1>
+            </div>
+
+        </div>
+
+        <!--video yt-->
+        <div class="row pt-3">
+
+            <div class="col-6 col-lg-8 d-none d-md-block">
+                <div class="row">
+
+                    <div class="col d-none d-md-block d-lg-none">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod rem commodi eos magnam, qui
+                            facere nulla recusandae. Asperiores rerum, ullam eos, soluta repudiandae sunt suscipit
+                            optio
+                            commodi neque itaque repellat!</p>
+                    </div>
+
+                    <div class="embed-responsive embed-responsive-16by9 d-none d-lg-block">
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--form inscribirse al sorteo-->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="row">
+
+                    <div class="col-12">
+                        <form>
+                            <div class="form-group">
+                                <h2>Sorteamos 20 entradas dobles</h2>
+                                <small id="emailHelp" class="form-text text-muted">(*) Todos los campos son
+                                    obligatorios. Publicaremos los resultados en la web oficial.</small>
+                                <label for="inputEmail">Mail (*)</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                    placeholder="">
+                            </div>
+
+                            <button type="submit" class="btn btn-danger">Inscribirme!</button>
+
+                        </form>
+                    </div>
+
+                    <div class="col-12 d-none d-lg-block pt-4">
+                        <h3>Condiciones</h3>
+                        <p>Se encuentra abierto al público en general, es gratuito y sin obligación de compra alguna,
+                            exclusiva para residentes en la República Oriental del Uruguay, mayores de 18 años.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!---->
+
+
+        <!--Novedades-->
+        <div class="row pt-5" id="novedades">
+            <div class="col">
+                <h1>Novedades</h1>
+            </div>
+        </div>
+
+        <div class="row pt-3 pb-4">
+            <div class="col">
+
+                <!--4 imagenes abajo-->
+                <div class="row">
+                    <div class="col-3 d-none d-md-block">
+                        <article>
+                            <figure>
+                                <img src="img/noti1.jpg" alt="tango" class="img-fluid">
+                            </figure>
+                            <h3>El Tango, patrimonio de tu ciudad</h3>
+                            <p>Con actividades abiertas libres y gratuitas, más de 100 artistas de Uruguay y Argentina
+                                y gran producción artística, la Plaza Matriz será anfitriona de la primera edición de
+                                Montevideo Tango.</p>
+                        </article>
+                    </div>
+                    <div class="col-3 d-none d-md-block">
+                        <article>
+                            <figure>
+                                <img src="img/noti2.jpg" alt="festival montevideo" class="img-fluid">
+                            </figure>
+                            <h3>Montevideo de las Artes llega a Paso Molino</h3>
+                            <p>El Festival Montevideo de las Artes cerrará su ciclo de espectáculos barriales en Paso
+                                Molino.</p>
+                        </article>
+                    </div>
+                    <div class="col-3 d-none d-md-block">
+                        <article>
+                            <figure>
+                                <img src="img/noti3.jpg" alt="san felipe" class="img-fluid">
+                            </figure>
+                            <h3>Inscripciones abiertas para correr la San Felipe y Santiago</h3>
+                            <p>Están abiertas las preinscripciones para participar en la 24ª edición de la carrera San
+                                Felipe y Santiago, que se realizará el sábado 17 de noviembre por la rambla
+                                montevideana.</p>
+                        </article>
+                    </div>
+                    <div class="col-3 d-none d-md-block">
+                        <article>
+                            <figure>
+                                <img src="img/noti4.jpg" alt="mojo fiesta" class="img-fluid">
+                            </figure>
+                            <h3>Viví Mojo, una fiesta que celebra la juventud</h3>
+                            <p>Desde el 3 al 16 de noviembre tendrá lugar la primera bienal de la Juventud de
+                                Montevideo, con espectáculos en vivo, actividades, fotogalería, ferias y más, con
+                                entrada libre, en el Parque Rodó.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!--2 imagenes abajo anchas-->
+                <div class="row" id="articulos">
+                    <div class="col-12 col-sm-6">
+                        <article>
+                            <figure>
+                                <img src="img/noti5.jpg" alt="montevideo tropical" class="img-fluid">
+                            </figure>
+                            <h3>Montevideo Tropical</h3>
+                            <p>La grilla de Montevideo Tropical está integrada por reconocidas bandas como Karibe con
+                                K, Bola 8, Los Fatales, La Cumana, Los Negroni y El Super Hobby. También estarán Majo y
+                                la del 13, Vanesa Britos, Marcos Da Costa y Martín Quiroga. Será el 10 de noviembre
+                                desde las 16 horas en la Rural del Prado.</p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <article>
+                            <figure>
+                                <img src="img/arr.jpg" alt="cortes de transito" class="img-fluid">
+                            </figure>
+                            <h3>Cortes y desvíos de tránsito</h3>
+                            <p>Durante el fin de semana y el lunes 29 de octubre habrá cortes y desvíos de tránsito en
+                                diferentes tramos de Montevideo debido a obras, operativas y otras actividades en la
+                                vía pública.</p>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!---->
+
+        <!--arrow top-->
+        <span>
+            <a href="#informacion" id="backToTopBtn" class="">/\</a>
+        </span>
+
+
+    </div>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

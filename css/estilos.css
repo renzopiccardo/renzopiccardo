@@ -1,0 +1,182 @@
+body{
+	/*background-image: radial-gradient(rgb(26, 26, 26), rgb(0, 0, 0));*/
+	background-color: rgb(10, 10, 10);
+	color: whitesmoke;	
+	font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	
+}
+
+main{
+	
+}
+
+header, footer{
+	height: 50px; 
+	background-color: black;
+	/*border-bottom: 5px solid white;*/
+}
+
+nav{
+	min-height: 50px;
+	background-color: maroon;
+	/*background-image: linear-gradient(rgb(141, 0, 0), rgb(71, 0, 0));*/
+	font-family: 'Metal Mania', cursive;
+}
+
+article{
+	/*padding: 10px;*/
+}
+
+article.col-4{
+	background-color: skyblue;
+	border-bottom: 5px solid white;
+}
+
+article.col-6{
+	background-color: skyblue;
+	border-bottom: 5px solid white;
+}
+
+h1{
+	font-family: 'New Rocker', cursive;
+	font-size: 40px;
+	/*color: rgb(173, 0, 0);*/
+	color: maroon;
+	height: 50px;
+}
+
+h2{
+	font-family: 'Metal Mania', cursive;
+	font-size: 28px;
+}
+
+h3{
+	font-family: 'Metal Mania', cursive;
+	font-size: 20px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+
+#articulos{
+	/*
+	background-color: rgba(0, 162, 255, 0.829);
+	color: white;
+	*/
+}
+
+input, textarea{
+	background-color: rgba(0, 162, 255, 0.829);
+}
+
+#cuatroBotones{
+	
+}
+
+.btn-navegacion{
+	width: 100%;
+	margin-bottom: 20px;
+	/*background-color: rgb(70, 0, 0);*/
+	background-color: maroon;
+	border: 2px solid rgb(100, 0, 0);
+	color: white;
+	font-family: 'New Rocker', cursive;
+	font-size: 20px;
+}
+
+#carrusel{
+	
+}
+
+.carousel-item img{
+	display: block;
+	width: 100%;
+	height: 400px;
+}
+
+#img-informacion-grande{
+	
+}
+
+.table{
+	background-color: rgb(29, 0, 0);
+}
+
+.table thead th{
+	border-top: 1px solid #be4d4d;
+	border-bottom: 1px solid #be4d4d;
+}
+
+.table tbody td {
+	border-bottom: 2px solid rgb(99, 76, 76);
+}
+
+.pedidosDiv h2{
+	color: #be4d4d;
+}
+
+.img-thumbnail{
+	background-color: black;
+	border: 1px solid #be4d4d;
+	
+}
+
+.logoRedondo{
+	border-radius: 100%;
+}
+
+.borde{
+	border-bottom: 2px solid #be4d4d;
+}
+
+#tablaPedidosYa{
+	
+}
+
+#tablaPedidosYa th{
+	border: 1px solid #be4d4d;
+}
+
+#tablaPedidosYa td {
+	border: 1px solid #be4d4d;
+}
+
+
+@media (min-width: 576px) {
+
+	.navbar-brand.abs{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.carousel-item img{
+		height: 300px;
+	}
+}
+
+/*
+@media screen and 
+(max-width: 768px) and
+(min-width: 575px){
+
+	.carousel-item img{
+		height: 300px;
+	}
+}
+*/
+
+@media (min-width: 1200px) {
+	.carousel-item img{
+		height: 500px;
+	}
+}
